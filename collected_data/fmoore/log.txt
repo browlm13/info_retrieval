@@ -1,0 +1,1 @@
+{"seed_url": "https://s2.smu.edu/~fmoore/", "max_urls_to_index": null, "robots_dissaloud_path": ["https://s2.smu.edu/~fmoore/dontgohere/"]}

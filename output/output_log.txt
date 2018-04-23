@@ -1,0 +1,1657 @@
+Loading Index Files
+file does not exit
+file does not exit
+file does not exit
+Response Status Code: 200
+Crawling: https://s2.smu.edu/~fmoore/
+Number of sites in index: 0
+Adding new URL to index: https://s2.smu.edu/~fmoore/
+Saving response summary
+Saving Document Term Frequency Dictonary ID: 1
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/schedule.htm
+Number of sites in index: 1
+Adding new URL to index: https://s2.smu.edu/~fmoore/schedule.htm
+Saving response summary
+Saving Document Term Frequency Dictonary ID: 2
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/CSE5337_syllabus.pdf
+Number of sites in index: 2
+Adding new URL to index: https://s2.smu.edu/~fmoore/CSE5337_syllabus.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/CSE7337_syllabus.pdf
+Number of sites in index: 3
+Adding new URL to index: https://s2.smu.edu/~fmoore/CSE7337_syllabus.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/index-fall2017.htm
+Number of sites in index: 4
+Adding new URL to index: https://s2.smu.edu/~fmoore/index-fall2017.htm
+Saving response summary
+Saving Document Term Frequency Dictonary ID: 3
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/sim_example-2018-02-15.xlsx
+Number of sites in index: 5
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/sim_example-2018-02-15.xlsx
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/permutermindex-example.jpg
+Number of sites in index: 6
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/permutermindex-example.jpg
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/CACM-Internet-Advertising-Oct-2017.pdf
+Number of sites in index: 7
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/CACM-Internet-Advertising-Oct-2017.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/exam1.html
+Number of sites in index: 8
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/exam1.html
+Saving response summary
+Saving Document Term Frequency Dictonary ID: 4
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/index_duplicate.htm
+Number of sites in index: 9
+Adding new URL to index: https://s2.smu.edu/~fmoore/index_duplicate.htm
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/porter_stemmer_example.html
+Number of sites in index: 10
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/porter_stemmer_example.html
+Saving response summary
+Saving Document Term Frequency Dictonary ID: 5
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/count_letters_duplicate.txt
+Number of sites in index: 11
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/count_letters_duplicate.txt
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/algorithm-1-7.pdf
+Number of sites in index: 12
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/algorithm-1-7.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/figure6-12.xlsx
+Number of sites in index: 13
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/figure6-12.xlsx
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/IEEE-Spectrum-The-Dark-Dialect-Oct-2017.pdf
+Number of sites in index: 14
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/IEEE-Spectrum-The-Dark-Dialect-Oct-2017.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/index.htm
+Number of sites in index: 15
+Adding new URL to index: https://s2.smu.edu/~fmoore/index.htm
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/mercator-article.pdf
+Number of sites in index: 16
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/mercator-article.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/levenshtein.html
+Number of sites in index: 17
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/levenshtein.html
+Saving response summary
+Saving Document Term Frequency Dictonary ID: 6
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/does_not_exist.htm
+Number of sites in index: 18
+Adding new URL to index: https://s2.smu.edu/~fmoore/does_not_exist.htm
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/example-2018-02-27.xlsx
+Number of sites in index: 19
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/example-2018-02-27.xlsx
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/this_aint_gonna_work.htm
+Number of sites in index: 20
+Adding new URL to index: https://s2.smu.edu/~fmoore/this_aint_gonna_work.htm
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/count_letters.txt
+Number of sites in index: 21
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/count_letters.txt
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/useragent.php
+Number of sites in index: 22
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/useragent.php
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/bigram-example.jpg
+Number of sites in index: 23
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/bigram-example.jpg
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/index-final.htm
+Number of sites in index: 24
+Adding new URL to index: https://s2.smu.edu/~fmoore/index-final.htm
+Saving response summary
+Saving Document Term Frequency Dictonary ID: 7
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/syl_5330.pdf
+Number of sites in index: 25
+Adding new URL to index: https://s2.smu.edu/~fmoore/syl_5330.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/syl_7330.pdf
+Number of sites in index: 26
+Adding new URL to index: https://s2.smu.edu/~fmoore/syl_7330.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/timeline.pdf
+Number of sites in index: 27
+Adding new URL to index: https://s2.smu.edu/~fmoore/timeline.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/SMU-CSE-LOGO.gif
+Number of sites in index: 28
+Adding new URL to index: https://s2.smu.edu/~fmoore/SMU-CSE-LOGO.gif
+Saving response summary
+Saving Index Files
+Saving Index Files
+Writing Document Term Frequency Matrix
+file does not exit
+Loading Index Files
+Response Status Code: 200
+Saving Index Files
+Loading Index Files
+Response Status Code: 200
+Saving Index Files
+Loading Index Files
+Response Status Code: 200
+Saving Index Files
+Loading Index Files
+Response Status Code: 200
+Saving Index Files
+Loading Index Files
+Response Status Code: 200
+Saving Index Files
+Loading Index Files
+Response Status Code: 200
+Saving Index Files
+Loading Index Files
+Response Status Code: 200
+Saving Index Files
+Loading Index Files
+Response Status Code: 200
+Saving Index Files
+Loading Index Files
+Response Status Code: 200
+Saving Index Files
+Loading Index Files
+Response Status Code: 200
+Saving Index Files
+Loading Index Files
+Response Status Code: 200
+Saving Index Files
+Loading Index Files
+Response Status Code: 200
+Saving Index Files
+Loading Index Files
+Response Status Code: 200
+Saving Index Files
+Loading Index Files
+Response Status Code: 200
+Saving Index Files
+Loading Index Files
+Response Status Code: 200
+Saving Index Files
+Loading Index Files
+Response Status Code: 200
+Saving Index Files
+Loading Index Files
+Response Status Code: 200
+Saving Index Files
+Loading Index Files
+Response Status Code: 200
+Saving Index Files
+Loading Index Files
+file does not exit
+file does not exit
+file does not exit
+Response Status Code: 200
+Crawling: https://s2.smu.edu/~fmoore/
+Number of sites in index: 0
+Adding new URL to index: https://s2.smu.edu/~fmoore/
+Saving response summary
+Saving Document Term Frequency Dictonary ID: 1
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/CSE5337_syllabus.pdf
+Number of sites in index: 1
+Adding new URL to index: https://s2.smu.edu/~fmoore/CSE5337_syllabus.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/schedule.htm
+Number of sites in index: 2
+Adding new URL to index: https://s2.smu.edu/~fmoore/schedule.htm
+Saving response summary
+Saving Document Term Frequency Dictonary ID: 2
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/index-fall2017.htm
+Number of sites in index: 3
+Adding new URL to index: https://s2.smu.edu/~fmoore/index-fall2017.htm
+Saving response summary
+Saving Document Term Frequency Dictonary ID: 3
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/CSE7337_syllabus.pdf
+Number of sites in index: 4
+Adding new URL to index: https://s2.smu.edu/~fmoore/CSE7337_syllabus.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/count_letters.txt
+Number of sites in index: 5
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/count_letters.txt
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/does_not_exist.htm
+Number of sites in index: 6
+Adding new URL to index: https://s2.smu.edu/~fmoore/does_not_exist.htm
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/this_aint_gonna_work.htm
+Number of sites in index: 7
+Adding new URL to index: https://s2.smu.edu/~fmoore/this_aint_gonna_work.htm
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/algorithm-1-7.pdf
+Number of sites in index: 8
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/algorithm-1-7.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/count_letters_duplicate.txt
+Number of sites in index: 9
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/count_letters_duplicate.txt
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/index.htm
+Number of sites in index: 10
+Adding new URL to index: https://s2.smu.edu/~fmoore/index.htm
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/porter_stemmer_example.html
+Number of sites in index: 11
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/porter_stemmer_example.html
+Saving response summary
+Saving Document Term Frequency Dictonary ID: 4
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/levenshtein.html
+Number of sites in index: 12
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/levenshtein.html
+Saving response summary
+Saving Document Term Frequency Dictonary ID: 5
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/bigram-example.jpg
+Number of sites in index: 13
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/bigram-example.jpg
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/exam1.html
+Number of sites in index: 14
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/exam1.html
+Saving response summary
+Saving Document Term Frequency Dictonary ID: 6
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/mercator-article.pdf
+Number of sites in index: 15
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/mercator-article.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/permutermindex-example.jpg
+Number of sites in index: 16
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/permutermindex-example.jpg
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/example-2018-02-27.xlsx
+Number of sites in index: 17
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/example-2018-02-27.xlsx
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/sim_example-2018-02-15.xlsx
+Number of sites in index: 18
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/sim_example-2018-02-15.xlsx
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/CACM-Internet-Advertising-Oct-2017.pdf
+Number of sites in index: 19
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/CACM-Internet-Advertising-Oct-2017.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/figure6-12.xlsx
+Number of sites in index: 20
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/figure6-12.xlsx
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/useragent.php
+Number of sites in index: 21
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/useragent.php
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/IEEE-Spectrum-The-Dark-Dialect-Oct-2017.pdf
+Number of sites in index: 22
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/IEEE-Spectrum-The-Dark-Dialect-Oct-2017.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/index_duplicate.htm
+Number of sites in index: 23
+Adding new URL to index: https://s2.smu.edu/~fmoore/index_duplicate.htm
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/syl_7330.pdf
+Number of sites in index: 24
+Adding new URL to index: https://s2.smu.edu/~fmoore/syl_7330.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/syl_5330.pdf
+Number of sites in index: 25
+Adding new URL to index: https://s2.smu.edu/~fmoore/syl_5330.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/timeline.pdf
+Number of sites in index: 26
+Adding new URL to index: https://s2.smu.edu/~fmoore/timeline.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/index-final.htm
+Number of sites in index: 27
+Adding new URL to index: https://s2.smu.edu/~fmoore/index-final.htm
+Saving response summary
+Saving Document Term Frequency Dictonary ID: 7
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/SMU-CSE-LOGO.gif
+Number of sites in index: 28
+Adding new URL to index: https://s2.smu.edu/~fmoore/SMU-CSE-LOGO.gif
+Saving response summary
+Saving Index Files
+Saving Index Files
+file does not exit
+Loading Index Files
+file does not exit
+file does not exit
+file does not exit
+Response Status Code: 200
+Crawling: https://s2.smu.edu/~fmoore/
+Number of sites in index: 0
+Adding new URL to index: https://s2.smu.edu/~fmoore/
+Saving response summary
+Saving Document Term Frequency Dictonary ID: 1
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/index-fall2017.htm
+Number of sites in index: 1
+Adding new URL to index: https://s2.smu.edu/~fmoore/index-fall2017.htm
+Saving response summary
+Saving Document Term Frequency Dictonary ID: 2
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/schedule.htm
+Number of sites in index: 2
+Adding new URL to index: https://s2.smu.edu/~fmoore/schedule.htm
+Saving response summary
+Saving Document Term Frequency Dictonary ID: 3
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/CSE7337_syllabus.pdf
+Number of sites in index: 3
+Adding new URL to index: https://s2.smu.edu/~fmoore/CSE7337_syllabus.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/CSE5337_syllabus.pdf
+Number of sites in index: 4
+Adding new URL to index: https://s2.smu.edu/~fmoore/CSE5337_syllabus.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/timeline.pdf
+Number of sites in index: 5
+Adding new URL to index: https://s2.smu.edu/~fmoore/timeline.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/syl_7330.pdf
+Number of sites in index: 6
+Adding new URL to index: https://s2.smu.edu/~fmoore/syl_7330.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/syl_5330.pdf
+Number of sites in index: 7
+Adding new URL to index: https://s2.smu.edu/~fmoore/syl_5330.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/index-final.htm
+Number of sites in index: 8
+Adding new URL to index: https://s2.smu.edu/~fmoore/index-final.htm
+Saving response summary
+Saving Document Term Frequency Dictonary ID: 4
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/useragent.php
+Number of sites in index: 9
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/useragent.php
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/index.htm
+Number of sites in index: 10
+Adding new URL to index: https://s2.smu.edu/~fmoore/index.htm
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/exam1.html
+Number of sites in index: 11
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/exam1.html
+Saving response summary
+Saving Document Term Frequency Dictonary ID: 5
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/mercator-article.pdf
+Number of sites in index: 12
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/mercator-article.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/k-means-example.xlsx
+Number of sites in index: 13
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/k-means-example.xlsx
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/roadmap-04-03-2018.jpg
+Number of sites in index: 14
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/roadmap-04-03-2018.jpg
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/IEEE-Spectrum-The-Dark-Dialect-Oct-2017.pdf
+Number of sites in index: 15
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/IEEE-Spectrum-The-Dark-Dialect-Oct-2017.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/permutermindex-example.jpg
+Number of sites in index: 16
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/permutermindex-example.jpg
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/porter_stemmer_example.html
+Number of sites in index: 17
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/porter_stemmer_example.html
+Saving response summary
+Saving Document Term Frequency Dictonary ID: 6
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/text/index.php
+Number of sites in index: 18
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/text/index.php
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/algorithm-1-7.pdf
+Number of sites in index: 19
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/algorithm-1-7.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/does_not_exist.htm
+Number of sites in index: 20
+Adding new URL to index: https://s2.smu.edu/~fmoore/does_not_exist.htm
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/example-2018-02-27.xlsx
+Number of sites in index: 21
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/example-2018-02-27.xlsx
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/levenshtein.html
+Number of sites in index: 22
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/levenshtein.html
+Saving response summary
+Saving Document Term Frequency Dictonary ID: 7
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/index_duplicate.htm
+Number of sites in index: 23
+Adding new URL to index: https://s2.smu.edu/~fmoore/index_duplicate.htm
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/sim_example-2018-02-15.xlsx
+Number of sites in index: 24
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/sim_example-2018-02-15.xlsx
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/count_letters.txt
+Number of sites in index: 25
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/count_letters.txt
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/this_aint_gonna_work.htm
+Number of sites in index: 26
+Adding new URL to index: https://s2.smu.edu/~fmoore/this_aint_gonna_work.htm
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/bigram-example.jpg
+Number of sites in index: 27
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/bigram-example.jpg
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/figure6-12.xlsx
+Number of sites in index: 28
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/figure6-12.xlsx
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/CACM-Internet-Advertising-Oct-2017.pdf
+Number of sites in index: 29
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/CACM-Internet-Advertising-Oct-2017.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/count_letters_duplicate.txt
+Number of sites in index: 30
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/count_letters_duplicate.txt
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/index.html
+Number of sites in index: 31
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/index.html
+Saving response summary
+Saving Document Term Frequency Dictonary ID: 8
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/SMU-CSE-LOGO.gif
+Number of sites in index: 32
+Adding new URL to index: https://s2.smu.edu/~fmoore/SMU-CSE-LOGO.gif
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/text/mockingbird5.html
+Number of sites in index: 33
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/text/mockingbird5.html
+Saving response summary
+Saving Document Term Frequency Dictonary ID: 9
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/text/mockingbird3.html
+Number of sites in index: 34
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/text/mockingbird3.html
+Saving response summary
+Saving Document Term Frequency Dictonary ID: 10
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/text/mockingbird4.html
+Number of sites in index: 35
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/text/mockingbird4.html
+Saving response summary
+Saving Document Term Frequency Dictonary ID: 11
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/text/mockingbird2.html
+Number of sites in index: 36
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/text/mockingbird2.html
+Saving response summary
+Saving Document Term Frequency Dictonary ID: 12
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/text/mockingbird1.html
+Number of sites in index: 37
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/text/mockingbird1.html
+Saving response summary
+Saving Document Term Frequency Dictonary ID: 13
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/text/building2.txt
+Number of sites in index: 38
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/text/building2.txt
+Saving response summary
+Saving Document Term Frequency Dictonary ID: 14
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/text/building1.txt
+Number of sites in index: 39
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/text/building1.txt
+Saving response summary
+Saving Document Term Frequency Dictonary ID: 15
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/text/magictext.html
+Number of sites in index: 40
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/text/magictext.html
+Saving response summary
+Saving Document Term Frequency Dictonary ID: 16
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/football1.txt
+Number of sites in index: 41
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/football1.txt
+Saving response summary
+Saving Document Term Frequency Dictonary ID: 17
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/baseball3.txt
+Number of sites in index: 42
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/baseball3.txt
+Saving response summary
+Saving Document Term Frequency Dictonary ID: 18
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/golf4.txt
+Number of sites in index: 43
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/golf4.txt
+Saving response summary
+Saving Document Term Frequency Dictonary ID: 19
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/basketball5.txt
+Number of sites in index: 44
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/basketball5.txt
+Saving response summary
+Saving Document Term Frequency Dictonary ID: 20
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/basketball3.txt
+Number of sites in index: 45
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/basketball3.txt
+Saving response summary
+Saving Document Term Frequency Dictonary ID: 21
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/golf5.txt
+Number of sites in index: 46
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/golf5.txt
+Saving response summary
+Saving Document Term Frequency Dictonary ID: 22
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/baseball4.txt
+Number of sites in index: 47
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/baseball4.txt
+Saving response summary
+Saving Document Term Frequency Dictonary ID: 23
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/football3.txt
+Number of sites in index: 48
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/football3.txt
+Saving response summary
+Saving Document Term Frequency Dictonary ID: 24
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/golf2.txt
+Number of sites in index: 49
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/golf2.txt
+Saving response summary
+Saving Document Term Frequency Dictonary ID: 25
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/basketball4.txt
+Number of sites in index: 50
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/basketball4.txt
+Saving response summary
+Saving Document Term Frequency Dictonary ID: 26
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/basketball1.txt
+Number of sites in index: 51
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/basketball1.txt
+Saving response summary
+Saving Document Term Frequency Dictonary ID: 27
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/football5.txt
+Number of sites in index: 52
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/football5.txt
+Saving response summary
+Saving Document Term Frequency Dictonary ID: 28
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/basketball2.txt
+Number of sites in index: 53
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/basketball2.txt
+Saving response summary
+Saving Document Term Frequency Dictonary ID: 29
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/golf3.txt
+Number of sites in index: 54
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/golf3.txt
+Saving response summary
+Saving Document Term Frequency Dictonary ID: 30
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/golf1.txt
+Number of sites in index: 55
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/golf1.txt
+Saving response summary
+Saving Document Term Frequency Dictonary ID: 31
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/football4.txt
+Number of sites in index: 56
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/football4.txt
+Saving response summary
+Saving Document Term Frequency Dictonary ID: 32
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/baseball2.txt
+Number of sites in index: 57
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/baseball2.txt
+Saving response summary
+Saving Document Term Frequency Dictonary ID: 33
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/baseball5.txt
+Number of sites in index: 58
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/baseball5.txt
+Saving response summary
+Saving Document Term Frequency Dictonary ID: 34
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/football2.txt
+Number of sites in index: 59
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/football2.txt
+Saving response summary
+Saving Document Term Frequency Dictonary ID: 35
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/baseball1.txt
+Number of sites in index: 60
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/baseball1.txt
+Saving response summary
+Saving Document Term Frequency Dictonary ID: 36
+Saving Index Files
+Saving Index Files
+file does not exit
+Loading Index Files
+file does not exit
+file does not exit
+file does not exit
+Response Status Code: 200
+Crawling: https://s2.smu.edu/~fmoore/
+Number of sites in index: 0
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/
+Saving response summary
+Response Status Code: 200
+Saving Document Term Frequency Dictonary ID: 1
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/index-fall2017.htm
+Number of sites in index: 1
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/index-fall2017.htm
+Saving response summary
+Response Status Code: 200
+Saving Document Term Frequency Dictonary ID: 2
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/CSE7337_syllabus.pdf
+Number of sites in index: 2
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/CSE7337_syllabus.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/schedule.htm
+Number of sites in index: 3
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/schedule.htm
+Saving response summary
+Response Status Code: 200
+Saving Document Term Frequency Dictonary ID: 3
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/CSE5337_syllabus.pdf
+Number of sites in index: 4
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/CSE5337_syllabus.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/syl_7330.pdf
+Number of sites in index: 5
+Response Status Code: 404
+Adding new URL to index: https://s2.smu.edu/~fmoore/syl_7330.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/index-final.htm
+Number of sites in index: 6
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/index-final.htm
+Saving response summary
+Response Status Code: 200
+Saving Document Term Frequency Dictonary ID: 4
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/timeline.pdf
+Number of sites in index: 7
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/timeline.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/syl_5330.pdf
+Number of sites in index: 8
+Response Status Code: 404
+Adding new URL to index: https://s2.smu.edu/~fmoore/syl_5330.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/permutermindex-example.jpg
+Number of sites in index: 9
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/permutermindex-example.jpg
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/does_not_exist.htm
+Number of sites in index: 10
+Response Status Code: 404
+Adding new URL to index: https://s2.smu.edu/~fmoore/does_not_exist.htm
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/exam1.html
+Number of sites in index: 11
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/exam1.html
+Saving response summary
+Response Status Code: 200
+Saving Document Term Frequency Dictonary ID: 5
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/sim_example-2018-02-15.xlsx
+Number of sites in index: 12
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/sim_example-2018-02-15.xlsx
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/count_letters.txt
+Number of sites in index: 13
+Response Status Code: 404
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/count_letters.txt
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/algorithm-1-7.pdf
+Number of sites in index: 14
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/algorithm-1-7.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/porter_stemmer_example.html
+Number of sites in index: 15
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/porter_stemmer_example.html
+Saving response summary
+Response Status Code: 200
+Saving Document Term Frequency Dictonary ID: 6
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/IEEE-Spectrum-The-Dark-Dialect-Oct-2017.pdf
+Number of sites in index: 16
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/IEEE-Spectrum-The-Dark-Dialect-Oct-2017.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/k-means-example.xlsx
+Number of sites in index: 17
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/k-means-example.xlsx
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/mercator-article.pdf
+Number of sites in index: 18
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/mercator-article.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/useragent.php
+Number of sites in index: 19
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/useragent.php
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/roadmap-04-03-2018.jpg
+Number of sites in index: 20
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/roadmap-04-03-2018.jpg
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/index.htm
+Number of sites in index: 21
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/index.htm
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/this_aint_gonna_work.htm
+Number of sites in index: 22
+Response Status Code: 404
+Adding new URL to index: https://s2.smu.edu/~fmoore/this_aint_gonna_work.htm
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/figure6-12.xlsx
+Number of sites in index: 23
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/figure6-12.xlsx
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/index.html
+Number of sites in index: 24
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/index.html
+Saving response summary
+Response Status Code: 200
+Saving Document Term Frequency Dictonary ID: 7
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/text/index.php
+Number of sites in index: 25
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/text/index.php
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/index_duplicate.htm
+Number of sites in index: 26
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/index_duplicate.htm
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/example-2018-02-27.xlsx
+Number of sites in index: 27
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/example-2018-02-27.xlsx
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/count_letters_duplicate.txt
+Number of sites in index: 28
+Response Status Code: 404
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/count_letters_duplicate.txt
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/bigram-example.jpg
+Number of sites in index: 29
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/bigram-example.jpg
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/CACM-Internet-Advertising-Oct-2017.pdf
+Number of sites in index: 30
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/CACM-Internet-Advertising-Oct-2017.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/levenshtein.html
+Number of sites in index: 31
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/levenshtein.html
+Saving response summary
+Response Status Code: 200
+Saving Document Term Frequency Dictonary ID: 8
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/SMU-CSE-LOGO.gif
+Number of sites in index: 32
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/SMU-CSE-LOGO.gif
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/football5.txt
+Number of sites in index: 33
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/football5.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Term Frequency Dictonary ID: 9
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/football4.txt
+Number of sites in index: 34
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/football4.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Term Frequency Dictonary ID: 10
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/baseball3.txt
+Number of sites in index: 35
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/baseball3.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Term Frequency Dictonary ID: 11
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/basketball4.txt
+Number of sites in index: 36
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/basketball4.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Term Frequency Dictonary ID: 12
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/basketball3.txt
+Number of sites in index: 37
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/basketball3.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Term Frequency Dictonary ID: 13
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/football3.txt
+Number of sites in index: 38
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/football3.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Term Frequency Dictonary ID: 14
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/golf2.txt
+Number of sites in index: 39
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/golf2.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Term Frequency Dictonary ID: 15
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/golf3.txt
+Number of sites in index: 40
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/golf3.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Term Frequency Dictonary ID: 16
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/golf1.txt
+Number of sites in index: 41
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/golf1.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Term Frequency Dictonary ID: 17
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/basketball5.txt
+Number of sites in index: 42
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/basketball5.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Term Frequency Dictonary ID: 18
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/baseball1.txt
+Number of sites in index: 43
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/baseball1.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Term Frequency Dictonary ID: 19
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/basketball1.txt
+Number of sites in index: 44
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/basketball1.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Term Frequency Dictonary ID: 20
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/baseball4.txt
+Number of sites in index: 45
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/baseball4.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Term Frequency Dictonary ID: 21
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/baseball2.txt
+Number of sites in index: 46
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/baseball2.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Term Frequency Dictonary ID: 22
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/basketball2.txt
+Number of sites in index: 47
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/basketball2.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Term Frequency Dictonary ID: 23
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/golf5.txt
+Number of sites in index: 48
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/golf5.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Term Frequency Dictonary ID: 24
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/football2.txt
+Number of sites in index: 49
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/football2.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Term Frequency Dictonary ID: 25
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/baseball5.txt
+Number of sites in index: 50
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/baseball5.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Term Frequency Dictonary ID: 26
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/golf4.txt
+Number of sites in index: 51
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/golf4.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Term Frequency Dictonary ID: 27
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/football1.txt
+Number of sites in index: 52
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/football1.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Term Frequency Dictonary ID: 28
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/text/building1.txt
+Number of sites in index: 53
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/text/building1.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Term Frequency Dictonary ID: 29
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/text/mockingbird1.html
+Number of sites in index: 54
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/text/mockingbird1.html
+Saving response summary
+Response Status Code: 200
+Saving Document Term Frequency Dictonary ID: 30
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/text/mockingbird3.html
+Number of sites in index: 55
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/text/mockingbird3.html
+Saving response summary
+Response Status Code: 200
+Saving Document Term Frequency Dictonary ID: 31
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/text/mockingbird5.html
+Number of sites in index: 56
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/text/mockingbird5.html
+Saving response summary
+Response Status Code: 200
+Saving Document Term Frequency Dictonary ID: 32
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/text/mockingbird2.html
+Number of sites in index: 57
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/text/mockingbird2.html
+Saving response summary
+Response Status Code: 200
+Saving Document Term Frequency Dictonary ID: 33
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/text/building2.txt
+Number of sites in index: 58
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/text/building2.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Term Frequency Dictonary ID: 34
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/text/magictext.html
+Number of sites in index: 59
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/text/magictext.html
+Saving response summary
+Response Status Code: 200
+Saving Document Term Frequency Dictonary ID: 35
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/text/mockingbird4.html
+Number of sites in index: 60
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/text/mockingbird4.html
+Saving response summary
+Response Status Code: 200
+Saving Document Term Frequency Dictonary ID: 36
+Saving Index Files
+Saving Index Files
+Loading Index Files
+file does not exit
+file does not exit
+file does not exit
+Response Status Code: 200
+Crawling: https://s2.smu.edu/~fmoore/
+Number of sites in index: 0
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/
+Saving response summary
+Response Status Code: 200
+Saving Document Term Frequency Dictonary ID: 1
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/CSE5337_syllabus.pdf
+Number of sites in index: 1
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/CSE5337_syllabus.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/index-fall2017.htm
+Number of sites in index: 2
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/index-fall2017.htm
+Saving response summary
+Response Status Code: 200
+Saving Document Term Frequency Dictonary ID: 2
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/schedule.htm
+Number of sites in index: 3
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/schedule.htm
+Saving response summary
+Response Status Code: 200
+Saving Document Term Frequency Dictonary ID: 3
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/CSE7337_syllabus.pdf
+Number of sites in index: 4
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/CSE7337_syllabus.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/syl_5330.pdf
+Number of sites in index: 5
+Response Status Code: 404
+Adding new URL to index: https://s2.smu.edu/~fmoore/syl_5330.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/index-final.htm
+Number of sites in index: 6
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/index-final.htm
+Saving response summary
+Response Status Code: 200
+Saving Document Term Frequency Dictonary ID: 4
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/syl_7330.pdf
+Number of sites in index: 7
+Response Status Code: 404
+Adding new URL to index: https://s2.smu.edu/~fmoore/syl_7330.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/timeline.pdf
+Number of sites in index: 8
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/timeline.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/count_letters.txt
+Number of sites in index: 9
+Response Status Code: 404
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/count_letters.txt
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/k-means-example.xlsx
+Number of sites in index: 10
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/k-means-example.xlsx
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/mercator-article.pdf
+Number of sites in index: 11
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/mercator-article.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/IEEE-Spectrum-The-Dark-Dialect-Oct-2017.pdf
+Number of sites in index: 12
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/IEEE-Spectrum-The-Dark-Dialect-Oct-2017.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/levenshtein.html
+Number of sites in index: 13
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/levenshtein.html
+Saving response summary
+Response Status Code: 200
+Saving Document Term Frequency Dictonary ID: 5
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/index.htm
+Number of sites in index: 14
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/index.htm
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/figure6-12.xlsx
+Number of sites in index: 15
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/figure6-12.xlsx
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/text/index.php
+Number of sites in index: 16
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/text/index.php
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/algorithm-1-7.pdf
+Number of sites in index: 17
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/algorithm-1-7.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/this_aint_gonna_work.htm
+Number of sites in index: 18
+Response Status Code: 404
+Adding new URL to index: https://s2.smu.edu/~fmoore/this_aint_gonna_work.htm
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/index.html
+Number of sites in index: 19
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/index.html
+Saving response summary
+Response Status Code: 200
+Saving Document Term Frequency Dictonary ID: 6
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/index_duplicate.htm
+Number of sites in index: 20
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/index_duplicate.htm
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/porter_stemmer_example.html
+Number of sites in index: 21
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/porter_stemmer_example.html
+Saving response summary
+Response Status Code: 200
+Saving Document Term Frequency Dictonary ID: 7
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/sim_example-2018-02-15.xlsx
+Number of sites in index: 22
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/sim_example-2018-02-15.xlsx
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/example-2018-02-27.xlsx
+Number of sites in index: 23
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/example-2018-02-27.xlsx
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/does_not_exist.htm
+Number of sites in index: 24
+Response Status Code: 404
+Adding new URL to index: https://s2.smu.edu/~fmoore/does_not_exist.htm
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/roadmap-04-03-2018.jpg
+Number of sites in index: 25
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/roadmap-04-03-2018.jpg
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/permutermindex-example.jpg
+Number of sites in index: 26
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/permutermindex-example.jpg
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/useragent.php
+Number of sites in index: 27
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/useragent.php
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/CACM-Internet-Advertising-Oct-2017.pdf
+Number of sites in index: 28
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/CACM-Internet-Advertising-Oct-2017.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/count_letters_duplicate.txt
+Number of sites in index: 29
+Response Status Code: 404
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/count_letters_duplicate.txt
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/exam1.html
+Number of sites in index: 30
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/exam1.html
+Saving response summary
+Response Status Code: 200
+Saving Document Term Frequency Dictonary ID: 8
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/bigram-example.jpg
+Number of sites in index: 31
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/bigram-example.jpg
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/SMU-CSE-LOGO.gif
+Number of sites in index: 32
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/SMU-CSE-LOGO.gif
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/text/mockingbird2.html
+Number of sites in index: 33
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/text/mockingbird2.html
+Saving response summary
+Response Status Code: 200
+Saving Document Term Frequency Dictonary ID: 9
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/text/magictext.html
+Number of sites in index: 34
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/text/magictext.html
+Saving response summary
+Response Status Code: 200
+Saving Document Term Frequency Dictonary ID: 10
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/text/mockingbird4.html
+Number of sites in index: 35
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/text/mockingbird4.html
+Saving response summary
+Response Status Code: 200
+Saving Document Term Frequency Dictonary ID: 11
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/text/building1.txt
+Number of sites in index: 36
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/text/building1.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Term Frequency Dictonary ID: 12
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/text/mockingbird1.html
+Number of sites in index: 37
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/text/mockingbird1.html
+Saving response summary
+Response Status Code: 200
+Saving Document Term Frequency Dictonary ID: 13
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/text/mockingbird5.html
+Number of sites in index: 38
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/text/mockingbird5.html
+Saving response summary
+Response Status Code: 200
+Saving Document Term Frequency Dictonary ID: 14
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/text/mockingbird3.html
+Number of sites in index: 39
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/text/mockingbird3.html
+Saving response summary
+Response Status Code: 200
+Saving Document Term Frequency Dictonary ID: 15
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/text/building2.txt
+Number of sites in index: 40
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/text/building2.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Term Frequency Dictonary ID: 16
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/basketball1.txt
+Number of sites in index: 41
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/basketball1.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Term Frequency Dictonary ID: 17
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/basketball2.txt
+Number of sites in index: 42
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/basketball2.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Term Frequency Dictonary ID: 18
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/golf2.txt
+Number of sites in index: 43
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/golf2.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Term Frequency Dictonary ID: 19
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/baseball5.txt
+Number of sites in index: 44
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/baseball5.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Term Frequency Dictonary ID: 20
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/football1.txt
+Number of sites in index: 45
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/football1.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Term Frequency Dictonary ID: 21
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/baseball4.txt
+Number of sites in index: 46
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/baseball4.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Term Frequency Dictonary ID: 22
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/golf5.txt
+Number of sites in index: 47
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/golf5.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Term Frequency Dictonary ID: 23
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/basketball5.txt
+Number of sites in index: 48
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/basketball5.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Term Frequency Dictonary ID: 24
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/baseball2.txt
+Number of sites in index: 49
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/baseball2.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Term Frequency Dictonary ID: 25
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/football5.txt
+Number of sites in index: 50
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/football5.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Term Frequency Dictonary ID: 26
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/golf3.txt
+Number of sites in index: 51
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/golf3.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Term Frequency Dictonary ID: 27
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/golf4.txt
+Number of sites in index: 52
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/golf4.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Term Frequency Dictonary ID: 28
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/baseball3.txt
+Number of sites in index: 53
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/baseball3.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Term Frequency Dictonary ID: 29
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/basketball4.txt
+Number of sites in index: 54
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/basketball4.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Term Frequency Dictonary ID: 30
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/basketball3.txt
+Number of sites in index: 55
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/basketball3.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Term Frequency Dictonary ID: 31
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/football3.txt
+Number of sites in index: 56
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/football3.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Term Frequency Dictonary ID: 32
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/football2.txt
+Number of sites in index: 57
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/football2.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Term Frequency Dictonary ID: 33
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/football4.txt
+Number of sites in index: 58
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/football4.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Term Frequency Dictonary ID: 34
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/baseball1.txt
+Number of sites in index: 59
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/baseball1.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Term Frequency Dictonary ID: 35
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/golf1.txt
+Number of sites in index: 60
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/golf1.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Term Frequency Dictonary ID: 36
+Saving Index Files
+Saving Index Files
+file does not exit
+file does not exit
+file does not exit
+file does not exit
+file does not exit
+file does not exit
+file does not exit
+file does not exit
+file does not exit
+file does not exit
+file does not exit
+file does not exit
+file does not exit
+file does not exit
+file does not exit
+file does not exit
+file does not exit
+file does not exit
+file does not exit
+file does not exit
+file does not exit
+file does not exit
+file does not exit
+file does not exit
+file does not exit
+file does not exit
+file does not exit
+file does not exit
+file does not exit
+file does not exit
+file does not exit
+file does not exit
+file does not exit
+file does not exit
+file does not exit
+file does not exit
+file does not exit
+file does not exit
+file does not exit
+file does not exit
+file does not exit
+file does not exit
+file does not exit
+file does not exit
+file does not exit
+file does not exit
+file does not exit
+file does not exit

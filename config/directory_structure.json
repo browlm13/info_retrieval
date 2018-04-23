@@ -1,0 +1,29 @@
+{
+    "path_templates" :
+        {
+            "directory_structure_file" :                  "collected_data/%s/directory_structure.json",
+            "log_file" :                                  "collected_data/%s/log.txt",
+            "resolved_url_map_file" :                     "collected_data/resolved_url_map.json",
+            "url_id_map_file" :                           "collected_data/url_id_map.json",
+            "doc_hash_id_map_file" :                      "collected_data/doc_hash_id_map.json",
+            "document_directory_path" :                   "collected_data/%s/documents/%s/",
+            "web_page_summaries_directory_path" :         "collected_data/%s/web_page_summaries/",
+            "web_page_summary_file_path" :                "collected_data/%s/web_page_summaries/web_page_summary_%s.json",
+            "document_frequency_dict_file_path" :         "collected_data/%s/documents/document_frequency_dict_%s.json",
+            "document_term_frequency_matrix_file_path" :  "output/document_term_frequency_matrix.csv"
+        },
+
+    "path_template_parameters" :
+        {
+            "directory_structure_file" :                      ["Output Directory"],
+            "log_file" :                                      ["Output Directory"],
+            "resolved_url_map_file" :                         ["None"],
+            "url_id_map_file" :                               ["None"],
+            "doc_hash_id_map_file" :                          ["None"],
+            "document_directory_path" :                       ["Output Directory", "Document ID"],
+            "web_page_summaries_directory_path" :             ["Output Directory"],
+            "web_page_summary_file_path" :                    ["Output Directory", "Resolved URL ID"],
+            "document_frequency_dict_file_path" :             ["Output Directory", "Document ID"],
+            "document_term_frequency_matrix_file_path" :      ["None"]
+        }
+}
