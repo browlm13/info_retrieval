@@ -15,7 +15,7 @@ __version__ = "2.0.1"
                         Search Engine / Web Crawler
                              Command Line Tool
 """
-
+"""
 logger = logging.getLogger(__name__)
 logger.addHandler(logging.FileHandler("output/output_log.txt"))
 logger.addHandler(logging.StreamHandler(sys.stdout))
@@ -45,23 +45,36 @@ bs.scrape_website(seed_url=args.url, output_directory=args.output, max_urls_to_i
 
 # display summary and write term frequency matrix to output file
 summary.display_summary(args.output)
-
 """
+
 dtfm = dvo.get_document_term_frequency_matrix('fmoore')
 
 M, docID2row, word2col = dvo.document_vector_matrix_and_index_dicts(dtfm)
-print(word2col)
-print(docID2row)
-print(M.shape)
+#print(word2col)
+#print(docID2row)
+#print(M.shape)
 import numpy as np
-query_vector = np.zeros((1133))
+
 dv12 = M[11,:]
 # np.nonzero(dv12)
+#query_vector[136] = 1
+#query_vector[137] = 1
+#query_vector[138] = 1
+#print(query_vector)
+#print(dvo.query_to_vector(""))
+# testing cosine similarity
+# print(dvo.ranked_cosine_similarity(query_vector, M))
+#print(dvo.cluster_pruning(dtfm))
+
+"""
+query_vector = np.zeros((1133))
 query_vector[136] = 1
 query_vector[137] = 1
 query_vector[138] = 1
-
-# testing cosine similarity
-# print(dvo.ranked_cosine_similarity(query_vector, M))
-print(dvo.cluster_pruning(dtfm))
 """
+raw_query = "advanc amid attack"
+query_vector = dvo.query_to_vector(raw_query, dtfm)
+token_list = dvo.vector_to_tokens(query_vector, dtfm)
+print(token_list)
+
+

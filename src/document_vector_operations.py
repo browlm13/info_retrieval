@@ -6,6 +6,7 @@ import math
 
 # my lib
 from src import file_io
+from src import text_processing
 
 # external
 import glob
@@ -21,7 +22,7 @@ logger.addHandler(logging.StreamHandler(sys.stdout))
 
 
 def load_document_frequency_dicts(indexed_directory_name):
-    document_frequency_dict_file_template = file_io.get_template('document_frequency_dict_file_path') % \
+    document_frequency_dict_file_template = file_io.get_template('document_term_frequency_dictionary_file_path') % \
                                             (indexed_directory_name, '*')
 
     document_id_term_frequency_dict = {}
@@ -152,6 +153,31 @@ def cluster_pruning_leader_follower_dict(doc_freq_matrix_dataFrame):
     # return leader follower dictonary
     return leader_dictionary
 
-#def
+def query_to_vector(raw_query, doc_freq_matrix_dataFrame):
+    document_vector_matrix, docID2row, word2col = document_vector_matrix_and_index_dicts(doc_freq_matrix_dataFrame)
+
+    # create empty query vector
+    query_vector = np.zeros(document_vector_matrix.shape[1])
+
+    tokens = text_processing.plain_text_to_tokens(raw_query) #, stopwords_file)
+    query_term_frequency_dictionary = text_processing.word_frequency_dict(tokens)
+
+    for word, freq in query_term_frequency_dictionary.items():
+        if word in word2col:
+            column_index = word2col[word]
+            query_vector[column_index] = freq
+
+    return query_vector
+
+def vector_to_tokens(query_vector, doc_freq_matrix_dataFrame):
+    document_vector_matrix, docID2row, word2col = document_vector_matrix_and_index_dicts(doc_freq_matrix_dataFrame)
+
+    col2word = {v: k for k, v in word2col.items()}
+    token_list = []
+    word_indices = np.nonzero(query_vector)[0] # column indecies
+    for i in word_indices:
+        token_list.append(col2word[i])
+
+    return token_list
 
 # def postings list <-> document term frequency matrix
