@@ -2,6 +2,7 @@ import json
 import logging
 import sys
 import os
+import math
 
 # my lib
 from src import file_io
@@ -120,3 +121,32 @@ def ranked_cosine_similarity(query_vector, document_vector_matrix):
     max_indices = np.argsort(reversed_index_range_vector[indices_to_sorted_max_indices])
 
     return max_indices
+
+def cluster_pruning(doc_freq_matrix_dataFrame):
+    """
+
+    :param doc_freq_matrix_dataFrame:
+    :return: return sqrt(N) leaders with sqrt(N) followers as python dictionary with keys as leader docIDs and values
+            as list of follower docIDs
+    """
+    document_vector_matrix, docID2row, word2col = document_vector_matrix_and_index_dicts(doc_freq_matrix_dataFrame)
+
+    # choose n random document vectors indices
+    N = doc_freq_matrix_dataFrame.shape[0]
+    sqrtN = int(math.sqrt(N))
+    leader_indices = np.random.randint(low=0, high=N, size=sqrtN, dtype=int)
+
+    # find each leaders top sqrtN followers using cosine similarity
+    find_follower_list = lambda leader_idx: ranked_cosine_similarity(document_vector_matrix[leader_idx],document_vector_matrix)[:sqrtN]
+    follower_indices_matrix = np.apply_along_axis(find_follower_list,0,leader_indices)
+
+    # create leader follower dictionary
+    leader_dictionary = {}
+    row2docID = {v:k for k,v in docID2row.items()}
+    for i,lidx in enumerate(leader_indices.tolist()):
+        leader_docID = row2docID[lidx]
+        follower_docIDs = [row2docID[idx] for idx in follower_indices_matrix[i].tolist()]
+        leader_dictionary[leader_docID] = follower_docIDs
+
+    # return leader follower dictonary
+    return leader_dictionary

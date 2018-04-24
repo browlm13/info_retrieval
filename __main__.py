@@ -46,7 +46,7 @@ summary.display_summary(args.output)
 """
 
 dtfm = dvo.get_document_term_frequency_matrix('fmoore')
-
+"""
 M, docID2row, word2col = dvo.document_vector_matrix_and_index_dicts(dtfm)
 print(word2col)
 print(docID2row)
@@ -58,6 +58,7 @@ dv12 = M[11,:]
 query_vector[136] = 1
 query_vector[137] = 1
 query_vector[138] = 1
-
+"""
 # testing cosine similarity
-print(dvo.ranked_cosine_similarity(query_vector, M))
+# print(dvo.ranked_cosine_similarity(query_vector, M))
+dvo.cluster_pruning(dtfm)
