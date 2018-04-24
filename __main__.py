@@ -38,15 +38,15 @@ parser.add_argument('-u', '--url', help='Website to crawl and index.', type=str,
 args = parser.parse_args()
 
 # TODO: add options for saving, document frequency matrix, html, and plain text
-
+"""
 # crawl site
 bs = base_station.Base_Station(index_html=True, index_title_and_body=True, index_term_frequency_matrix=True)
 bs.scrape_website(seed_url=args.url, output_directory=args.output, max_urls_to_index=args.number, stopwords_file=args.input)
 
 # display summary and write term frequency matrix to output file
 summary.display_summary(args.output)
-
 """
+
 dtfm = dvo.get_document_term_frequency_matrix('fmoore')
 
 M, docID2row, word2col = dvo.document_vector_matrix_and_index_dicts(dtfm)
@@ -61,8 +61,6 @@ query_vector[136] = 1
 query_vector[137] = 1
 query_vector[138] = 1
 
-# TODO: Save html / plane text for testing purposes
 # testing cosine similarity
 # print(dvo.ranked_cosine_similarity(query_vector, M))
-dvo.cluster_pruning(dtfm)
-"""
+print(dvo.cluster_pruning(dtfm))
