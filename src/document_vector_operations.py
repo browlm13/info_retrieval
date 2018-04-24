@@ -122,9 +122,10 @@ def ranked_cosine_similarity(query_vector, document_vector_matrix):
 
     return max_indices
 
-def cluster_pruning(doc_freq_matrix_dataFrame):
-    """
 
+def cluster_pruning_leader_follower_dict(doc_freq_matrix_dataFrame):
+    """
+    Select docIds for leaders and followers and format in python dictionary
     :param doc_freq_matrix_dataFrame:
     :return: return sqrt(N) leaders with sqrt(N) followers as python dictionary with keys as leader docIDs and values
             as list of follower docIDs
@@ -150,3 +151,5 @@ def cluster_pruning(doc_freq_matrix_dataFrame):
 
     # return leader follower dictonary
     return leader_dictionary
+
+#def

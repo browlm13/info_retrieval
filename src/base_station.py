@@ -79,23 +79,8 @@ class URL_Indexer():
 
         # write file
         logger.info("Saving response summary")
-        file_io.save('web_page_summary_file_path', written_web_page_summary,
+        file_io.save('web_page_access_log_and_metadata_file_path', written_web_page_summary,
                      [output_directory_name, written_web_page_summary['url_id']])
-
-        """
-        html = None
-        ...
-        title = None
-        if 'title' in web_page_summary:
-            title = web_page_summary['title']
-        plain_text = None
-        if 'plain_text' in web_page_summary:
-            plain_text = web_page_summary['plain_text']
-
-        # add title and plain text
-        written_web_page_summary['title'] = title
-        written_web_page_summary['plain_text'] = plain_text
-        """
 
 
     def save_url_indexer(self):
@@ -142,43 +127,58 @@ class Document_Indexer():
 
         logger.info("Saving Document Term Frequency Dictonary ID: %d" % document_id)
         # write file
-        file_io.save('document_frequency_dict_file_path', term_frequency_dictionary,
+        file_io.save('document_term_frequency_dictionary_file_path', term_frequency_dictionary,
                      [output_directory_name, document_id])
 
     # new
-    def save_page_html_dictionary(self, page_html, content_hash, output_directory_name):
+    def save_document_html_dictionary(self, document_html, content_hash, output_directory_name):
         # add new document hash to index
         self.hash_id_index.add(content_hash)
         document_id = self.hash_id_index[content_hash]
 
         # create page html json with meta data
-        page_html_dictionary = {
-            'page_html' : page_html,
+        document_html_dictionary = {
+            'page_html' : document_html,
             'document_id' : document_id,
             'content_hash' : content_hash
         }
 
         logger.info("Saving Page HTML, ID: %d" % document_id)
         # write file
-        file_io.save('document_html_file_path', page_html_dictionary,
+        file_io.save('document_html_file_path', document_html_dictionary,
                      [output_directory_name, document_id])
 
-    def save_title_and_body_dictionary(self, title_and_body_dictionary, content_hash, output_directory_name):
+    def save_document_title_dictionary(self, document_title, content_hash, output_directory_name):
         # add new document hash to index
         self.hash_id_index.add(content_hash)
         document_id = self.hash_id_index[content_hash]
 
         # create page html json with meta data
-        page_html_dictionary = {
-            'title' : title_and_body_dictionary['title'],
-            'body' : title_and_body_dictionary['plain_text'], # TODO: Change to body
+        document_title_dictionary = {
+            'title' : document_title['title'],
+            'document_id' : document_id,
+            'content_hash' : content_hash
+        }
+        logger.info("Saving Document Title, ID: %d" % document_id)
+        # write file
+        file_io.save('document_title_file_path', document_title_dictionary,
+                     [output_directory_name, document_id])
+
+    def save_document_plain_text_dictionary(self, document_plain_text, content_hash, output_directory_name):
+        # add new document hash to index
+        self.hash_id_index.add(content_hash)
+        document_id = self.hash_id_index[content_hash]
+
+        # create page html json with meta data
+        document_plain_text_dictionary = {
+            'plain_text' : document_plain_text['plain_text'],
             'document_id' : document_id,
             'content_hash' : content_hash
         }
 
-        logger.info("Saving Page Title And Body, ID: %d" % document_id)
+        logger.info("Saving Document Plain Text, ID: %d" % document_id)
         # write file
-        file_io.save('document_title_body_file_path', page_html_dictionary,
+        file_io.save('document_plain_text_file_path', document_plain_text_dictionary,
                      [output_directory_name, document_id])
 
 
@@ -194,7 +194,7 @@ class Document_Indexer():
 
 class Base_Station():
 
-    def __init__(self, index_html=False, index_title_and_body=False, index_term_frequency_matrix=True):
+    def __init__(self, index_document_html=False, index_document_title=False, index_document_plain_text=False, index_document_term_frequency_dictionary=True):
         self.url_indexer = URL_Indexer()
         self.document_indexer = Document_Indexer()
 
@@ -203,9 +203,10 @@ class Base_Station():
 
         # elements to index
         self.crawler_index_instructions = {
-            "index_html": index_html,
-            "index_title_and_body": index_title_and_body,
-            "index_term_frequency_matrix": index_term_frequency_matrix
+            "index_document_html": index_document_html,
+            "index_document_title": index_document_title,
+            "index_document_plain_text": index_document_plain_text,
+            "index_document_term_frequency_dictionary": index_document_term_frequency_dictionary
         }
 
     def update_frontier(self, url_list):
@@ -295,21 +296,26 @@ class Base_Station():
         # return crawler index instructions
         return crawler_index_instructions
 
-    def report_term_frequency_dictionary(self, term_frequency_dictionary, content_hash):
-        """ Recieves a web page summary dictonary from a crawler. Checks the content hash for contnet already indexed."""
+    def report_document_term_frequency_dictionary(self, term_frequency_dictionary, content_hash):
+        """ Recieves a web page summary dictonary from a crawler.
+        Checks the content hash for contnet already indexed."""
         self.document_indexer.save_term_frequency_dictionary(term_frequency_dictionary, content_hash,
                                                              self.output_directory_name)
 
     # new
-    def report_page_html(self, page_html, content_hash):
+    def report_document_html(self, document_html, content_hash):
         """ Receives web page html string from a crawler. Checked the content hash for content already indexed."""
-        self.document_indexer.save_page_html_dictionary(page_html, content_hash,
+        self.document_indexer.save_document_html_dictionary(document_html, content_hash,
                                                              self.output_directory_name)
 
-    def report_title_and_body_dictionary(self, title_and_body_dictionary, content_hash):
+    def report_document_title(self, document_title, content_hash):
         """ Receives web page html string from a crawler. Checked the content hash for content already indexed."""
-        self.document_indexer.save_title_and_body_dictionary(title_and_body_dictionary, content_hash,
-                                                             self.output_directory_name)
+        self.document_indexer.save_document_title_dictionary(document_title, content_hash, self.output_directory_name)
+
+
+    def report_document_plain_text(self, document_plain_text, content_hash):
+        """ Receives web page html string from a crawler. Checked the content hash for content already indexed."""
+        self.document_indexer.save_document_plain_text_dictionary(document_plain_text, content_hash, self.output_directory_name)
 
     def save_indexes(self):
         logger.info("Saving Index Files")

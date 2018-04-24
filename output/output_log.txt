@@ -5491,3 +5491,2721 @@ Saving Index Files
 Saving Index Files
 file does not exit
 file does not exit
+Loading Index Files
+file does not exit
+file does not exit
+file does not exit
+Response Status Code: 200
+Crawling: https://s2.smu.edu/~fmoore/
+Number of sites in index: 0
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/
+Saving response summary
+Response Status Code: 200
+Saving Page HTML, ID: 1
+Response Status Code: 200
+item: 495bd2a876952c6cf7cdb7d683a89f84 already in Incremental Hash ID
+Saving Page Title And Body, ID: 1
+Response Status Code: 200
+item: 495bd2a876952c6cf7cdb7d683a89f84 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 1
+Loading Index Files
+file does not exit
+file does not exit
+file does not exit
+Response Status Code: 200
+Crawling: https://s2.smu.edu/~fmoore/
+Number of sites in index: 0
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/
+Saving response summary
+Response Status Code: 200
+Saving Page HTML, ID: 1
+Response Status Code: 200
+item: 495bd2a876952c6cf7cdb7d683a89f84 already in Incremental Hash ID
+Saving Page Title And Body, ID: 1
+Response Status Code: 200
+item: 495bd2a876952c6cf7cdb7d683a89f84 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 1
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/index-fall2017.htm
+Number of sites in index: 1
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/index-fall2017.htm
+Saving response summary
+Response Status Code: 200
+Saving Page HTML, ID: 2
+Response Status Code: 200
+item: 1dd3aa9e4b964e50a7d343a2c9d93b00 already in Incremental Hash ID
+Saving Page Title And Body, ID: 2
+Response Status Code: 200
+item: 1dd3aa9e4b964e50a7d343a2c9d93b00 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 2
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/schedule.htm
+Number of sites in index: 2
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/schedule.htm
+Saving response summary
+Response Status Code: 200
+Saving Page HTML, ID: 3
+Response Status Code: 200
+item: 9548c25d625c1720cc5aa920fa328138 already in Incremental Hash ID
+Saving Page Title And Body, ID: 3
+Response Status Code: 200
+item: 9548c25d625c1720cc5aa920fa328138 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 3
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/CSE7337_syllabus.pdf
+Number of sites in index: 3
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/CSE7337_syllabus.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/CSE5337_syllabus.pdf
+Number of sites in index: 4
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/CSE5337_syllabus.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/index-final.htm
+Number of sites in index: 5
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/index-final.htm
+Saving response summary
+Response Status Code: 200
+Saving Page HTML, ID: 4
+Response Status Code: 200
+item: 61ec4bf2dc00d6f19af8d2e11534b848 already in Incremental Hash ID
+Saving Page Title And Body, ID: 4
+Response Status Code: 200
+item: 61ec4bf2dc00d6f19af8d2e11534b848 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 4
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/syl_7330.pdf
+Number of sites in index: 6
+Response Status Code: 404
+Adding new URL to index: https://s2.smu.edu/~fmoore/syl_7330.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/syl_5330.pdf
+Number of sites in index: 7
+Response Status Code: 404
+Adding new URL to index: https://s2.smu.edu/~fmoore/syl_5330.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/timeline.pdf
+Number of sites in index: 8
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/timeline.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/index.html
+Number of sites in index: 9
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/index.html
+Saving response summary
+Response Status Code: 200
+Saving Page HTML, ID: 5
+Response Status Code: 200
+item: 80ab2d4f5fda50022eb8e65dde3b8ee2 already in Incremental Hash ID
+Saving Page Title And Body, ID: 5
+Response Status Code: 200
+item: 80ab2d4f5fda50022eb8e65dde3b8ee2 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 5
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/count_letters.txt
+Number of sites in index: 10
+Response Status Code: 404
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/count_letters.txt
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/index.htm
+Number of sites in index: 11
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/index.htm
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/levenshtein.html
+Number of sites in index: 12
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/levenshtein.html
+Saving response summary
+Response Status Code: 200
+Saving Page HTML, ID: 6
+Response Status Code: 200
+item: 45ced4cd26142f36695b8baebc38b7a4 already in Incremental Hash ID
+Saving Page Title And Body, ID: 6
+Response Status Code: 200
+item: 45ced4cd26142f36695b8baebc38b7a4 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 6
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/useragent.php
+Number of sites in index: 13
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/useragent.php
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/count_letters_duplicate.txt
+Number of sites in index: 14
+Response Status Code: 404
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/count_letters_duplicate.txt
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/figure6-12.xlsx
+Number of sites in index: 15
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/figure6-12.xlsx
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/roadmap-04-03-2018.jpg
+Number of sites in index: 16
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/roadmap-04-03-2018.jpg
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/sim_example-2018-02-15.xlsx
+Number of sites in index: 17
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/sim_example-2018-02-15.xlsx
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/this_aint_gonna_work.htm
+Number of sites in index: 18
+Response Status Code: 404
+Adding new URL to index: https://s2.smu.edu/~fmoore/this_aint_gonna_work.htm
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/k-means-example.xlsx
+Number of sites in index: 19
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/k-means-example.xlsx
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/does_not_exist.htm
+Number of sites in index: 20
+Response Status Code: 404
+Adding new URL to index: https://s2.smu.edu/~fmoore/does_not_exist.htm
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/IEEE-Spectrum-The-Dark-Dialect-Oct-2017.pdf
+Number of sites in index: 21
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/IEEE-Spectrum-The-Dark-Dialect-Oct-2017.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/mercator-article.pdf
+Number of sites in index: 22
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/mercator-article.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/bigram-example.jpg
+Number of sites in index: 23
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/bigram-example.jpg
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/example-2018-02-27.xlsx
+Number of sites in index: 24
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/example-2018-02-27.xlsx
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/algorithm-1-7.pdf
+Number of sites in index: 25
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/algorithm-1-7.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/exam1.html
+Number of sites in index: 26
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/exam1.html
+Saving response summary
+Response Status Code: 200
+Saving Page HTML, ID: 7
+Response Status Code: 200
+item: 1b2f30e02cd3a1ff2a7bff15f7b59ca9 already in Incremental Hash ID
+Saving Page Title And Body, ID: 7
+Response Status Code: 200
+item: 1b2f30e02cd3a1ff2a7bff15f7b59ca9 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 7
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/index_duplicate.htm
+Number of sites in index: 27
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/index_duplicate.htm
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/text/index.php
+Number of sites in index: 28
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/text/index.php
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/permutermindex-example.jpg
+Number of sites in index: 29
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/permutermindex-example.jpg
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/CACM-Internet-Advertising-Oct-2017.pdf
+Number of sites in index: 30
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/CACM-Internet-Advertising-Oct-2017.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/porter_stemmer_example.html
+Number of sites in index: 31
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/porter_stemmer_example.html
+Saving response summary
+Response Status Code: 200
+Saving Page HTML, ID: 8
+Response Status Code: 200
+item: ba7983688b49e916a344d1fe6bf30bdb already in Incremental Hash ID
+Saving Page Title And Body, ID: 8
+Response Status Code: 200
+item: ba7983688b49e916a344d1fe6bf30bdb already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 8
+Loading Index Files
+file does not exit
+file does not exit
+file does not exit
+Response Status Code: 200
+Crawling: https://s2.smu.edu/~fmoore/
+Number of sites in index: 0
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/
+Saving response summary
+Response Status Code: 200
+Saving Page HTML, ID: 1
+Response Status Code: 200
+item: 495bd2a876952c6cf7cdb7d683a89f84 already in Incremental Hash ID
+Saving Page Title And Body, ID: 1
+Response Status Code: 200
+item: 495bd2a876952c6cf7cdb7d683a89f84 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 1
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/CSE5337_syllabus.pdf
+Number of sites in index: 1
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/CSE5337_syllabus.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/schedule.htm
+Number of sites in index: 2
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/schedule.htm
+Saving response summary
+Response Status Code: 200
+Saving Page HTML, ID: 2
+Response Status Code: 200
+item: 9548c25d625c1720cc5aa920fa328138 already in Incremental Hash ID
+Saving Page Title And Body, ID: 2
+Response Status Code: 200
+item: 9548c25d625c1720cc5aa920fa328138 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 2
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/index-fall2017.htm
+Number of sites in index: 3
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/index-fall2017.htm
+Saving response summary
+Response Status Code: 200
+Saving Page HTML, ID: 3
+Response Status Code: 200
+item: 1dd3aa9e4b964e50a7d343a2c9d93b00 already in Incremental Hash ID
+Saving Page Title And Body, ID: 3
+Response Status Code: 200
+item: 1dd3aa9e4b964e50a7d343a2c9d93b00 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 3
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/CSE7337_syllabus.pdf
+Number of sites in index: 4
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/CSE7337_syllabus.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/figure6-12.xlsx
+Number of sites in index: 5
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/figure6-12.xlsx
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/count_letters.txt
+Number of sites in index: 6
+Response Status Code: 404
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/count_letters.txt
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/count_letters_duplicate.txt
+Number of sites in index: 7
+Response Status Code: 404
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/count_letters_duplicate.txt
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/useragent.php
+Number of sites in index: 8
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/useragent.php
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/sim_example-2018-02-15.xlsx
+Number of sites in index: 9
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/sim_example-2018-02-15.xlsx
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/exam1.html
+Number of sites in index: 10
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/exam1.html
+Saving response summary
+Response Status Code: 200
+Saving Page HTML, ID: 4
+Response Status Code: 200
+item: 1b2f30e02cd3a1ff2a7bff15f7b59ca9 already in Incremental Hash ID
+Saving Page Title And Body, ID: 4
+Response Status Code: 200
+item: 1b2f30e02cd3a1ff2a7bff15f7b59ca9 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 4
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/text/index.php
+Number of sites in index: 11
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/text/index.php
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/permutermindex-example.jpg
+Number of sites in index: 12
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/permutermindex-example.jpg
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/bigram-example.jpg
+Number of sites in index: 13
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/bigram-example.jpg
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/index_duplicate.htm
+Number of sites in index: 14
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/index_duplicate.htm
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/algorithm-1-7.pdf
+Number of sites in index: 15
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/algorithm-1-7.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/example-2018-02-27.xlsx
+Number of sites in index: 16
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/example-2018-02-27.xlsx
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/porter_stemmer_example.html
+Number of sites in index: 17
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/porter_stemmer_example.html
+Saving response summary
+Response Status Code: 200
+Saving Page HTML, ID: 5
+Response Status Code: 200
+item: ba7983688b49e916a344d1fe6bf30bdb already in Incremental Hash ID
+Saving Page Title And Body, ID: 5
+Response Status Code: 200
+item: ba7983688b49e916a344d1fe6bf30bdb already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 5
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/index.htm
+Number of sites in index: 18
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/index.htm
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/mercator-article.pdf
+Number of sites in index: 19
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/mercator-article.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/k-means-example.xlsx
+Number of sites in index: 20
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/k-means-example.xlsx
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/roadmap-04-03-2018.jpg
+Number of sites in index: 21
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/roadmap-04-03-2018.jpg
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/this_aint_gonna_work.htm
+Number of sites in index: 22
+Response Status Code: 404
+Adding new URL to index: https://s2.smu.edu/~fmoore/this_aint_gonna_work.htm
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/does_not_exist.htm
+Number of sites in index: 23
+Response Status Code: 404
+Adding new URL to index: https://s2.smu.edu/~fmoore/does_not_exist.htm
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/CACM-Internet-Advertising-Oct-2017.pdf
+Number of sites in index: 24
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/CACM-Internet-Advertising-Oct-2017.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/IEEE-Spectrum-The-Dark-Dialect-Oct-2017.pdf
+Number of sites in index: 25
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/IEEE-Spectrum-The-Dark-Dialect-Oct-2017.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/levenshtein.html
+Number of sites in index: 26
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/levenshtein.html
+Saving response summary
+Response Status Code: 200
+Saving Page HTML, ID: 6
+Response Status Code: 200
+item: 45ced4cd26142f36695b8baebc38b7a4 already in Incremental Hash ID
+Saving Page Title And Body, ID: 6
+Response Status Code: 200
+item: 45ced4cd26142f36695b8baebc38b7a4 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 6
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/index.html
+Number of sites in index: 27
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/index.html
+Saving response summary
+Response Status Code: 200
+Saving Page HTML, ID: 7
+Response Status Code: 200
+item: 80ab2d4f5fda50022eb8e65dde3b8ee2 already in Incremental Hash ID
+Saving Page Title And Body, ID: 7
+Response Status Code: 200
+item: 80ab2d4f5fda50022eb8e65dde3b8ee2 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 7
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/timeline.pdf
+Number of sites in index: 28
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/timeline.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/index-final.htm
+Number of sites in index: 29
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/index-final.htm
+Saving response summary
+Response Status Code: 200
+Saving Page HTML, ID: 8
+Response Status Code: 200
+item: 61ec4bf2dc00d6f19af8d2e11534b848 already in Incremental Hash ID
+Saving Page Title And Body, ID: 8
+Response Status Code: 200
+item: 61ec4bf2dc00d6f19af8d2e11534b848 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 8
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/syl_5330.pdf
+Number of sites in index: 30
+Response Status Code: 404
+Adding new URL to index: https://s2.smu.edu/~fmoore/syl_5330.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/syl_7330.pdf
+Number of sites in index: 31
+Response Status Code: 404
+Adding new URL to index: https://s2.smu.edu/~fmoore/syl_7330.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/text/mockingbird4.html
+Number of sites in index: 32
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/text/mockingbird4.html
+Saving response summary
+Response Status Code: 200
+Saving Page HTML, ID: 9
+Response Status Code: 200
+item: 2d846c95630557ca9cbb99ea981fb3a1 already in Incremental Hash ID
+Saving Page Title And Body, ID: 9
+Response Status Code: 200
+item: 2d846c95630557ca9cbb99ea981fb3a1 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 9
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/text/mockingbird5.html
+Number of sites in index: 33
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/text/mockingbird5.html
+Saving response summary
+Response Status Code: 200
+Saving Page HTML, ID: 10
+Response Status Code: 200
+item: 3da7d15adc91445ddc456346cee7328e already in Incremental Hash ID
+Saving Page Title And Body, ID: 10
+Response Status Code: 200
+item: 3da7d15adc91445ddc456346cee7328e already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 10
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/text/building1.txt
+Number of sites in index: 34
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/text/building1.txt
+Saving response summary
+Response Status Code: 200
+Saving Page Title And Body, ID: 11
+Response Status Code: 200
+item: 1a56f936254809757be7efbd6dfb8926 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 11
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/text/building2.txt
+Number of sites in index: 35
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/text/building2.txt
+Saving response summary
+Response Status Code: 200
+Saving Page Title And Body, ID: 12
+Response Status Code: 200
+item: 1e069cd0b15f91c91e963308c289b106 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 12
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/text/mockingbird2.html
+Number of sites in index: 36
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/text/mockingbird2.html
+Saving response summary
+Response Status Code: 200
+Saving Page HTML, ID: 13
+Response Status Code: 200
+item: e4ae14afbe923284722a41f6d706d005 already in Incremental Hash ID
+Saving Page Title And Body, ID: 13
+Response Status Code: 200
+item: e4ae14afbe923284722a41f6d706d005 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 13
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/text/magictext.html
+Number of sites in index: 37
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/text/magictext.html
+Saving response summary
+Response Status Code: 200
+Saving Page HTML, ID: 14
+Response Status Code: 200
+item: 50fa771ce611d4cae923b517271d317e already in Incremental Hash ID
+Saving Page Title And Body, ID: 14
+Response Status Code: 200
+item: 50fa771ce611d4cae923b517271d317e already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 14
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/text/mockingbird1.html
+Number of sites in index: 38
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/text/mockingbird1.html
+Saving response summary
+Response Status Code: 200
+Saving Page HTML, ID: 15
+Response Status Code: 200
+item: d06df03db230722dd8c298a386a259cf already in Incremental Hash ID
+Saving Page Title And Body, ID: 15
+Response Status Code: 200
+item: d06df03db230722dd8c298a386a259cf already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 15
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/text/mockingbird3.html
+Number of sites in index: 39
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/text/mockingbird3.html
+Saving response summary
+Response Status Code: 200
+Saving Page HTML, ID: 16
+Response Status Code: 200
+item: 635eac95466541152f65571e344c5782 already in Incremental Hash ID
+Saving Page Title And Body, ID: 16
+Response Status Code: 200
+item: 635eac95466541152f65571e344c5782 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 16
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/golf4.txt
+Number of sites in index: 40
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/golf4.txt
+Saving response summary
+Response Status Code: 200
+Saving Page Title And Body, ID: 17
+Response Status Code: 200
+item: c35483263506cb47aec7483dacc9e578 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 17
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/football3.txt
+Number of sites in index: 41
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/football3.txt
+Saving response summary
+Response Status Code: 200
+Saving Page Title And Body, ID: 18
+Response Status Code: 200
+item: 7fbd2e41d772379927946a090ad89a74 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 18
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/baseball3.txt
+Number of sites in index: 42
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/baseball3.txt
+Saving response summary
+Response Status Code: 200
+Saving Page Title And Body, ID: 19
+Response Status Code: 200
+item: a0be425eabe874b3bf9ef0b019d02074 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 19
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/golf2.txt
+Number of sites in index: 43
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/golf2.txt
+Saving response summary
+Response Status Code: 200
+Saving Page Title And Body, ID: 20
+Response Status Code: 200
+item: 7e1a4b86c01aa45900c5dabcb3fb434e already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 20
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/baseball4.txt
+Number of sites in index: 44
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/baseball4.txt
+Saving response summary
+Response Status Code: 200
+Saving Page Title And Body, ID: 21
+Response Status Code: 200
+item: bc17f0833ec085db4fd23ec3d474f25f already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 21
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/football2.txt
+Number of sites in index: 45
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/football2.txt
+Saving response summary
+Response Status Code: 200
+Saving Page Title And Body, ID: 22
+Response Status Code: 200
+item: 5535d2f76819666fb7181240ee182df0 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 22
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/golf3.txt
+Number of sites in index: 46
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/golf3.txt
+Saving response summary
+Response Status Code: 200
+Saving Page Title And Body, ID: 23
+Response Status Code: 200
+item: ff69903d50b18065afdfe406f4c880a9 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 23
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/baseball5.txt
+Number of sites in index: 47
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/baseball5.txt
+Saving response summary
+Response Status Code: 200
+Saving Page Title And Body, ID: 24
+Response Status Code: 200
+item: ca482302a9e56d24aa70373aff67c718 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 24
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/golf1.txt
+Number of sites in index: 48
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/golf1.txt
+Saving response summary
+Response Status Code: 200
+Saving Page Title And Body, ID: 25
+Response Status Code: 200
+item: ec1d3d02a667664b2886ee46b12df551 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 25
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/basketball1.txt
+Number of sites in index: 49
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/basketball1.txt
+Saving response summary
+Response Status Code: 200
+Saving Page Title And Body, ID: 26
+Response Status Code: 200
+item: 882d3ae4a0e857269e37cfae31790ed4 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 26
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/basketball4.txt
+Number of sites in index: 50
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/basketball4.txt
+Saving response summary
+Response Status Code: 200
+Saving Page Title And Body, ID: 27
+Response Status Code: 200
+item: 662252f769aac95ff1f7d8bab41c2294 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 27
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/basketball3.txt
+Number of sites in index: 51
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/basketball3.txt
+Saving response summary
+Response Status Code: 200
+Saving Page Title And Body, ID: 28
+Response Status Code: 200
+item: 6b96f9b76a99386d52de611472a7b88f already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 28
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/basketball5.txt
+Number of sites in index: 52
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/basketball5.txt
+Saving response summary
+Response Status Code: 200
+Saving Page Title And Body, ID: 29
+Response Status Code: 200
+item: a6246140ed639ff964c119393fed34ce already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 29
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/baseball2.txt
+Number of sites in index: 53
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/baseball2.txt
+Saving response summary
+Response Status Code: 200
+Saving Page Title And Body, ID: 30
+Response Status Code: 200
+item: 32609f6eab6e964148d79f8307f861c4 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 30
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/football1.txt
+Number of sites in index: 54
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/football1.txt
+Saving response summary
+Response Status Code: 200
+Saving Page Title And Body, ID: 31
+Response Status Code: 200
+item: 184c5e4a7467bf92dac1808cc2c1c27c already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 31
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/football4.txt
+Number of sites in index: 55
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/football4.txt
+Saving response summary
+Response Status Code: 200
+Saving Page Title And Body, ID: 32
+Response Status Code: 200
+item: 94ce6eda78f9398e83946fc2e7630d96 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 32
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/football5.txt
+Number of sites in index: 56
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/football5.txt
+Saving response summary
+Response Status Code: 200
+Saving Page Title And Body, ID: 33
+Response Status Code: 200
+item: 1182ee976f1159b5005cb0966eff1e2b already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 33
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/basketball2.txt
+Number of sites in index: 57
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/basketball2.txt
+Saving response summary
+Response Status Code: 200
+Saving Page Title And Body, ID: 34
+Response Status Code: 200
+item: 4786b09136d5b0cd799047814e8324f4 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 34
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/baseball1.txt
+Number of sites in index: 58
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/baseball1.txt
+Saving response summary
+Response Status Code: 200
+Saving Page Title And Body, ID: 35
+Response Status Code: 200
+item: 03c01337e189620c7c8a625268bf5ec9 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 35
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/golf5.txt
+Number of sites in index: 59
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/golf5.txt
+Saving response summary
+Response Status Code: 200
+Saving Page Title And Body, ID: 36
+Response Status Code: 200
+item: f6098ad4fe9d4bfa082311828bb8067b already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 36
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/SMU-CSE-LOGO.gif
+Number of sites in index: 60
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/SMU-CSE-LOGO.gif
+Saving response summary
+Saving Index Files
+Saving Index Files
+Loading Index Files
+file does not exit
+file does not exit
+file does not exit
+Response Status Code: 200
+Crawling: https://s2.smu.edu/~fmoore/
+Number of sites in index: 0
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/
+Saving response summary
+Response Status Code: 200
+Loading Index Files
+file does not exit
+file does not exit
+file does not exit
+Response Status Code: 200
+Crawling: https://s2.smu.edu/~fmoore/
+Number of sites in index: 0
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/
+Saving response summary
+Response Status Code: 200
+Saving Page HTML, ID: 1
+Response Status Code: 200
+item: 495bd2a876952c6cf7cdb7d683a89f84 already in Incremental Hash ID
+Saving Document Title, ID: 1
+Loading Index Files
+file does not exit
+file does not exit
+file does not exit
+Response Status Code: 200
+Crawling: https://s2.smu.edu/~fmoore/
+Number of sites in index: 0
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/
+Saving response summary
+Response Status Code: 200
+Saving Page HTML, ID: 1
+Response Status Code: 200
+item: 495bd2a876952c6cf7cdb7d683a89f84 already in Incremental Hash ID
+Saving Document Title, ID: 1
+Response Status Code: 200
+item: 495bd2a876952c6cf7cdb7d683a89f84 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 1
+Loading Index Files
+file does not exit
+file does not exit
+file does not exit
+Response Status Code: 200
+Crawling: https://s2.smu.edu/~fmoore/
+Number of sites in index: 0
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/
+Saving response summary
+Response Status Code: 200
+Saving Page HTML, ID: 1
+Response Status Code: 200
+item: 495bd2a876952c6cf7cdb7d683a89f84 already in Incremental Hash ID
+Saving Document Title, ID: 1
+Response Status Code: 200
+item: 495bd2a876952c6cf7cdb7d683a89f84 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 1
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/index-fall2017.htm
+Number of sites in index: 1
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/index-fall2017.htm
+Saving response summary
+Response Status Code: 200
+Saving Page HTML, ID: 2
+Response Status Code: 200
+item: 1dd3aa9e4b964e50a7d343a2c9d93b00 already in Incremental Hash ID
+Saving Document Title, ID: 2
+Response Status Code: 200
+item: 1dd3aa9e4b964e50a7d343a2c9d93b00 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 2
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/schedule.htm
+Number of sites in index: 2
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/schedule.htm
+Saving response summary
+Response Status Code: 200
+Saving Page HTML, ID: 3
+Response Status Code: 200
+item: 9548c25d625c1720cc5aa920fa328138 already in Incremental Hash ID
+Saving Document Title, ID: 3
+Response Status Code: 200
+item: 9548c25d625c1720cc5aa920fa328138 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 3
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/CSE7337_syllabus.pdf
+Number of sites in index: 3
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/CSE7337_syllabus.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/CSE5337_syllabus.pdf
+Number of sites in index: 4
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/CSE5337_syllabus.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/syl_5330.pdf
+Number of sites in index: 5
+Response Status Code: 404
+Adding new URL to index: https://s2.smu.edu/~fmoore/syl_5330.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/index-final.htm
+Number of sites in index: 6
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/index-final.htm
+Saving response summary
+Response Status Code: 200
+Saving Page HTML, ID: 4
+Response Status Code: 200
+item: 61ec4bf2dc00d6f19af8d2e11534b848 already in Incremental Hash ID
+Saving Document Title, ID: 4
+Response Status Code: 200
+item: 61ec4bf2dc00d6f19af8d2e11534b848 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 4
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/syl_7330.pdf
+Number of sites in index: 7
+Response Status Code: 404
+Adding new URL to index: https://s2.smu.edu/~fmoore/syl_7330.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/timeline.pdf
+Number of sites in index: 8
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/timeline.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/index.htm
+Number of sites in index: 9
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/index.htm
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/levenshtein.html
+Number of sites in index: 10
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/levenshtein.html
+Saving response summary
+Response Status Code: 200
+Saving Page HTML, ID: 5
+Response Status Code: 200
+item: 45ced4cd26142f36695b8baebc38b7a4 already in Incremental Hash ID
+Saving Document Title, ID: 5
+Response Status Code: 200
+item: 45ced4cd26142f36695b8baebc38b7a4 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 5
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/bigram-example.jpg
+Number of sites in index: 11
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/bigram-example.jpg
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/this_aint_gonna_work.htm
+Number of sites in index: 12
+Response Status Code: 404
+Adding new URL to index: https://s2.smu.edu/~fmoore/this_aint_gonna_work.htm
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/count_letters_duplicate.txt
+Number of sites in index: 13
+Response Status Code: 404
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/count_letters_duplicate.txt
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/porter_stemmer_example.html
+Number of sites in index: 14
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/porter_stemmer_example.html
+Saving response summary
+Response Status Code: 200
+Saving Page HTML, ID: 6
+Response Status Code: 200
+item: ba7983688b49e916a344d1fe6bf30bdb already in Incremental Hash ID
+Saving Document Title, ID: 6
+Response Status Code: 200
+item: ba7983688b49e916a344d1fe6bf30bdb already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 6
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/does_not_exist.htm
+Number of sites in index: 15
+Response Status Code: 404
+Adding new URL to index: https://s2.smu.edu/~fmoore/does_not_exist.htm
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/index_duplicate.htm
+Number of sites in index: 16
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/index_duplicate.htm
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/CACM-Internet-Advertising-Oct-2017.pdf
+Number of sites in index: 17
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/CACM-Internet-Advertising-Oct-2017.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/roadmap-04-03-2018.jpg
+Number of sites in index: 18
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/roadmap-04-03-2018.jpg
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/mercator-article.pdf
+Number of sites in index: 19
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/mercator-article.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/index.html
+Number of sites in index: 20
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/index.html
+Saving response summary
+Response Status Code: 200
+Saving Page HTML, ID: 7
+Response Status Code: 200
+item: 80ab2d4f5fda50022eb8e65dde3b8ee2 already in Incremental Hash ID
+Saving Document Title, ID: 7
+Response Status Code: 200
+item: 80ab2d4f5fda50022eb8e65dde3b8ee2 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 7
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/k-means-example.xlsx
+Number of sites in index: 21
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/k-means-example.xlsx
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/sim_example-2018-02-15.xlsx
+Number of sites in index: 22
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/sim_example-2018-02-15.xlsx
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/example-2018-02-27.xlsx
+Number of sites in index: 23
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/example-2018-02-27.xlsx
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/figure6-12.xlsx
+Number of sites in index: 24
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/figure6-12.xlsx
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/text/index.php
+Number of sites in index: 25
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/text/index.php
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/IEEE-Spectrum-The-Dark-Dialect-Oct-2017.pdf
+Number of sites in index: 26
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/IEEE-Spectrum-The-Dark-Dialect-Oct-2017.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/exam1.html
+Number of sites in index: 27
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/exam1.html
+Saving response summary
+Response Status Code: 200
+Saving Page HTML, ID: 8
+Response Status Code: 200
+item: 1b2f30e02cd3a1ff2a7bff15f7b59ca9 already in Incremental Hash ID
+Saving Document Title, ID: 8
+Response Status Code: 200
+item: 1b2f30e02cd3a1ff2a7bff15f7b59ca9 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 8
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/useragent.php
+Number of sites in index: 28
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/useragent.php
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/algorithm-1-7.pdf
+Number of sites in index: 29
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/algorithm-1-7.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/count_letters.txt
+Number of sites in index: 30
+Response Status Code: 404
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/count_letters.txt
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/permutermindex-example.jpg
+Number of sites in index: 31
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/permutermindex-example.jpg
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/SMU-CSE-LOGO.gif
+Number of sites in index: 32
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/SMU-CSE-LOGO.gif
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/baseball2.txt
+Number of sites in index: 33
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/baseball2.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Title, ID: 9
+Response Status Code: 200
+item: 32609f6eab6e964148d79f8307f861c4 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 9
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/football1.txt
+Number of sites in index: 34
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/football1.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Title, ID: 10
+Response Status Code: 200
+item: 184c5e4a7467bf92dac1808cc2c1c27c already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 10
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/golf3.txt
+Number of sites in index: 35
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/golf3.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Title, ID: 11
+Response Status Code: 200
+item: ff69903d50b18065afdfe406f4c880a9 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 11
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/football4.txt
+Number of sites in index: 36
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/football4.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Title, ID: 12
+Response Status Code: 200
+item: 94ce6eda78f9398e83946fc2e7630d96 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 12
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/golf2.txt
+Number of sites in index: 37
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/golf2.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Title, ID: 13
+Response Status Code: 200
+item: 7e1a4b86c01aa45900c5dabcb3fb434e already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 13
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/baseball3.txt
+Number of sites in index: 38
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/baseball3.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Title, ID: 14
+Response Status Code: 200
+item: a0be425eabe874b3bf9ef0b019d02074 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 14
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/basketball1.txt
+Number of sites in index: 39
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/basketball1.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Title, ID: 15
+Response Status Code: 200
+item: 882d3ae4a0e857269e37cfae31790ed4 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 15
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/golf5.txt
+Number of sites in index: 40
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/golf5.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Title, ID: 16
+Response Status Code: 200
+item: f6098ad4fe9d4bfa082311828bb8067b already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 16
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/baseball5.txt
+Number of sites in index: 41
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/baseball5.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Title, ID: 17
+Response Status Code: 200
+item: ca482302a9e56d24aa70373aff67c718 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 17
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/golf1.txt
+Number of sites in index: 42
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/golf1.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Title, ID: 18
+Response Status Code: 200
+item: ec1d3d02a667664b2886ee46b12df551 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 18
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/football3.txt
+Number of sites in index: 43
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/football3.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Title, ID: 19
+Response Status Code: 200
+item: 7fbd2e41d772379927946a090ad89a74 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 19
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/football2.txt
+Number of sites in index: 44
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/football2.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Title, ID: 20
+Response Status Code: 200
+item: 5535d2f76819666fb7181240ee182df0 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 20
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/golf4.txt
+Number of sites in index: 45
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/golf4.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Title, ID: 21
+Response Status Code: 200
+item: c35483263506cb47aec7483dacc9e578 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 21
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/baseball4.txt
+Number of sites in index: 46
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/baseball4.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Title, ID: 22
+Response Status Code: 200
+item: bc17f0833ec085db4fd23ec3d474f25f already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 22
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/basketball4.txt
+Number of sites in index: 47
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/basketball4.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Title, ID: 23
+Response Status Code: 200
+item: 662252f769aac95ff1f7d8bab41c2294 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 23
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/basketball3.txt
+Number of sites in index: 48
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/basketball3.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Title, ID: 24
+Response Status Code: 200
+item: 6b96f9b76a99386d52de611472a7b88f already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 24
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/football5.txt
+Number of sites in index: 49
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/football5.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Title, ID: 25
+Response Status Code: 200
+item: 1182ee976f1159b5005cb0966eff1e2b already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 25
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/basketball5.txt
+Number of sites in index: 50
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/basketball5.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Title, ID: 26
+Response Status Code: 200
+item: a6246140ed639ff964c119393fed34ce already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 26
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/baseball1.txt
+Number of sites in index: 51
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/baseball1.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Title, ID: 27
+Response Status Code: 200
+item: 03c01337e189620c7c8a625268bf5ec9 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 27
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/basketball2.txt
+Number of sites in index: 52
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/basketball2.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Title, ID: 28
+Response Status Code: 200
+item: 4786b09136d5b0cd799047814e8324f4 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 28
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/text/mockingbird1.html
+Number of sites in index: 53
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/text/mockingbird1.html
+Saving response summary
+Response Status Code: 200
+Saving Page HTML, ID: 29
+Response Status Code: 200
+item: d06df03db230722dd8c298a386a259cf already in Incremental Hash ID
+Saving Document Title, ID: 29
+Response Status Code: 200
+item: d06df03db230722dd8c298a386a259cf already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 29
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/text/building1.txt
+Number of sites in index: 54
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/text/building1.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Title, ID: 30
+Response Status Code: 200
+item: 1a56f936254809757be7efbd6dfb8926 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 30
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/text/mockingbird2.html
+Number of sites in index: 55
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/text/mockingbird2.html
+Saving response summary
+Response Status Code: 200
+Saving Page HTML, ID: 31
+Response Status Code: 200
+item: e4ae14afbe923284722a41f6d706d005 already in Incremental Hash ID
+Saving Document Title, ID: 31
+Response Status Code: 200
+item: e4ae14afbe923284722a41f6d706d005 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 31
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/text/magictext.html
+Number of sites in index: 56
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/text/magictext.html
+Saving response summary
+Response Status Code: 200
+Saving Page HTML, ID: 32
+Response Status Code: 200
+item: 50fa771ce611d4cae923b517271d317e already in Incremental Hash ID
+Saving Document Title, ID: 32
+Response Status Code: 200
+item: 50fa771ce611d4cae923b517271d317e already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 32
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/text/mockingbird4.html
+Number of sites in index: 57
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/text/mockingbird4.html
+Saving response summary
+Response Status Code: 200
+Saving Page HTML, ID: 33
+Response Status Code: 200
+item: 2d846c95630557ca9cbb99ea981fb3a1 already in Incremental Hash ID
+Saving Document Title, ID: 33
+Response Status Code: 200
+item: 2d846c95630557ca9cbb99ea981fb3a1 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 33
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/text/mockingbird3.html
+Number of sites in index: 58
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/text/mockingbird3.html
+Saving response summary
+Response Status Code: 200
+Saving Page HTML, ID: 34
+Response Status Code: 200
+item: 635eac95466541152f65571e344c5782 already in Incremental Hash ID
+Saving Document Title, ID: 34
+Response Status Code: 200
+item: 635eac95466541152f65571e344c5782 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 34
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/text/building2.txt
+Number of sites in index: 59
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/text/building2.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Title, ID: 35
+Response Status Code: 200
+item: 1e069cd0b15f91c91e963308c289b106 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 35
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/text/mockingbird5.html
+Number of sites in index: 60
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/text/mockingbird5.html
+Saving response summary
+Response Status Code: 200
+Saving Page HTML, ID: 36
+Response Status Code: 200
+item: 3da7d15adc91445ddc456346cee7328e already in Incremental Hash ID
+Saving Document Title, ID: 36
+Response Status Code: 200
+item: 3da7d15adc91445ddc456346cee7328e already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 36
+Saving Index Files
+Saving Index Files
+Loading Index Files
+file does not exit
+file does not exit
+file does not exit
+Response Status Code: 200
+Crawling: https://s2.smu.edu/~fmoore/
+Number of sites in index: 0
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/
+Saving response summary
+Response Status Code: 200
+Saving Page HTML, ID: 1
+Response Status Code: 200
+item: 495bd2a876952c6cf7cdb7d683a89f84 already in Incremental Hash ID
+Saving Document Title, ID: 1
+Response Status Code: 200
+item: 495bd2a876952c6cf7cdb7d683a89f84 already in Incremental Hash ID
+Loading Index Files
+file does not exit
+file does not exit
+file does not exit
+Response Status Code: 200
+Crawling: https://s2.smu.edu/~fmoore/
+Number of sites in index: 0
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/
+Saving response summary
+Response Status Code: 200
+Saving Page HTML, ID: 1
+Response Status Code: 200
+item: 495bd2a876952c6cf7cdb7d683a89f84 already in Incremental Hash ID
+Saving Document Title, ID: 1
+Response Status Code: 200
+item: 495bd2a876952c6cf7cdb7d683a89f84 already in Incremental Hash ID
+Loading Index Files
+file does not exit
+file does not exit
+file does not exit
+Response Status Code: 200
+Crawling: https://s2.smu.edu/~fmoore/
+Number of sites in index: 0
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/
+Saving response summary
+Response Status Code: 200
+Saving Page HTML, ID: 1
+Response Status Code: 200
+item: 495bd2a876952c6cf7cdb7d683a89f84 already in Incremental Hash ID
+Saving Document Title, ID: 1
+Response Status Code: 200
+item: 495bd2a876952c6cf7cdb7d683a89f84 already in Incremental Hash ID
+Saving Document Plain Text, ID: 1
+Response Status Code: 200
+item: 495bd2a876952c6cf7cdb7d683a89f84 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 1
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/schedule.htm
+Number of sites in index: 1
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/schedule.htm
+Saving response summary
+Response Status Code: 200
+Saving Page HTML, ID: 2
+Response Status Code: 200
+item: 9548c25d625c1720cc5aa920fa328138 already in Incremental Hash ID
+Saving Document Title, ID: 2
+Response Status Code: 200
+item: 9548c25d625c1720cc5aa920fa328138 already in Incremental Hash ID
+Saving Document Plain Text, ID: 2
+Response Status Code: 200
+item: 9548c25d625c1720cc5aa920fa328138 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 2
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/CSE7337_syllabus.pdf
+Number of sites in index: 2
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/CSE7337_syllabus.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/index-fall2017.htm
+Number of sites in index: 3
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/index-fall2017.htm
+Saving response summary
+Response Status Code: 200
+Saving Page HTML, ID: 3
+Response Status Code: 200
+item: 1dd3aa9e4b964e50a7d343a2c9d93b00 already in Incremental Hash ID
+Saving Document Title, ID: 3
+Response Status Code: 200
+item: 1dd3aa9e4b964e50a7d343a2c9d93b00 already in Incremental Hash ID
+Saving Document Plain Text, ID: 3
+Response Status Code: 200
+item: 1dd3aa9e4b964e50a7d343a2c9d93b00 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 3
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/CSE5337_syllabus.pdf
+Number of sites in index: 4
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/CSE5337_syllabus.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/index_duplicate.htm
+Number of sites in index: 5
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/index_duplicate.htm
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/mercator-article.pdf
+Number of sites in index: 6
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/mercator-article.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/index.html
+Number of sites in index: 7
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/index.html
+Saving response summary
+Response Status Code: 200
+Saving Page HTML, ID: 4
+Response Status Code: 200
+item: 80ab2d4f5fda50022eb8e65dde3b8ee2 already in Incremental Hash ID
+Saving Document Title, ID: 4
+Response Status Code: 200
+item: 80ab2d4f5fda50022eb8e65dde3b8ee2 already in Incremental Hash ID
+Saving Document Plain Text, ID: 4
+Response Status Code: 200
+item: 80ab2d4f5fda50022eb8e65dde3b8ee2 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 4
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/porter_stemmer_example.html
+Number of sites in index: 8
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/porter_stemmer_example.html
+Saving response summary
+Response Status Code: 200
+Saving Page HTML, ID: 5
+Response Status Code: 200
+item: ba7983688b49e916a344d1fe6bf30bdb already in Incremental Hash ID
+Saving Document Title, ID: 5
+Response Status Code: 200
+item: ba7983688b49e916a344d1fe6bf30bdb already in Incremental Hash ID
+Saving Document Plain Text, ID: 5
+Response Status Code: 200
+item: ba7983688b49e916a344d1fe6bf30bdb already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 5
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/count_letters.txt
+Number of sites in index: 9
+Response Status Code: 404
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/count_letters.txt
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/exam1.html
+Number of sites in index: 10
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/exam1.html
+Saving response summary
+Response Status Code: 200
+Saving Page HTML, ID: 6
+Response Status Code: 200
+item: 1b2f30e02cd3a1ff2a7bff15f7b59ca9 already in Incremental Hash ID
+Saving Document Title, ID: 6
+Response Status Code: 200
+item: 1b2f30e02cd3a1ff2a7bff15f7b59ca9 already in Incremental Hash ID
+Saving Document Plain Text, ID: 6
+Response Status Code: 200
+item: 1b2f30e02cd3a1ff2a7bff15f7b59ca9 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 6
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/k-means-example.xlsx
+Number of sites in index: 11
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/k-means-example.xlsx
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/sim_example-2018-02-15.xlsx
+Number of sites in index: 12
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/sim_example-2018-02-15.xlsx
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/permutermindex-example.jpg
+Number of sites in index: 13
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/permutermindex-example.jpg
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/levenshtein.html
+Number of sites in index: 14
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/levenshtein.html
+Saving response summary
+Response Status Code: 200
+Saving Page HTML, ID: 7
+Response Status Code: 200
+item: 45ced4cd26142f36695b8baebc38b7a4 already in Incremental Hash ID
+Saving Document Title, ID: 7
+Response Status Code: 200
+item: 45ced4cd26142f36695b8baebc38b7a4 already in Incremental Hash ID
+Saving Document Plain Text, ID: 7
+Response Status Code: 200
+item: 45ced4cd26142f36695b8baebc38b7a4 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 7
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/this_aint_gonna_work.htm
+Number of sites in index: 15
+Response Status Code: 404
+Adding new URL to index: https://s2.smu.edu/~fmoore/this_aint_gonna_work.htm
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/does_not_exist.htm
+Number of sites in index: 16
+Response Status Code: 404
+Adding new URL to index: https://s2.smu.edu/~fmoore/does_not_exist.htm
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/algorithm-1-7.pdf
+Number of sites in index: 17
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/algorithm-1-7.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/figure6-12.xlsx
+Number of sites in index: 18
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/figure6-12.xlsx
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/IEEE-Spectrum-The-Dark-Dialect-Oct-2017.pdf
+Number of sites in index: 19
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/IEEE-Spectrum-The-Dark-Dialect-Oct-2017.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/example-2018-02-27.xlsx
+Number of sites in index: 20
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/example-2018-02-27.xlsx
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/index.htm
+Number of sites in index: 21
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/index.htm
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/count_letters_duplicate.txt
+Number of sites in index: 22
+Response Status Code: 404
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/count_letters_duplicate.txt
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/bigram-example.jpg
+Number of sites in index: 23
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/bigram-example.jpg
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/useragent.php
+Number of sites in index: 24
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/useragent.php
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/text/index.php
+Number of sites in index: 25
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/text/index.php
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/roadmap-04-03-2018.jpg
+Number of sites in index: 26
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/roadmap-04-03-2018.jpg
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/CACM-Internet-Advertising-Oct-2017.pdf
+Number of sites in index: 27
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/CACM-Internet-Advertising-Oct-2017.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/timeline.pdf
+Number of sites in index: 28
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/timeline.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/syl_7330.pdf
+Number of sites in index: 29
+Response Status Code: 404
+Adding new URL to index: https://s2.smu.edu/~fmoore/syl_7330.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/index-final.htm
+Number of sites in index: 30
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/index-final.htm
+Saving response summary
+Response Status Code: 200
+Saving Page HTML, ID: 8
+Response Status Code: 200
+item: 61ec4bf2dc00d6f19af8d2e11534b848 already in Incremental Hash ID
+Saving Document Title, ID: 8
+Response Status Code: 200
+item: 61ec4bf2dc00d6f19af8d2e11534b848 already in Incremental Hash ID
+Saving Document Plain Text, ID: 8
+Response Status Code: 200
+item: 61ec4bf2dc00d6f19af8d2e11534b848 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 8
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/syl_5330.pdf
+Number of sites in index: 31
+Response Status Code: 404
+Adding new URL to index: https://s2.smu.edu/~fmoore/syl_5330.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/football4.txt
+Number of sites in index: 32
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/football4.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Title, ID: 9
+Response Status Code: 200
+item: 94ce6eda78f9398e83946fc2e7630d96 already in Incremental Hash ID
+Saving Document Plain Text, ID: 9
+Response Status Code: 200
+item: 94ce6eda78f9398e83946fc2e7630d96 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 9
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/golf2.txt
+Number of sites in index: 33
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/golf2.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Title, ID: 10
+Response Status Code: 200
+item: 7e1a4b86c01aa45900c5dabcb3fb434e already in Incremental Hash ID
+Saving Document Plain Text, ID: 10
+Response Status Code: 200
+item: 7e1a4b86c01aa45900c5dabcb3fb434e already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 10
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/basketball3.txt
+Number of sites in index: 34
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/basketball3.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Title, ID: 11
+Response Status Code: 200
+item: 6b96f9b76a99386d52de611472a7b88f already in Incremental Hash ID
+Saving Document Plain Text, ID: 11
+Response Status Code: 200
+item: 6b96f9b76a99386d52de611472a7b88f already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 11
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/golf5.txt
+Number of sites in index: 35
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/golf5.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Title, ID: 12
+Response Status Code: 200
+item: f6098ad4fe9d4bfa082311828bb8067b already in Incremental Hash ID
+Saving Document Plain Text, ID: 12
+Response Status Code: 200
+item: f6098ad4fe9d4bfa082311828bb8067b already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 12
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/baseball3.txt
+Number of sites in index: 36
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/baseball3.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Title, ID: 13
+Response Status Code: 200
+item: a0be425eabe874b3bf9ef0b019d02074 already in Incremental Hash ID
+Saving Document Plain Text, ID: 13
+Response Status Code: 200
+item: a0be425eabe874b3bf9ef0b019d02074 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 13
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/football3.txt
+Number of sites in index: 37
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/football3.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Title, ID: 14
+Response Status Code: 200
+item: 7fbd2e41d772379927946a090ad89a74 already in Incremental Hash ID
+Saving Document Plain Text, ID: 14
+Response Status Code: 200
+item: 7fbd2e41d772379927946a090ad89a74 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 14
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/golf3.txt
+Number of sites in index: 38
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/golf3.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Title, ID: 15
+Response Status Code: 200
+item: ff69903d50b18065afdfe406f4c880a9 already in Incremental Hash ID
+Saving Document Plain Text, ID: 15
+Response Status Code: 200
+item: ff69903d50b18065afdfe406f4c880a9 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 15
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/baseball2.txt
+Number of sites in index: 39
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/baseball2.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Title, ID: 16
+Response Status Code: 200
+item: 32609f6eab6e964148d79f8307f861c4 already in Incremental Hash ID
+Saving Document Plain Text, ID: 16
+Response Status Code: 200
+item: 32609f6eab6e964148d79f8307f861c4 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 16
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/football1.txt
+Number of sites in index: 40
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/football1.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Title, ID: 17
+Response Status Code: 200
+item: 184c5e4a7467bf92dac1808cc2c1c27c already in Incremental Hash ID
+Saving Document Plain Text, ID: 17
+Response Status Code: 200
+item: 184c5e4a7467bf92dac1808cc2c1c27c already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 17
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/football5.txt
+Number of sites in index: 41
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/football5.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Title, ID: 18
+Response Status Code: 200
+item: 1182ee976f1159b5005cb0966eff1e2b already in Incremental Hash ID
+Saving Document Plain Text, ID: 18
+Response Status Code: 200
+item: 1182ee976f1159b5005cb0966eff1e2b already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 18
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/basketball2.txt
+Number of sites in index: 42
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/basketball2.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Title, ID: 19
+Response Status Code: 200
+item: 4786b09136d5b0cd799047814e8324f4 already in Incremental Hash ID
+Saving Document Plain Text, ID: 19
+Response Status Code: 200
+item: 4786b09136d5b0cd799047814e8324f4 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 19
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/baseball1.txt
+Number of sites in index: 43
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/baseball1.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Title, ID: 20
+Response Status Code: 200
+item: 03c01337e189620c7c8a625268bf5ec9 already in Incremental Hash ID
+Saving Document Plain Text, ID: 20
+Response Status Code: 200
+item: 03c01337e189620c7c8a625268bf5ec9 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 20
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/golf4.txt
+Number of sites in index: 44
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/golf4.txt
+Saving response summary
+Loading Index Files
+file does not exit
+file does not exit
+file does not exit
+Response Status Code: 200
+Crawling: https://s2.smu.edu/~fmoore/
+Number of sites in index: 0
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/
+Saving response summary
+Loading Index Files
+file does not exit
+file does not exit
+file does not exit
+Response Status Code: 200
+Crawling: https://s2.smu.edu/~fmoore/
+Number of sites in index: 0
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/
+Saving response summary
+Response Status Code: 200
+Saving Page HTML, ID: 1
+Response Status Code: 200
+item: 495bd2a876952c6cf7cdb7d683a89f84 already in Incremental Hash ID
+Saving Document Title, ID: 1
+Response Status Code: 200
+item: 495bd2a876952c6cf7cdb7d683a89f84 already in Incremental Hash ID
+Saving Document Plain Text, ID: 1
+Response Status Code: 200
+item: 495bd2a876952c6cf7cdb7d683a89f84 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 1
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/index-fall2017.htm
+Number of sites in index: 1
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/index-fall2017.htm
+Saving response summary
+Response Status Code: 200
+Saving Page HTML, ID: 2
+Response Status Code: 200
+item: 1dd3aa9e4b964e50a7d343a2c9d93b00 already in Incremental Hash ID
+Saving Document Title, ID: 2
+Response Status Code: 200
+item: 1dd3aa9e4b964e50a7d343a2c9d93b00 already in Incremental Hash ID
+Saving Document Plain Text, ID: 2
+Response Status Code: 200
+item: 1dd3aa9e4b964e50a7d343a2c9d93b00 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 2
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/CSE5337_syllabus.pdf
+Number of sites in index: 2
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/CSE5337_syllabus.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/schedule.htm
+Number of sites in index: 3
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/schedule.htm
+Saving response summary
+Response Status Code: 200
+Saving Page HTML, ID: 3
+Response Status Code: 200
+item: 9548c25d625c1720cc5aa920fa328138 already in Incremental Hash ID
+Saving Document Title, ID: 3
+Response Status Code: 200
+item: 9548c25d625c1720cc5aa920fa328138 already in Incremental Hash ID
+Saving Document Plain Text, ID: 3
+Response Status Code: 200
+item: 9548c25d625c1720cc5aa920fa328138 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 3
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/CSE7337_syllabus.pdf
+Number of sites in index: 4
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/CSE7337_syllabus.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/syl_5330.pdf
+Number of sites in index: 5
+Response Status Code: 404
+Adding new URL to index: https://s2.smu.edu/~fmoore/syl_5330.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/syl_7330.pdf
+Number of sites in index: 6
+Response Status Code: 404
+Adding new URL to index: https://s2.smu.edu/~fmoore/syl_7330.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/index-final.htm
+Number of sites in index: 7
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/index-final.htm
+Saving response summary
+Response Status Code: 200
+Saving Page HTML, ID: 4
+Response Status Code: 200
+item: 61ec4bf2dc00d6f19af8d2e11534b848 already in Incremental Hash ID
+Saving Document Title, ID: 4
+Response Status Code: 200
+item: 61ec4bf2dc00d6f19af8d2e11534b848 already in Incremental Hash ID
+Saving Document Plain Text, ID: 4
+Response Status Code: 200
+item: 61ec4bf2dc00d6f19af8d2e11534b848 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 4
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/timeline.pdf
+Number of sites in index: 8
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/timeline.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/roadmap-04-03-2018.jpg
+Number of sites in index: 9
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/roadmap-04-03-2018.jpg
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/permutermindex-example.jpg
+Number of sites in index: 10
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/permutermindex-example.jpg
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/exam1.html
+Number of sites in index: 11
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/exam1.html
+Saving response summary
+Response Status Code: 200
+Saving Page HTML, ID: 5
+Response Status Code: 200
+item: 1b2f30e02cd3a1ff2a7bff15f7b59ca9 already in Incremental Hash ID
+Saving Document Title, ID: 5
+Response Status Code: 200
+item: 1b2f30e02cd3a1ff2a7bff15f7b59ca9 already in Incremental Hash ID
+Saving Document Plain Text, ID: 5
+Response Status Code: 200
+item: 1b2f30e02cd3a1ff2a7bff15f7b59ca9 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 5
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/index.htm
+Number of sites in index: 12
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/index.htm
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/index_duplicate.htm
+Number of sites in index: 13
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/index_duplicate.htm
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/example-2018-02-27.xlsx
+Number of sites in index: 14
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/example-2018-02-27.xlsx
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/CACM-Internet-Advertising-Oct-2017.pdf
+Number of sites in index: 15
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/CACM-Internet-Advertising-Oct-2017.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/useragent.php
+Number of sites in index: 16
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/useragent.php
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/levenshtein.html
+Number of sites in index: 17
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/levenshtein.html
+Saving response summary
+Response Status Code: 200
+Saving Page HTML, ID: 6
+Response Status Code: 200
+item: 45ced4cd26142f36695b8baebc38b7a4 already in Incremental Hash ID
+Saving Document Title, ID: 6
+Response Status Code: 200
+item: 45ced4cd26142f36695b8baebc38b7a4 already in Incremental Hash ID
+Saving Document Plain Text, ID: 6
+Response Status Code: 200
+item: 45ced4cd26142f36695b8baebc38b7a4 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 6
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/text/index.php
+Number of sites in index: 18
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/text/index.php
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/count_letters_duplicate.txt
+Number of sites in index: 19
+Response Status Code: 404
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/count_letters_duplicate.txt
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/mercator-article.pdf
+Number of sites in index: 20
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/mercator-article.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/k-means-example.xlsx
+Number of sites in index: 21
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/k-means-example.xlsx
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/figure6-12.xlsx
+Number of sites in index: 22
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/figure6-12.xlsx
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/algorithm-1-7.pdf
+Number of sites in index: 23
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/algorithm-1-7.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/count_letters.txt
+Number of sites in index: 24
+Response Status Code: 404
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/count_letters.txt
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/porter_stemmer_example.html
+Number of sites in index: 25
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/porter_stemmer_example.html
+Saving response summary
+Response Status Code: 200
+Saving Page HTML, ID: 7
+Response Status Code: 200
+item: ba7983688b49e916a344d1fe6bf30bdb already in Incremental Hash ID
+Saving Document Title, ID: 7
+Response Status Code: 200
+item: ba7983688b49e916a344d1fe6bf30bdb already in Incremental Hash ID
+Saving Document Plain Text, ID: 7
+Response Status Code: 200
+item: ba7983688b49e916a344d1fe6bf30bdb already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 7
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/this_aint_gonna_work.htm
+Number of sites in index: 26
+Response Status Code: 404
+Adding new URL to index: https://s2.smu.edu/~fmoore/this_aint_gonna_work.htm
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/index.html
+Number of sites in index: 27
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/index.html
+Saving response summary
+Response Status Code: 200
+Saving Page HTML, ID: 8
+Response Status Code: 200
+item: 80ab2d4f5fda50022eb8e65dde3b8ee2 already in Incremental Hash ID
+Saving Document Title, ID: 8
+Response Status Code: 200
+item: 80ab2d4f5fda50022eb8e65dde3b8ee2 already in Incremental Hash ID
+Saving Document Plain Text, ID: 8
+Response Status Code: 200
+item: 80ab2d4f5fda50022eb8e65dde3b8ee2 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 8
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/IEEE-Spectrum-The-Dark-Dialect-Oct-2017.pdf
+Number of sites in index: 28
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/IEEE-Spectrum-The-Dark-Dialect-Oct-2017.pdf
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/sim_example-2018-02-15.xlsx
+Number of sites in index: 29
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/sim_example-2018-02-15.xlsx
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/bigram-example.jpg
+Number of sites in index: 30
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/bigram-example.jpg
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/does_not_exist.htm
+Number of sites in index: 31
+Response Status Code: 404
+Adding new URL to index: https://s2.smu.edu/~fmoore/does_not_exist.htm
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/SMU-CSE-LOGO.gif
+Number of sites in index: 32
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/SMU-CSE-LOGO.gif
+Saving response summary
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/text/building2.txt
+Number of sites in index: 33
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/text/building2.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Title, ID: 9
+Response Status Code: 200
+item: 1e069cd0b15f91c91e963308c289b106 already in Incremental Hash ID
+Saving Document Plain Text, ID: 9
+Response Status Code: 200
+item: 1e069cd0b15f91c91e963308c289b106 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 9
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/text/magictext.html
+Number of sites in index: 34
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/text/magictext.html
+Saving response summary
+Response Status Code: 200
+Saving Page HTML, ID: 10
+Response Status Code: 200
+item: 50fa771ce611d4cae923b517271d317e already in Incremental Hash ID
+Saving Document Title, ID: 10
+Response Status Code: 200
+item: 50fa771ce611d4cae923b517271d317e already in Incremental Hash ID
+Saving Document Plain Text, ID: 10
+Response Status Code: 200
+item: 50fa771ce611d4cae923b517271d317e already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 10
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/text/mockingbird1.html
+Number of sites in index: 35
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/text/mockingbird1.html
+Saving response summary
+Response Status Code: 200
+Saving Page HTML, ID: 11
+Response Status Code: 200
+item: d06df03db230722dd8c298a386a259cf already in Incremental Hash ID
+Saving Document Title, ID: 11
+Response Status Code: 200
+item: d06df03db230722dd8c298a386a259cf already in Incremental Hash ID
+Saving Document Plain Text, ID: 11
+Response Status Code: 200
+item: d06df03db230722dd8c298a386a259cf already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 11
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/text/mockingbird5.html
+Number of sites in index: 36
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/text/mockingbird5.html
+Saving response summary
+Response Status Code: 200
+Saving Page HTML, ID: 12
+Response Status Code: 200
+item: 3da7d15adc91445ddc456346cee7328e already in Incremental Hash ID
+Saving Document Title, ID: 12
+Response Status Code: 200
+item: 3da7d15adc91445ddc456346cee7328e already in Incremental Hash ID
+Saving Document Plain Text, ID: 12
+Response Status Code: 200
+item: 3da7d15adc91445ddc456346cee7328e already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 12
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/text/mockingbird2.html
+Number of sites in index: 37
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/text/mockingbird2.html
+Saving response summary
+Response Status Code: 200
+Saving Page HTML, ID: 13
+Response Status Code: 200
+item: e4ae14afbe923284722a41f6d706d005 already in Incremental Hash ID
+Saving Document Title, ID: 13
+Response Status Code: 200
+item: e4ae14afbe923284722a41f6d706d005 already in Incremental Hash ID
+Saving Document Plain Text, ID: 13
+Response Status Code: 200
+item: e4ae14afbe923284722a41f6d706d005 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 13
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/text/mockingbird3.html
+Number of sites in index: 38
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/text/mockingbird3.html
+Saving response summary
+Response Status Code: 200
+Saving Page HTML, ID: 14
+Response Status Code: 200
+item: 635eac95466541152f65571e344c5782 already in Incremental Hash ID
+Saving Document Title, ID: 14
+Response Status Code: 200
+item: 635eac95466541152f65571e344c5782 already in Incremental Hash ID
+Saving Document Plain Text, ID: 14
+Response Status Code: 200
+item: 635eac95466541152f65571e344c5782 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 14
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/text/mockingbird4.html
+Number of sites in index: 39
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/text/mockingbird4.html
+Saving response summary
+Response Status Code: 200
+Saving Page HTML, ID: 15
+Response Status Code: 200
+item: 2d846c95630557ca9cbb99ea981fb3a1 already in Incremental Hash ID
+Saving Document Title, ID: 15
+Response Status Code: 200
+item: 2d846c95630557ca9cbb99ea981fb3a1 already in Incremental Hash ID
+Saving Document Plain Text, ID: 15
+Response Status Code: 200
+item: 2d846c95630557ca9cbb99ea981fb3a1 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 15
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/misc/text/building1.txt
+Number of sites in index: 40
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/misc/text/building1.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Title, ID: 16
+Response Status Code: 200
+item: 1a56f936254809757be7efbd6dfb8926 already in Incremental Hash ID
+Saving Document Plain Text, ID: 16
+Response Status Code: 200
+item: 1a56f936254809757be7efbd6dfb8926 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 16
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/golf1.txt
+Number of sites in index: 41
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/golf1.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Title, ID: 17
+Response Status Code: 200
+item: ec1d3d02a667664b2886ee46b12df551 already in Incremental Hash ID
+Saving Document Plain Text, ID: 17
+Response Status Code: 200
+item: ec1d3d02a667664b2886ee46b12df551 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 17
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/golf4.txt
+Number of sites in index: 42
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/golf4.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Title, ID: 18
+Response Status Code: 200
+item: c35483263506cb47aec7483dacc9e578 already in Incremental Hash ID
+Saving Document Plain Text, ID: 18
+Response Status Code: 200
+item: c35483263506cb47aec7483dacc9e578 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 18
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/baseball1.txt
+Number of sites in index: 43
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/baseball1.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Title, ID: 19
+Response Status Code: 200
+item: 03c01337e189620c7c8a625268bf5ec9 already in Incremental Hash ID
+Saving Document Plain Text, ID: 19
+Response Status Code: 200
+item: 03c01337e189620c7c8a625268bf5ec9 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 19
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/basketball3.txt
+Number of sites in index: 44
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/basketball3.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Title, ID: 20
+Response Status Code: 200
+item: 6b96f9b76a99386d52de611472a7b88f already in Incremental Hash ID
+Saving Document Plain Text, ID: 20
+Response Status Code: 200
+item: 6b96f9b76a99386d52de611472a7b88f already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 20
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/football2.txt
+Number of sites in index: 45
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/football2.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Title, ID: 21
+Response Status Code: 200
+item: 5535d2f76819666fb7181240ee182df0 already in Incremental Hash ID
+Saving Document Plain Text, ID: 21
+Response Status Code: 200
+item: 5535d2f76819666fb7181240ee182df0 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 21
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/golf2.txt
+Number of sites in index: 46
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/golf2.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Title, ID: 22
+Response Status Code: 200
+item: 7e1a4b86c01aa45900c5dabcb3fb434e already in Incremental Hash ID
+Saving Document Plain Text, ID: 22
+Response Status Code: 200
+item: 7e1a4b86c01aa45900c5dabcb3fb434e already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 22
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/golf3.txt
+Number of sites in index: 47
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/golf3.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Title, ID: 23
+Response Status Code: 200
+item: ff69903d50b18065afdfe406f4c880a9 already in Incremental Hash ID
+Saving Document Plain Text, ID: 23
+Response Status Code: 200
+item: ff69903d50b18065afdfe406f4c880a9 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 23
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/football4.txt
+Number of sites in index: 48
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/football4.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Title, ID: 24
+Response Status Code: 200
+item: 94ce6eda78f9398e83946fc2e7630d96 already in Incremental Hash ID
+Saving Document Plain Text, ID: 24
+Response Status Code: 200
+item: 94ce6eda78f9398e83946fc2e7630d96 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 24
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/baseball2.txt
+Number of sites in index: 49
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/baseball2.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Title, ID: 25
+Response Status Code: 200
+item: 32609f6eab6e964148d79f8307f861c4 already in Incremental Hash ID
+Saving Document Plain Text, ID: 25
+Response Status Code: 200
+item: 32609f6eab6e964148d79f8307f861c4 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 25
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/baseball5.txt
+Number of sites in index: 50
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/baseball5.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Title, ID: 26
+Response Status Code: 200
+item: ca482302a9e56d24aa70373aff67c718 already in Incremental Hash ID
+Saving Document Plain Text, ID: 26
+Response Status Code: 200
+item: ca482302a9e56d24aa70373aff67c718 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 26
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/basketball1.txt
+Number of sites in index: 51
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/basketball1.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Title, ID: 27
+Response Status Code: 200
+item: 882d3ae4a0e857269e37cfae31790ed4 already in Incremental Hash ID
+Saving Document Plain Text, ID: 27
+Response Status Code: 200
+item: 882d3ae4a0e857269e37cfae31790ed4 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 27
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/football1.txt
+Number of sites in index: 52
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/football1.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Title, ID: 28
+Response Status Code: 200
+item: 184c5e4a7467bf92dac1808cc2c1c27c already in Incremental Hash ID
+Saving Document Plain Text, ID: 28
+Response Status Code: 200
+item: 184c5e4a7467bf92dac1808cc2c1c27c already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 28
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/basketball4.txt
+Number of sites in index: 53
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/basketball4.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Title, ID: 29
+Response Status Code: 200
+item: 662252f769aac95ff1f7d8bab41c2294 already in Incremental Hash ID
+Saving Document Plain Text, ID: 29
+Response Status Code: 200
+item: 662252f769aac95ff1f7d8bab41c2294 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 29
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/basketball5.txt
+Number of sites in index: 54
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/basketball5.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Title, ID: 30
+Response Status Code: 200
+item: a6246140ed639ff964c119393fed34ce already in Incremental Hash ID
+Saving Document Plain Text, ID: 30
+Response Status Code: 200
+item: a6246140ed639ff964c119393fed34ce already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 30
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/baseball3.txt
+Number of sites in index: 55
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/baseball3.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Title, ID: 31
+Response Status Code: 200
+item: a0be425eabe874b3bf9ef0b019d02074 already in Incremental Hash ID
+Saving Document Plain Text, ID: 31
+Response Status Code: 200
+item: a0be425eabe874b3bf9ef0b019d02074 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 31
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/football3.txt
+Number of sites in index: 56
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/football3.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Title, ID: 32
+Response Status Code: 200
+item: 7fbd2e41d772379927946a090ad89a74 already in Incremental Hash ID
+Saving Document Plain Text, ID: 32
+Response Status Code: 200
+item: 7fbd2e41d772379927946a090ad89a74 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 32
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/basketball2.txt
+Number of sites in index: 57
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/basketball2.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Title, ID: 33
+Response Status Code: 200
+item: 4786b09136d5b0cd799047814e8324f4 already in Incremental Hash ID
+Saving Document Plain Text, ID: 33
+Response Status Code: 200
+item: 4786b09136d5b0cd799047814e8324f4 already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 33
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/football5.txt
+Number of sites in index: 58
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/football5.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Title, ID: 34
+Response Status Code: 200
+item: 1182ee976f1159b5005cb0966eff1e2b already in Incremental Hash ID
+Saving Document Plain Text, ID: 34
+Response Status Code: 200
+item: 1182ee976f1159b5005cb0966eff1e2b already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 34
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/golf5.txt
+Number of sites in index: 59
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/golf5.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Title, ID: 35
+Response Status Code: 200
+item: f6098ad4fe9d4bfa082311828bb8067b already in Incremental Hash ID
+Saving Document Plain Text, ID: 35
+Response Status Code: 200
+item: f6098ad4fe9d4bfa082311828bb8067b already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 35
+Saving Index Files
+Crawling: https://s2.smu.edu/~fmoore/textfiles/baseball4.txt
+Number of sites in index: 60
+Response Status Code: 200
+Adding new URL to index: https://s2.smu.edu/~fmoore/textfiles/baseball4.txt
+Saving response summary
+Response Status Code: 200
+Saving Document Title, ID: 36
+Response Status Code: 200
+item: bc17f0833ec085db4fd23ec3d474f25f already in Incremental Hash ID
+Saving Document Plain Text, ID: 36
+Response Status Code: 200
+item: bc17f0833ec085db4fd23ec3d474f25f already in Incremental Hash ID
+Saving Document Term Frequency Dictonary ID: 36
+Saving Index Files
+Saving Index Files
+Loading Index Files
+Response Status Code: 200
+Saving Index Files
+file does not exit

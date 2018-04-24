@@ -1,3 +1,6 @@
+TODO: Postings lists and tiered postings lists - weigthed scores
+TODO: Postings list <-> Term Frequency Matrix
+
 ----------------------------------------
 Program use:
 python __main__.py -o [output_directory_name (Required)] -n [max_number_to_index] -i [stopwords_file.txt] -u [seed_url]

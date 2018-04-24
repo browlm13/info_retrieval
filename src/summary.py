@@ -101,7 +101,7 @@ def load_log_file(indexed_directory_name):
 
 def load_web_page_summaries(indexed_directory_name):
 
-    web_page_summaries_file_template = file_io.get_template('web_page_summary_file_path') % (indexed_directory_name, '*')
+    web_page_summaries_file_template = file_io.get_template('web_page_access_log_and_metadata_file_path') % (indexed_directory_name, '*')
 
     web_page_summaries_list = []
     for wpsf_path in glob.glob(web_page_summaries_file_template):
@@ -111,7 +111,7 @@ def load_web_page_summaries(indexed_directory_name):
     return web_page_summaries_list
 
 def load_document_frequency_dicts(indexed_directory_name):
-    document_frequency_dict_file_template = file_io.get_template('document_frequency_dict_file_path') % (indexed_directory_name, '*')
+    document_frequency_dict_file_template = file_io.get_template('document_term_frequency_dictionary_file_path') % (indexed_directory_name, '*')
 
     document_id_term_frequency_dict = {}
     for dfd_path in glob.glob(document_frequency_dict_file_template):
