@@ -153,3 +153,5 @@ def cluster_pruning_leader_follower_dict(doc_freq_matrix_dataFrame):
     return leader_dictionary
 
 #def
+
+# def postings list <-> document term frequency matrix
