@@ -11,6 +11,7 @@ logger = logging.getLogger(__name__)
 logger.addHandler(logging.FileHandler("output/output_log.txt"))
 logger.addHandler(logging.StreamHandler(sys.stdout))
 
+
 """
 
 Incremental Hash ID

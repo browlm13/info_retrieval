@@ -13,6 +13,9 @@ logger = logging.getLogger(__name__)
 logger.addHandler(logging.FileHandler("output/output_log.txt"))
 logger.addHandler(logging.StreamHandler(sys.stdout))
 
+# TODO: add url_id : content hash map
+# TODO: add url graph data structure for connected resolved links
+
 class URL_Indexer():
 
     def __init__(self):
@@ -76,7 +79,6 @@ class URL_Indexer():
         written_web_page_summary['resolved_normalized_a_hrefs'] = resolved_normalized_a_hrefs
         written_web_page_summary['resolved_normalized_img_srcs'] = resolved_normalized_img_srcs
 
-
         # write file
         logger.info("Saving response summary")
         file_io.save('web_page_access_log_and_metadata_file_path', written_web_page_summary,
@@ -115,6 +117,23 @@ class Document_Indexer():
         if content_hash in self.hash_id_index:
             return True
         return False
+
+    """
+    # new
+    def content_hash(self, document_id):
+        id_hash_index = {v:k for k,v in self.hash_id_index.to_dict().items()}
+        assert document_id in id_hash_index
+        return id_hash_index[document_id]
+
+    # new
+    def document_id(self, content_hash):
+        assert self.document_in_index(content_hash)
+        return self.hash_id_index[content_hash]
+
+    # new
+    def add_document(self, content_hash):
+        self.hash_id_index.add(content_hash)
+    """
 
     def save_term_frequency_dictionary(self, term_frequency_dictionary, content_hash, output_directory_name):
         # add new document hash to index
@@ -197,6 +216,8 @@ class Base_Station():
     def __init__(self, index_document_html=False, index_document_title=False, index_document_plain_text=False, index_document_term_frequency_dictionary=True):
         self.url_indexer = URL_Indexer()
         self.document_indexer = Document_Indexer()
+
+        # content_hash : url list - map
 
         # load indexers
         self.load_indexes()
@@ -286,6 +307,31 @@ class Base_Station():
         if 'content_hash' in web_page_summary:
             content_hash = web_page_summary['content_hash']
             document_in_index = self.document_indexer.document_in_index(content_hash)  # continue indexing...
+
+        """
+        # checks if document has been indexed
+        document_in_index = False
+        if 'content_hash' in web_page_summary:
+            content_hash = web_page_summary['content_hash']
+            document_in_index = self.document_indexer.document_in_index(content_hash)  # continue indexing...
+
+            # indent added
+            # add document to document indexer
+            self.document_indexer.add_document(content_hash)
+            document_id = self.document_indexer.document_id(content_hash)
+
+            # add document id field to url indexer web_page summary
+            web_page_summary['document_id'] = document_id
+
+            # add to url indexer
+            self.url_indexer.add_web_page_summary(web_page_summary, self.output_directory_name)
+
+            # update_frontier
+            if 'normalized_a_hrefs' in web_page_summary:
+                self.update_frontier(web_page_summary['normalized_a_hrefs'])
+        """
+
+        ### TODO: add content_hash : [URL list]
 
         # elements to index
         # if document has been indexed, negate all other elements

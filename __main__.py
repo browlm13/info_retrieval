@@ -44,7 +44,7 @@ bs = base_station.Base_Station(index_document_html=True, index_document_title=Tr
 bs.scrape_website(seed_url=args.url, output_directory=args.output, max_urls_to_index=args.number, stopwords_file=args.input)
 
 # display summary and write term frequency matrix to output file
-summary.display_summary(args.output)
+### summary.display_summary(args.output) # builds shitty matrix
 """
 
 dtfm = dvo.get_document_term_frequency_matrix('fmoore')
