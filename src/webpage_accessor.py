@@ -74,6 +74,18 @@ def pull_summary(requested_url, included_attributes=("requested_url", "redirect_
             if 'binary_response_content' in included_attributes:
                 response_summary['binary_response_content'] = response.content
 
+            # set 'html' value
+            if 'page_html' in included_attributes:
+                response_summary['page_html'] = None # response.content
+                if response_summary['content_type'] == "text/html":
+                    response_summary['page_html'] = file_parser.extract_html_string(response.text)
+
+            # set 'title' value
+            if 'title' in included_attributes:
+                response_summary['title'] = None
+                if response_summary['content_type'] == "text/html":
+                    response_summary['title'] = file_parser.extract_title(response.text)
+
             # set 'plain_text' value
             if 'plain_text' in included_attributes:
                 response_summary['plain_text'] = None
