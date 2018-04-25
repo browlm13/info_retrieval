@@ -86,6 +86,23 @@ class URL_Frontier():
     def to_list(self):
         return self.q.to_list()
 
+    # new
+    """
+    def save(self, file_path):
+        with open(file_path, 'w') as file:
+            url_frontier_dictionary = {'url_frontier' : self.to_list()}
+            file.write(json.dumps(url_frontier_dictionary))
+    """
+    def to_dict(self):
+        return {'url_frontier' : self.to_list()}
+
+    def load(self, file_path):
+        with open(file_path) as json_data:
+            url_frontier_dictionary = json.load(json_data)
+            self.q = Queue()
+            self.add_list(url_frontier_dictionary['url_frontier'])
+
+
 class Queue():
     """
         This class impliments a minimal queue data structure capable of storing any type of data.
