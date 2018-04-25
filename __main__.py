@@ -15,7 +15,7 @@ __version__ = "2.0.1"
                         Search Engine / Web Crawler
                              Command Line Tool
 """
-
+"""
 logger = logging.getLogger(__name__)
 logger.addHandler(logging.FileHandler("output/output_log.txt"))
 logger.addHandler(logging.StreamHandler(sys.stdout))
@@ -45,7 +45,7 @@ bs.scrape_website(seed_url=args.url, output_directory=args.output, max_urls_to_i
 
 # display summary and write term frequency matrix to output file
 ### summary.display_summary(args.output) # builds shitty matrix
-
+"""
 """
 dtfm = dvo.get_document_term_frequency_matrix('fmoore')
 
@@ -78,4 +78,5 @@ query_vector = dvo.query_to_vector(raw_query, dtfm)
 token_list = dvo.vector_to_tokens(query_vector, dtfm)
 print(token_list)
 """
-
+docID_url_map = dvo.get_docID2url_map()
+print(docID_url_map)

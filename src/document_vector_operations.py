@@ -89,6 +89,28 @@ def document_vector_matrix_and_index_dicts(doc_freq_matrix_dataFrame):
 
     return document_vector_matrix, dict(docID2row), dict(word2col)
 
+# join hash_url_list_map and hash_id_map (stupid name doc prefix) on hash for url_id connection
+def get_docID2url_map():
+
+    hash_id_map_file = file_io.get_path("hash_id_map_file", None, force=True)
+    with open(hash_id_map_file) as json_data:
+        hash_id_map = json.load(json_data)
+
+
+    #hash_id_df = pd.DataFrame(hash_id_tuple_list, columns=['hash', 'id'])
+
+    hash_url_list_map_file = file_io.get_path("hash_url_list_map_file", None, force=True)
+    with open(hash_url_list_map_file) as json_data:
+        hash_url_list_map = json.load(json_data)
+
+    # take all urls
+    # docID_url_map = {hash_id_map[hash]:hash_url_list_map[hash] for hash in hash_id_map.keys()}
+
+    # take only first url
+    docID_url_map = {hash_id_map[hash]: hash_url_list_map[hash][0] for hash in hash_id_map.keys()}
+    return docID_url_map
+
+
 
 def cosine_similarity(document_vector_1, document_vector_2):
     """

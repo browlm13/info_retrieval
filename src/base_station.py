@@ -229,10 +229,10 @@ class Document_Indexer():
 
     def save_document_indexer(self):
         # write file
-        file_io.save('doc_hash_id_map_file', self.hash_id_index.to_dict(), None)
+        file_io.save('hash_id_map_file', self.hash_id_index.to_dict(), None)
 
     def load_document_indexer(self):
-        document_indexer_file_path = file_io.get_path('doc_hash_id_map_file', None)
+        document_indexer_file_path = file_io.get_path('hash_id_map_file', None)
         if document_indexer_file_path is not None:
             self.hash_id_index.load(document_indexer_file_path)
 
