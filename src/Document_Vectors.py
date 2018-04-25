@@ -75,24 +75,18 @@ class DocumentTermFrequencyMatrix():
         pd.DataFrame(data=self.np_dtfm).to_csv(np_dtfm_file, index=False)
 
         logger.info("Writing word to col Map")
-        #word2col_file = file_io.get_path("word2col_file_path", None, force=True)
-        #self.word2col.to_csv(word2col_file)
         # hack key to string
-        data = dict((':'.join(k), v) for k, v in self.word2col.items())
+        data = self.word2col #dict("%s:%s" % (k,v) for k, v in self.word2col.items())
         file_io.save("word2col_file_path", data, None)
 
         logger.info("Writing DocID to Row Map")
-        #docID2row_file = file_io.get_path("docID2row_file_path", None, force=True)
-        #self.word2col.to_csv(docID2row_file)
         #hack key to string
-        data = dict((':'.join(k), v) for k, v in self.docID2row.items())
+        data = dict({str(k):v for k, v in self.docID2row.items()})
         file_io.save("docID2row_file_path", data, None)
 
         logger.info("Writing DocID to URL Map")
-        #docID2url_file = file_io.get_path("docID2url_file_path", None, force=True)
-        #self.docID2url.to_csv(docID2url_file)
         # hack key to string
-        data = dict((':'.join(k), v) for k, v in self.docID2url.items())
+        data = dict({str(k):v for k, v in self.docID2url.items()})
         file_io.save("docID2url_file_path", data, None)
 
 
