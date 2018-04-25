@@ -4,8 +4,7 @@ import sys
 import logging
 
 # my lib
-from src import base_station
-from src import summary
+from src import Document_Vectors
 from src import document_vector_operations as dvo
 
 __author__ = 'LJ Brown'
@@ -15,7 +14,7 @@ __version__ = "2.0.1"
                         Search Engine / Web Crawler
                              Command Line Tool
 """
-"""
+
 logger = logging.getLogger(__name__)
 logger.addHandler(logging.FileHandler("output/output_log.txt"))
 logger.addHandler(logging.StreamHandler(sys.stdout))
@@ -38,7 +37,7 @@ parser.add_argument('-u', '--url', help='Website to crawl and index.', type=str,
 args = parser.parse_args()
 
 # TODO: add options for saving, document frequency matrix, html, and plain text
-
+"""
 # crawl site
 bs = base_station.Base_Station(index_document_html=False, index_document_title=True, index_document_plain_text=True, index_document_term_frequency_dictionary=True)
 bs.scrape_website(seed_url=args.url, output_directory=args.output, max_urls_to_index=args.number, stopwords_file=args.input)
@@ -46,16 +45,24 @@ bs.scrape_website(seed_url=args.url, output_directory=args.output, max_urls_to_i
 # display summary and write term frequency matrix to output file
 ### summary.display_summary(args.output) # builds shitty matrix
 """
-"""
-dtfm = dvo.get_document_term_frequency_matrix('fmoore')
 
-M, docID2row, word2col = dvo.document_vector_matrix_and_index_dicts(dtfm)
+#
+# Build Document Term Frequency Matrix
+#
+
+dtfm = Document_Vectors.DocumentTermFrequencyMatrix()
+dtfm.create_from_indexed_directories([args.output])
+dtfm.save_document_term_frequency_matrix()
+
+#dtfm = dvo.get_document_term_frequency_matrix(args.output)
+#print(dtfm)
+#M, docID2row, word2col = dvo.document_vector_matrix_and_index_dicts(dtfm)
 #print(word2col)
 #print(docID2row)
 #print(M.shape)
-import numpy as np
+#import numpy as np
 
-dv12 = M[11,:]
+#dv12 = M[11,:]
 # np.nonzero(dv12)
 #query_vector[136] = 1
 #query_vector[137] = 1
@@ -65,7 +72,7 @@ dv12 = M[11,:]
 # testing cosine similarity
 # print(dvo.ranked_cosine_similarity(query_vector, M))
 #print(dvo.cluster_pruning(dtfm))
-"""
+
 """
 query_vector = np.zeros((1133))
 query_vector[136] = 1
