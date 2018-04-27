@@ -1,16 +1,26 @@
 {
     "path_templates" :
         {
-            "directory_structure_file" :                  "collected_data/%s/directory_structure.json",
-            "log_file" :                                  "collected_data/%s/log.txt",
-            "resolved_url_map_file" :                     "collected_data/resolved_url_map.json",
-            "url_id_map_file" :                           "collected_data/url_id_map.json",
-            "doc_hash_id_map_file" :                      "collected_data/doc_hash_id_map.json",
-            "document_directory_path" :                   "collected_data/%s/documents/%s/",
-            "web_page_summaries_directory_path" :         "collected_data/%s/web_page_summaries/",
-            "web_page_summary_file_path" :                "collected_data/%s/web_page_summaries/web_page_summary_%s.json",
-            "document_frequency_dict_file_path" :         "collected_data/%s/documents/document_frequency_dict_%s.json",
-            "document_term_frequency_matrix_file_path" :  "output/document_term_frequency_matrix.csv"
+            "directory_structure_file" :                      "collected_data/%s/directory_structure.json",
+            "log_file" :                                      "collected_data/%s/log.txt",
+            "resolved_url_map_file" :                         "collected_data/resolved_url_map.json",
+            "url_id_map_file" :                               "collected_data/url_id_map.json",
+            "hash_url_list_map_file" :                        "collected_data/hash_url_list_map.json",
+            "hash_id_map_file":                               "collected_data/hash_id_map.json",
+            "url_frontier_file" :                             "collected_data/url_frontier.json",
+            "document_directory_path" :                       "collected_data/%s/documents/%s/",
+            "web_page_access_log_and_metadata_directory_path" :"collected_data/%s/web_page_access_log_and_metadata_database/",
+            "web_page_access_log_and_metadata_file_path" :     "collected_data/%s/web_page_access_log_and_metadata_database/web_page_access_log_and_metadata_%s.json",
+            "document_term_frequency_dictionary_file_path":   "collected_data/%s/document_term_frequency_dictionary_database/document_term_frequency_dictionary_%s.json",
+            "document_html_file_path" :                       "collected_data/%s/document_html_database/document_html_%s.json",
+            "document_title_file_path" :                      "collected_data/%s/document_title_database/document_title_%s.json",
+            "document_plain_text_file_path" :                 "collected_data/%s/document_plain_text_database/document_plain_text_%s.json",
+            "document_term_frequency_matrix_file_path" :      "output/document_term_frequency_matrix.csv",
+            "numpy_document_term_frequency_matrix_file_path" :"output/numpy_document_term_frequency_matrix.csv",
+            "word2col_file_path" :                            "output/word2col.json",
+            "docID2row_file_path" :                           "output/docID2row.json",
+            "docID2url_file_path" :                           "output/docID2url.json"
+
         },
 
     "path_template_parameters" :
@@ -19,11 +29,20 @@
             "log_file" :                                      ["Output Directory"],
             "resolved_url_map_file" :                         ["None"],
             "url_id_map_file" :                               ["None"],
-            "doc_hash_id_map_file" :                          ["None"],
+            "hash_url_list_map_file" :                        ["None"],
+            "hash_id_map_file":                               ["None"],
+            "url_frontier_file" :                             ["None"],
             "document_directory_path" :                       ["Output Directory", "Document ID"],
-            "web_page_summaries_directory_path" :             ["Output Directory"],
-            "web_page_summary_file_path" :                    ["Output Directory", "Resolved URL ID"],
-            "document_frequency_dict_file_path" :             ["Output Directory", "Document ID"],
-            "document_term_frequency_matrix_file_path" :      ["None"]
+            "web_page_access_log_and_metadata_directory_path" :["Output Directory"],
+            "web_page_access_log_and_metadata_file_path" :    ["Output Directory", "Resolved URL ID"],
+            "document_term_frequency_dictionary_file_path":   ["Output Directory", "Document ID"],
+            "document_html_file_path" :                       ["Output Directory", "Document ID"],
+            "document_title_file_path" :                      ["Output Directory", "Document ID"],
+            "document_plain_text_file_path" :                 ["Output Directory", "Document ID"],
+            "document_term_frequency_matrix_file_path" :      ["None"],
+            "numpy_document_term_frequency_matrix_file_path" :["None"],
+            "word2col_file_path" :                            ["None"],
+            "docID2row_file_path" :                           ["None"],
+            "docID2url_file_path" :                           ["None"]
         }
 }

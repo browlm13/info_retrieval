@@ -1,1 +1,1 @@
-{"seed_url": "https://s2.smu.edu/~fmoore/", "max_urls_to_index": null, "robots_dissaloud_path": ["https://s2.smu.edu/~fmoore/dontgohere/"]}
+{"max_urls_to_index": null, "robots_dissaloud_path": ["https://s2.smu.edu/~fmoore/dontgohere/"], "seed_url": "https://s2.smu.edu/~fmoore/", "indexed_elements": {"index_document_plain_text": true, "index_document_html": false, "index_document_title": true, "index_document_term_frequency_dictionary": true}}

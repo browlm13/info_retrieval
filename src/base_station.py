@@ -1,5 +1,6 @@
 import logging
 import sys
+import json
 
 # my lib
 from src import utils
@@ -13,11 +14,23 @@ logger = logging.getLogger(__name__)
 logger.addHandler(logging.FileHandler("output/output_log.txt"))
 logger.addHandler(logging.StreamHandler(sys.stdout))
 
+# TODO: add url_id : content hash map
+# TODO: add url graph data structure for connected resolved links
+# TODO: load url frontier state from saved files
+
 class URL_Indexer():
 
     def __init__(self):
         self.url_resolver = utils.URL_Resolver()
         self.url_id_index = utils.Incremental_Hash_ID()
+
+        # content_hash : [url, list]; map
+        self.hash_url_list_map = {}
+
+    # new
+    def get_hash_url_list_map(self):
+        return self.hash_url_list_map
+
 
     def get_url_id_dict(self):
         return self.url_id_index.to_dict()
@@ -59,7 +72,6 @@ class URL_Indexer():
         self.url_id_index.add(resolved_requested_url)
 
         # if not in index, resolve all web page links and write to file
-
         # and if has attributes
         resolved_normalized_a_hrefs = []
         if 'normalized_a_hrefs' in web_page_summary:
@@ -78,14 +90,40 @@ class URL_Indexer():
 
         # write file
         logger.info("Saving response summary")
-        file_io.save('web_page_summary_file_path', written_web_page_summary,
+        file_io.save('web_page_access_log_and_metadata_file_path', written_web_page_summary,
                      [output_directory_name, written_web_page_summary['url_id']])
+
+        # keeping track of pointer urls to same content
+        # update hash_url_list_map
+        if 'content_hash' in web_page_summary:
+            content_hash = web_page_summary['content_hash']
+
+            requested_url_list = []
+            resolved_requested_url_list = []
+            redirection_urls_list = []
+
+            try: requested_url_list = [web_page_summary['requested_url']]
+            except: pass
+            try: resolved_requested_url_list = [web_page_summary['resolved_requested_url']]
+            except: pass
+            try: redirection_urls_list = web_page_summary['redirect_history']   # already list
+            except: pass
+            urls = requested_url_list + resolved_requested_url_list + redirection_urls_list
+
+            if content_hash in self.hash_url_list_map:
+                existing_urls = self.hash_url_list_map[content_hash]
+                urls += existing_urls
+
+            self.hash_url_list_map[content_hash] = list(set(urls))
 
 
     def save_url_indexer(self):
         # write file
         file_io.save('url_id_map_file', self.url_id_index.to_dict(), None)
         file_io.save('resolved_url_map_file', self.url_resolver.to_dict(), None)
+
+        # new
+        file_io.save('hash_url_list_map_file', self.hash_url_list_map, None)
 
     def load_url_indexer(self):
 
@@ -98,6 +136,14 @@ class URL_Indexer():
         url_resolver_file_path = file_io.get_path('resolved_url_map_file', None)
         if url_resolver_file_path is not None:
             self.url_resolver.load(url_resolver_file_path)
+
+
+        # new
+        # load hash_url_list_map
+        hash_url_list_map_path = file_io.get_path('hash_url_list_map_file', None)
+        if hash_url_list_map_path is not None:
+            with open(hash_url_list_map_path) as json_data:
+                self.hash_url_list_map = json.load(json_data)
 
     def __len__(self):
         return len(self.url_id_index)
@@ -126,27 +172,92 @@ class Document_Indexer():
 
         logger.info("Saving Document Term Frequency Dictonary ID: %d" % document_id)
         # write file
-        file_io.save('document_frequency_dict_file_path', term_frequency_dictionary,
+        file_io.save('document_term_frequency_dictionary_file_path', term_frequency_dictionary,
                      [output_directory_name, document_id])
+
+    # new
+    def save_document_html_dictionary(self, document_html, content_hash, output_directory_name):
+        # add new document hash to index
+        self.hash_id_index.add(content_hash)
+        document_id = self.hash_id_index[content_hash]
+
+        # create page html json with meta data
+        document_html_dictionary = {
+            'page_html' : document_html,
+            'document_id' : document_id,
+            'content_hash' : content_hash
+        }
+
+        logger.info("Saving Page HTML, ID: %d" % document_id)
+        # write file
+        file_io.save('document_html_file_path', document_html_dictionary,
+                     [output_directory_name, document_id])
+
+    def save_document_title_dictionary(self, document_title, content_hash, output_directory_name):
+        # add new document hash to index
+        self.hash_id_index.add(content_hash)
+        document_id = self.hash_id_index[content_hash]
+
+        # create page html json with meta data
+        document_title_dictionary = {
+            'title' : document_title['title'],
+            'document_id' : document_id,
+            'content_hash' : content_hash
+        }
+        logger.info("Saving Document Title, ID: %d" % document_id)
+        # write file
+        file_io.save('document_title_file_path', document_title_dictionary,
+                     [output_directory_name, document_id])
+
+    def save_document_plain_text_dictionary(self, document_plain_text, content_hash, output_directory_name):
+        # add new document hash to index
+        self.hash_id_index.add(content_hash)
+        document_id = self.hash_id_index[content_hash]
+
+        # create page html json with meta data
+        document_plain_text_dictionary = {
+            'plain_text' : document_plain_text['plain_text'],
+            'document_id' : document_id,
+            'content_hash' : content_hash
+        }
+
+        logger.info("Saving Document Plain Text, ID: %d" % document_id)
+        # write file
+        file_io.save('document_plain_text_file_path', document_plain_text_dictionary,
+                     [output_directory_name, document_id])
+
 
     def save_document_indexer(self):
         # write file
-        file_io.save('doc_hash_id_map_file', self.hash_id_index.to_dict(), None)
+        file_io.save('hash_id_map_file', self.hash_id_index.to_dict(), None)
 
     def load_document_indexer(self):
-        document_indexer_file_path = file_io.get_path('doc_hash_id_map_file', None)
+        document_indexer_file_path = file_io.get_path('hash_id_map_file', None)
         if document_indexer_file_path is not None:
             self.hash_id_index.load(document_indexer_file_path)
 
 
 class Base_Station():
 
-    def __init__(self):
+    def __init__(self, index_document_html=False, index_document_title=False, index_document_plain_text=False, index_document_term_frequency_dictionary=True):
         self.url_indexer = URL_Indexer()
         self.document_indexer = Document_Indexer()
 
+        # new
+        self.url_frontier = utils.URL_Frontier()
+
+
+
         # load indexers
         self.load_indexes()
+
+        # elements to index
+        self.crawler_index_instructions = {
+            "index_document_html": index_document_html,
+            "index_document_title": index_document_title,
+            "index_document_plain_text": index_document_plain_text,
+            "index_document_term_frequency_dictionary": index_document_term_frequency_dictionary
+        }
 
     def update_frontier(self, url_list):
         # filter
@@ -187,7 +298,7 @@ class Base_Station():
         self.forbidden_urls = self.url_indexer.resolve_url_list(robot_parser.read_robots_dissaloud(self.seed_url))
 
         # make queue
-        self.url_frontier = utils.URL_Frontier()
+        #self.url_frontier = utils.URL_Frontier()   # new uncommented
 
         # add seed to url frontier
         self.update_frontier([self.seed_url])
@@ -221,15 +332,40 @@ class Base_Station():
             self.update_frontier(web_page_summary['normalized_a_hrefs'])
 
         # checks if document has been indexed
+        document_in_index = False
         if 'content_hash' in web_page_summary:
             content_hash = web_page_summary['content_hash']
-            return not self.document_indexer.document_in_index(content_hash)  # continue indexing...
-        return False
+            document_in_index = self.document_indexer.document_in_index(content_hash)  # continue indexing...
 
-    def report_term_frequency_dictionary(self, term_frequency_dictionary, content_hash):
-        """ Recieves a web page summary dictonary from a crawler. Checks the content hash for contnet already indexed."""
+        # elements to index
+        # if document has been indexed, negate all other elements
+        crawler_index_instructions = self.crawler_index_instructions
+        if document_in_index:
+            crawler_index_instructions = {k:False for k, v in self.crawler_index_instructions.items()}
+
+        # return crawler index instructions
+        return crawler_index_instructions
+
+    def report_document_term_frequency_dictionary(self, term_frequency_dictionary, content_hash):
+        """ Recieves a web page summary dictonary from a crawler.
+        Checks the content hash for contnet already indexed."""
         self.document_indexer.save_term_frequency_dictionary(term_frequency_dictionary, content_hash,
                                                              self.output_directory_name)
+
+    # new
+    def report_document_html(self, document_html, content_hash):
+        """ Receives web page html string from a crawler. Checked the content hash for content already indexed."""
+        self.document_indexer.save_document_html_dictionary(document_html, content_hash,
+                                                             self.output_directory_name)
+
+    def report_document_title(self, document_title, content_hash):
+        """ Receives web page html string from a crawler. Checked the content hash for content already indexed."""
+        self.document_indexer.save_document_title_dictionary(document_title, content_hash, self.output_directory_name)
+
+
+    def report_document_plain_text(self, document_plain_text, content_hash):
+        """ Receives web page html string from a crawler. Checked the content hash for content already indexed."""
+        self.document_indexer.save_document_plain_text_dictionary(document_plain_text, content_hash, self.output_directory_name)
 
     def save_indexes(self):
         logger.info("Saving Index Files")
@@ -237,15 +373,28 @@ class Base_Station():
         self.document_indexer.save_document_indexer()
         self.url_indexer.save_url_indexer()
 
+        # save url frontier
+        # write file
+        file_io.save('url_frontier_file', self.url_frontier.to_dict(), None)
+
     def load_indexes(self):
         logger.info("Loading Index Files")
         self.url_indexer.load_url_indexer()
         self.document_indexer.load_document_indexer()
+
+        # load url frontier
+        url_frontier_file_path = file_io.get_path('url_frontier_file', None)
+        if url_frontier_file_path is not None:
+            self.url_frontier.load(url_frontier_file_path)
+
+
 
     def write_log_file(self):
         self.log_info_dict = {}
         self.log_info_dict['seed_url'] = self.seed_url
         self.log_info_dict['max_urls_to_index'] = self.max_urls_to_index
         self.log_info_dict['robots_dissaloud_path'] = self.forbidden_urls
+        self.log_info_dict['indexed_elements'] = self.crawler_index_instructions
+
         # write file
         file_io.save('log_file', self.log_info_dict, [self.output_directory_name])

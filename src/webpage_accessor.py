@@ -74,11 +74,24 @@ def pull_summary(requested_url, included_attributes=("requested_url", "redirect_
             if 'binary_response_content' in included_attributes:
                 response_summary['binary_response_content'] = response.content
 
+            # set 'html' value
+            if 'page_html' in included_attributes:
+                response_summary['page_html'] = None # response.content
+                if response_summary['content_type'] == "text/html":
+                    response_summary['page_html'] = file_parser.extract_html_string(response.text)
+
+            # set 'title' value
+            if 'title' in included_attributes:
+                response_summary['title'] = None
+                if response_summary['content_type'] == "text/html":
+                    response_summary['title'] = file_parser.extract_title(response.text)
+
             # set 'plain_text' value
             if 'plain_text' in included_attributes:
+                # NEW replace response.text with response.content
                 response_summary['plain_text'] = None
                 if response_summary['content_type'] in file_parser.acepted_content_types():
-                    response_summary['plain_text'] = file_parser.extract_plain_text(response.text,
+                    response_summary['plain_text'] = file_parser.extract_plain_text(response.content,
                                                                                     response_summary['content_type'])
 
             # set 'tokens' value
@@ -89,7 +102,7 @@ def pull_summary(requested_url, included_attributes=("requested_url", "redirect_
 
             if 'term_frequency_dict' in included_attributes:
                 if response_summary['content_type'].split(';')[0] in file_parser.acepted_content_types():
-                    plain_text = file_parser.extract_plain_text(response.text, response_summary['content_type'])
+                    plain_text = file_parser.extract_plain_text(response.content, response_summary['content_type'])
                     tokens = text_processing.plain_text_to_tokens(plain_text, stopwords_file)
                     response_summary['term_frequency_dict'] = text_processing.word_frequency_dict(tokens)
 

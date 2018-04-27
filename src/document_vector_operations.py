@@ -6,6 +6,7 @@ import math
 
 # my lib
 from src import file_io
+from src import text_processing
 
 # external
 import glob
@@ -21,7 +22,7 @@ logger.addHandler(logging.StreamHandler(sys.stdout))
 
 
 def load_document_frequency_dicts(indexed_directory_name):
-    document_frequency_dict_file_template = file_io.get_template('document_frequency_dict_file_path') % \
+    document_frequency_dict_file_template = file_io.get_template('document_term_frequency_dictionary_file_path') % \
                                             (indexed_directory_name, '*')
 
     document_id_term_frequency_dict = {}
@@ -88,6 +89,28 @@ def document_vector_matrix_and_index_dicts(doc_freq_matrix_dataFrame):
 
     return document_vector_matrix, dict(docID2row), dict(word2col)
 
+# join hash_url_list_map and hash_id_map (stupid name doc prefix) on hash for url_id connection
+def get_docID2url_map():
+
+    hash_id_map_file = file_io.get_path("hash_id_map_file", None, force=True)
+    with open(hash_id_map_file) as json_data:
+        hash_id_map = json.load(json_data)
+
+
+    #hash_id_df = pd.DataFrame(hash_id_tuple_list, columns=['hash', 'id'])
+
+    hash_url_list_map_file = file_io.get_path("hash_url_list_map_file", None, force=True)
+    with open(hash_url_list_map_file) as json_data:
+        hash_url_list_map = json.load(json_data)
+
+    # take all urls
+    # docID_url_map = {hash_id_map[hash]:hash_url_list_map[hash] for hash in hash_id_map.keys()}
+
+    # take only first url
+    docID_url_map = {hash_id_map[hash]: hash_url_list_map[hash][0] for hash in hash_id_map.keys()}
+    return docID_url_map
+
+
 
 def cosine_similarity(document_vector_1, document_vector_2):
     """
@@ -122,9 +145,10 @@ def ranked_cosine_similarity(query_vector, document_vector_matrix):
 
     return max_indices
 
-def cluster_pruning(doc_freq_matrix_dataFrame):
-    """
 
+def cluster_pruning_leader_follower_dict(doc_freq_matrix_dataFrame):
+    """
+    Select docIds for leaders and followers and format in python dictionary
     :param doc_freq_matrix_dataFrame:
     :return: return sqrt(N) leaders with sqrt(N) followers as python dictionary with keys as leader docIDs and values
             as list of follower docIDs
@@ -150,3 +174,32 @@ def cluster_pruning(doc_freq_matrix_dataFrame):
 
     # return leader follower dictonary
     return leader_dictionary
+
+def query_to_vector(raw_query, doc_freq_matrix_dataFrame):
+    document_vector_matrix, docID2row, word2col = document_vector_matrix_and_index_dicts(doc_freq_matrix_dataFrame)
+
+    # create empty query vector
+    query_vector = np.zeros(document_vector_matrix.shape[1])
+
+    tokens = text_processing.plain_text_to_tokens(raw_query) #, stopwords_file)
+    query_term_frequency_dictionary = text_processing.word_frequency_dict(tokens)
+
+    for word, freq in query_term_frequency_dictionary.items():
+        if word in word2col:
+            column_index = word2col[word]
+            query_vector[column_index] = freq
+
+    return query_vector
+
+def vector_to_tokens(query_vector, doc_freq_matrix_dataFrame):
+    document_vector_matrix, docID2row, word2col = document_vector_matrix_and_index_dicts(doc_freq_matrix_dataFrame)
+
+    col2word = {v: k for k, v in word2col.items()}
+    token_list = []
+    word_indices = np.nonzero(query_vector)[0] # column indecies
+    for i in word_indices:
+        token_list.append(col2word[i])
+
+    return token_list
+
+# def postings list <-> document term frequency matrix
