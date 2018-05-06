@@ -13,6 +13,7 @@ from src import document_vector_operations
 import glob
 import pandas as pd
 import numpy as np
+import pickle
 
 # logging
 logging.basicConfig(level=logging.INFO)
@@ -59,9 +60,20 @@ class DocumentTermFrequencyMatrix():
                 if document_term_frequency_matrix_file_path is not None:
                     # load self.df_dtfm from csv and call self.numpy_matrix_and_mappings()
                     document_vector_object_already_created = True
+
+                    #
+                    # when loading entire structure
+                    #
                     self.indexed_directory_name_list_dict = {"indexed_directory_name_list": indexed_directory_name_list}
                     self.df_dtfm = pd.DataFrame.from_csv(document_term_frequency_matrix_file_path)
                     self.numpy_matrix_and_mappings()
+
+                    #
+                    #   loading fast matrix_maps.pkl, leader_matrix
+                    #
+                    document_vector_operations.cluster_pruning_matrix_and_maps(self.df_dtfm)
+
+
         if not document_vector_object_already_created:
             # create and save new stuff
             self.create_from_indexed_directories(indexed_directory_name_list)
@@ -132,18 +144,53 @@ class DocumentTermFrequencyMatrix():
 
         logger.info("Writing word to col Map")
         # hack key to string
-        data = self.word2col #dict("%s:%s" % (k,v) for k, v in self.word2col.items())
-        file_io.save("word2col_file_path", data, None)
+        word2col = self.word2col #dict("%s:%s" % (k,v) for k, v in self.word2col.items())
+        file_io.save("word2col_file_path", word2col, None)
+
+        logger.info("Writing col to word Map")
+        col2word = {v: k for k, v in self.word2col.items()}
+        file_io.save("col2word_file_path", col2word, None)
 
         logger.info("Writing DocID to Row Map")
         #hack key to string
-        data = dict({str(k):v for k, v in self.docID2row.items()})
-        file_io.save("docID2row_file_path", data, None)
+        docID2row = dict({str(k):v for k, v in self.docID2row.items()})
+        file_io.save("docID2row_file_path", docID2row, None)
+
+        logger.info("Writing Row to DocID Map")
+        # hack value to string - convert key from numpy data type to python data type
+        row2docID = {str(v): k.item() for k, v in self.docID2row.items()}
+        file_io.save("row2docID_file_path", row2docID, None)
 
         logger.info("Writing DocID to URL Map")
         # hack key to string
-        data = dict({str(k):v for k, v in self.docID2url.items()})
-        file_io.save("docID2url_file_path", data, None)
+        docID2url = dict({str(k):v for k, v in self.docID2url.items()})
+        file_io.save("docID2url_file_path", docID2url, None)
+
+        """
+        # save all maps in one file
+
+        # maps formatted for json
+        matrix_maps = {
+            'docID2url' : docID2url,
+            'row2docID' : row2docID,
+            'docID2row' : docID2row,
+            'col2word' : col2word,
+            'word2col' : word2col
+        }
+        """
+
+        # save all maps in one file
+        matrix_maps = {
+            'docID2url' : self.docID2url,
+            'row2docID' : {v: k for k, v in self.docID2row.items()},
+            'docID2row' : self.docID2row,
+            'col2word' : {v: k for k, v in self.word2col.items()},
+            'word2col' : self.word2col
+        }
+        matrix_maps_file_path = file_io.get_path('matrix_maps_file_path', None, force=True)
+        with open(matrix_maps_file_path, 'wb') as handle:
+            pickle.dump(matrix_maps, handle, protocol=pickle.HIGHEST_PROTOCOL)
+
 
         # save indexed directory list
         data = dict(self.indexed_directory_name_list_dict)

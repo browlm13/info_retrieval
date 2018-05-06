@@ -18,8 +18,11 @@
             "document_term_frequency_matrix_file_path" :      "output/document_term_frequency_matrix.csv",
             "numpy_document_term_frequency_matrix_file_path" :"output/numpy_document_term_frequency_matrix.csv",
             "word2col_file_path" :                            "output/word2col.json",
+            "col2word_file_path" :                            "output/col2word.json",
             "docID2row_file_path" :                           "output/docID2row.json",
+            "row2docID_file_path" :                           "output/row2docID.json",
             "docID2url_file_path" :                           "output/docID2url.json",
+            "matrix_maps_file_path" :                         "output/matrix_maps.pkl",
             "leader_follower_file_path" :                     "output/leader_follower.json",
             "indexed_directory_name_list_file_path" :         "output/indexed_directory_name_list.json"
         },
@@ -43,8 +46,11 @@
             "document_term_frequency_matrix_file_path" :      ["None"],
             "numpy_document_term_frequency_matrix_file_path" :["None"],
             "word2col_file_path" :                            ["None"],
+            "col2word_file_path" :                            ["None"],
             "docID2row_file_path" :                           ["None"],
+            "row2docID_file_path" :                           ["None"],
             "docID2url_file_path" :                           ["None"],
+            "matrix_maps_file_path" :                         ["None"],
             "leader_follower_file_path" :                     ["None"],
             "indexed_directory_name_list_file_path" :         ["None"]
         }

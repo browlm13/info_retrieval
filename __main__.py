@@ -108,13 +108,13 @@ leader_M = M[leader_indices]
 
 # query to vector
 # raw_query = "advanc amid attack"
-# raw_query = "buildingthree buildingtwo buildingone"
-raw_query = "Mary's lambs are little"
+raw_query = "buildingthree buildingtwo buildingone"
+# raw_query = "Mary's lambs are little"
 # raw_query = "player"
-query_vector = dvo.query_to_vector(raw_query, dtfm)
+query_vector = dvo.query_to_vector_slow(raw_query)
 
 
-# test website retreival with our cluster pruning
+# test website retreival without cluster pruning
 similar_indices = dvo.ranked_cosine_similarity(query_vector, dtfm)
 row2docID = {v : k for k,v in docID2row.items()}
 similar_ids = [row2docID[idx] for idx in similar_indices]

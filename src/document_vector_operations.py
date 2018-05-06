@@ -146,6 +146,85 @@ def ranked_cosine_similarity(query_vector, document_vector_matrix):
 
     return max_indices
 
+def cluster_pruning_matrix_and_maps(doc_freq_matrix_dataFrame):
+    """
+    Select docIds for leaders and followers and format in python dictionary
+    :param doc_freq_matrix_dataFrame:
+    :return: return sqrt(N) leaders with sqrt(N) followers as python dictionary with keys as leader docIDs and values
+            as list of follower docIDs
+    """
+    logger.info("Cluster Pruning - Preprocessing")
+    document_vector_matrix, docID2row, word2col = document_vector_matrix_and_index_dicts(doc_freq_matrix_dataFrame)
+
+    # choose n random document vectors indices
+    N = doc_freq_matrix_dataFrame.shape[0]
+    sqrtN = int(math.sqrt(N))
+    cluster_size = sqrtN + 1 # sqrtN + 1 for leader
+    random_indices = np.random.randint(low=0, high=N, size=sqrtN, dtype=int) # sqrtN random indices for sqrtN leaders
+    # (note: not necessarily leader indices)
+
+    # find each leaders top sqrtN followers using cosine similarity
+    # cluster matrix elements represent row indices in numpy document term frequency matrix
+    # follower list will start with leader as first index if leader is in matrix / is only equal document
+    find_cluster_array = lambda random_idx: ranked_cosine_similarity(document_vector_matrix[random_idx],
+                                                                     document_vector_matrix)[:cluster_size]
+
+    vfunc = np.vectorize(find_cluster_array, signature='()->(sqrtN)')
+    cluster_matrix = vfunc(random_indices)
+
+    # turn cluster matrix into id cluster matrix (use docIDs as elements instead of element indices as element indices)
+    row2docID = {v: k for k, v in docID2row.items()}
+    index2docID = lambda index: row2docID[index]
+    vfunc = np.vectorize(index2docID)
+    id_cluster_matrix = vfunc(cluster_matrix)
+
+    # create leader follower dictionary (with docIDs)
+    leader_ids = id_cluster_matrix[:,0] # use first column as leaders
+    # follower_id_matrix = id_cluster_matrix[:, 0:] # follower id matrix includes leader for leader follower dictionary
+    cluster_id_lists = id_cluster_matrix.tolist() # includes leader id too
+    # leader2cluster_id_dict = dict(zip(leader_ids, cluster_id_lists))  # leader maps to entire cluster id
+
+    # create leader matrix to save - used for quicker comparisons with query
+    # get leader vectors as matrix
+    leader_indices = cluster_matrix[:,0]
+    leader_document_vector_matrix = document_vector_matrix[leader_indices]  # used for best quick comparison with query
+
+    # go from leader_document_vector_matrix index with highest cosine similarity
+    # to leader and follower id list for quick access
+
+    # get leader  document vector matrix row to docID
+    leader_row_2_cluster_ids = dict(zip(range(0,leader_indices.shape[0]), cluster_id_lists))
+
+    # get docID url map
+    # docID2url = get_docID2url_map()
+
+    # get docID title map
+
+    #
+    # TODO: title matrix
+    #
+
+    # return leader document vector matrix and maps
+    return leader_document_vector_matrix, leader_row_2_cluster_ids #, docID2url
+
+    """
+    # turn cluster_id_lists into url lists
+    docIDlist_2_urllist = lambda docID_list: [docID2url[docID] for docID in docID_list]
+    cluster_urls_lists = [docIDlist_2_urllist(docID_list) for docID_list in id_cluster_matrix.tolist()]
+
+    # go from leader row directly to list of urls
+    leader_row_2_cluster_urls = dict(zip(range(0, leader_indices.shape[0]), cluster_urls_lists))
+    """
+
+
+    """
+    # return leader follower dictonary
+    if to_json:
+        leader_dict_json = {str(k) : v for k,v in leader_dict.items()}
+        return leader_dict_json
+    return leader_dict
+    """
+
 
 def cluster_pruning_leader_follower_dict(doc_freq_matrix_dataFrame, to_json=False):
     """
@@ -212,23 +291,63 @@ def load_leader_follower_dictionary():
         logger.error("Leader Follower File Not Found")
 
 
-def query_to_vector(raw_query, doc_freq_matrix_dataFrame):
-    document_vector_matrix, docID2row, word2col = document_vector_matrix_and_index_dicts(doc_freq_matrix_dataFrame)
-
+def query_to_vector(raw_query, word2col):
     # create empty query vector
-    query_vector = np.zeros(document_vector_matrix.shape[1])
+    query_vector = np.zeros(len(word2col))
 
-    tokens = text_processing.plain_text_to_tokens(raw_query) #, stopwords_file)
-    query_term_frequency_dictionary = text_processing.word_frequency_dict(tokens)
+    # tokenize query
+    query_tokens = text_processing.plain_text_to_tokens(raw_query)  # , stopwords file)
 
-    for word, freq in query_term_frequency_dictionary.items():
-        if word in word2col:
-            column_index = word2col[word]
-            query_vector[column_index] = freq
+    # update term frequencies of query vector
+    for token in query_tokens:
+        column_index = word2col[token]
+        query_vector[column_index] += 1
 
     return query_vector
 
-def vector_to_tokens(query_vector, doc_freq_matrix_dataFrame):
+
+def query_to_vector_slow(raw_query):
+
+    # all that is needed is word2col dictonary
+    word2col_file_path = file_io.get_path('word2col_file_path', None)
+    with open(word2col_file_path) as json_data:
+        word2col = json.load(json_data)
+
+    # create empty query vector
+    query_vector = np.zeros(len(word2col))
+
+    # tokenize query
+    query_tokens = text_processing.plain_text_to_tokens(raw_query) # , stopwords file)
+
+    # update term frequencies of query vector
+    for token in query_tokens:
+        column_index = word2col[token]
+        query_vector[column_index] += 1
+
+    return query_vector
+
+
+def vector_to_tokens(query_vector, col2word):
+    token_list = []
+    word_indices = np.nonzero(query_vector)[0] # column indices
+    for i in word_indices:
+        token_list.append(col2word[i])
+    return token_list
+
+
+def vector_to_tokens_slow(query_vector):
+    # all that is needed is col2word dictonary
+    document_vector_matrix, docID2row, word2col = document_vector_matrix_and_index_dicts(doc_freq_matrix_dataFrame)
+
+    col2word = {v: k for k, v in word2col.items()}
+    token_list = []
+    word_indices = np.nonzero(query_vector)[0] # column indecies
+    for i in word_indices:
+        token_list.append(col2word[i])
+
+    return token_list
+
+def vector_to_tokens_slow(query_vector, doc_freq_matrix_dataFrame):
     document_vector_matrix, docID2row, word2col = document_vector_matrix_and_index_dicts(doc_freq_matrix_dataFrame)
 
     col2word = {v: k for k, v in word2col.items()}
