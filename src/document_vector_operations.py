@@ -89,6 +89,7 @@ def document_vector_matrix_and_index_dicts(doc_freq_matrix_dataFrame):
 
     return document_vector_matrix, dict(docID2row), dict(word2col)
 
+
 # join hash_url_list_map and hash_id_map (stupid name doc prefix) on hash for url_id connection
 def get_docID2url_map():
 
@@ -146,34 +147,70 @@ def ranked_cosine_similarity(query_vector, document_vector_matrix):
     return max_indices
 
 
-def cluster_pruning_leader_follower_dict(doc_freq_matrix_dataFrame):
+def cluster_pruning_leader_follower_dict(doc_freq_matrix_dataFrame, to_json=False):
     """
     Select docIds for leaders and followers and format in python dictionary
     :param doc_freq_matrix_dataFrame:
     :return: return sqrt(N) leaders with sqrt(N) followers as python dictionary with keys as leader docIDs and values
             as list of follower docIDs
     """
+    logger.info("Cluster Pruning - Preprocessing")
     document_vector_matrix, docID2row, word2col = document_vector_matrix_and_index_dicts(doc_freq_matrix_dataFrame)
 
     # choose n random document vectors indices
     N = doc_freq_matrix_dataFrame.shape[0]
-    sqrtN = int(math.sqrt(N))
-    leader_indices = np.random.randint(low=0, high=N, size=sqrtN, dtype=int)
+    cluster_size = int(math.sqrt(N)) + 1 # sqrtN + 1 for leader
+    random_indices = np.random.randint(low=0, high=N, size=cluster_size, dtype=int)
 
     # find each leaders top sqrtN followers using cosine similarity
-    find_follower_list = lambda leader_idx: ranked_cosine_similarity(document_vector_matrix[leader_idx],document_vector_matrix)[:sqrtN]
-    follower_indices_matrix = np.apply_along_axis(find_follower_list,0,leader_indices)
+    # follower list will start with leader as first index if leader is in matrix / is only equal document
+    find_cluster_array = lambda random_idx: ranked_cosine_similarity(document_vector_matrix[random_idx],
+                                                                     document_vector_matrix)[:cluster_size]
 
-    # create leader follower dictionary
-    leader_dictionary = {}
-    row2docID = {v:k for k,v in docID2row.items()}
-    for i,lidx in enumerate(leader_indices.tolist()):
-        leader_docID = row2docID[lidx]
-        follower_docIDs = [row2docID[idx] for idx in follower_indices_matrix[i].tolist()]
-        leader_dictionary[leader_docID] = follower_docIDs
+    vfunc = np.vectorize(find_cluster_array, signature='()->(sqrtN)')
+    cluster_matrix = vfunc(random_indices)
+
+    # turn cluster matrix into id cluster matrix (use docIDs instead of element indices)
+    row2docID = {v: k for k, v in docID2row.items()}
+    index2docID = lambda index: row2docID[index]
+    vfunc = np.vectorize(index2docID)
+    id_cluster_matrix = vfunc(cluster_matrix)
+
+    # create leader follower dictonary (with docIDs)
+    leaders = id_cluster_matrix[:,0] # use first column as leaders
+    follower_matrix = id_cluster_matrix[:, 1:] # everything else
+    follower_lists = follower_matrix.tolist()
+    leader_dict = dict(zip(leaders, follower_lists))
 
     # return leader follower dictonary
-    return leader_dictionary
+    if to_json:
+        leader_dict_json = {str(k) : v for k,v in leader_dict.items()}
+        return leader_dict_json 
+    return leader_dict
+
+
+
+
+def save_leader_follower_dictionary(doc_freq_matrix_dataFrame):
+    logger.info("Saving Leader Follower File...")
+    leader_follower_docID_json = cluster_pruning_leader_follower_dict(doc_freq_matrix_dataFrame, to_json=True)
+    # write file
+    file_io.save('leader_follower_file_path', leader_follower_docID_json, None)
+
+
+def load_leader_follower_dictionary():
+
+    logger.info("Loading Leader Follower File...")
+    leader_follower_docID_dict_file_path = file_io.get_path('leader_follower_file_path', None)
+    if leader_follower_docID_dict_file_path is not None:
+        with open(leader_follower_docID_dict_file_path) as json_data:
+            leader_follower_dict_json = json.load(json_data)
+            # cast docID key to int
+            leader_follower_dict = {int(k) : v for k,v in leader_follower_dict_json.items()}
+        return leader_follower_dict
+    else:
+        logger.error("Leader Follower File Not Found")
+
 
 def query_to_vector(raw_query, doc_freq_matrix_dataFrame):
     document_vector_matrix, docID2row, word2col = document_vector_matrix_and_index_dicts(doc_freq_matrix_dataFrame)

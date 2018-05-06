@@ -10,7 +10,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 def acepted_content_types():
-    return ["text/html", "text/plain", "application/pdf"]
+    return ["text/html", "text/plain"] #, "application/pdf"]
 
 #
 #   Extract Plain Text from response.text and response.headers['content-type']
