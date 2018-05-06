@@ -62,6 +62,16 @@ def build_matrices_and_maps(indexed_directory_name_list):
     file_io.save('leader_document_vector_matrix_file_path', leader_document_vector_matrix,
                  [output_directory_name], output_type='numpy_array')
 
+    # save all maps in one file
+    matrix_maps = {
+        'docID2url': get_docID2url_map(),
+        'row2docID': {v: k for k, v in docID2row.items()},
+        'docID2row': docID2row,
+        'col2word': {v: k for k, v in word2col.items()},
+        'word2col': word2col
+    }
+    file_io.save('matrix_maps_file_path', matrix_maps, [output_directory_name], output_type='pickle_dict')
+
 
 def load_document_term_frequency_dictionaries(indexed_directory_name):
     logger.info("Loading Document Frequency Dictionaries")
@@ -209,6 +219,22 @@ def matrix_and_maps(document_id_term_frequency_dictionary, unique_words):
 
     return np_dtfm, docID2row, word2col
 
+def get_docID2url_map():
+
+    hash_id_map_file = file_io.get_path("hash_id_map_file", None, force=True)
+    with open(hash_id_map_file) as json_data:
+        hash_id_map = json.load(json_data)
+
+    hash_url_list_map_file = file_io.get_path("hash_url_list_map_file", None, force=True)
+    with open(hash_url_list_map_file) as json_data:
+        hash_url_list_map = json.load(json_data)
+
+    # take all urls
+    # docID_url_map = {hash_id_map[hash]:hash_url_list_map[hash] for hash in hash_id_map.keys()}
+
+    # take only first url
+    docID_url_map = {hash_id_map[hash]: hash_url_list_map[hash][0] for hash in hash_id_map.keys()}
+    return docID_url_map
 
 def cosine_similarity(document_vector_1, document_vector_2):
     """

@@ -5,6 +5,7 @@ import sys
 
 # external
 import numpy as np
+import pickle
 
 # logging
 logging.basicConfig(level=logging.INFO)
@@ -50,6 +51,10 @@ def save(type, data, parameters_list, output_type='json'):
 
     if output_type == 'numpy_array':
         np.save(file_path, data)
+
+    if output_type == 'pickle_dict':
+        with open(file_path, 'wb') as handle:
+            pickle.dump(data, handle, protocol=pickle.HIGHEST_PROTOCOL)
 
 
 def get_path(type, parameters_list, force=False):
