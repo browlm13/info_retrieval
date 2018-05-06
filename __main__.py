@@ -58,7 +58,7 @@ dtfm.load_from_output_file([args.output])
 #
 # Perform Cluster Pruning and save Leader Follower Dictonary
 #
-dtfm.perform_cluster_pruning_preprocessing()
+#dtfm.perform_cluster_pruning_preprocessing()
 
 
 # test load leader follower dict
@@ -75,22 +75,9 @@ dtfm.perform_cluster_pruning_preprocessing()
 #import numpy as np
 
 #dv12 = M[11,:]
-# np.nonzero(dv12)
-#query_vector[136] = 1
-#query_vector[137] = 1
-#query_vector[138] = 1
-#print(query_vector)
-#print(dvo.query_to_vector(""))
-# testing cosine similarity
-# print(dvo.ranked_cosine_similarity(query_vector, M))
-#print(dvo.cluster_pruning(dtfm))
 
-"""
-query_vector = np.zeros((1133))
-query_vector[136] = 1
-query_vector[137] = 1
-query_vector[138] = 1
-"""
+
+
 """
 # testing query to vector and back
 raw_query = "advanc amid attack"
@@ -116,39 +103,6 @@ leader_indices = np.array([docID2row[lid] for lid in leader_IDs])
 
 # get leader vectors as matrix
 leader_M = M[leader_indices]
-
-"""
-#
-# test groupings of leaders/followers
-#
-# get docID's to return as list by adding add follower ids
-for lid in leader_follower_docID_dict.keys():
-    follower_IDs = leader_follower_docID_dict[lid]
-    result_ids = [lid] + follower_IDs
-
-    # get result urls
-    url_list = [docID_url_map[rid] for rid in result_ids]
-    print(url_list)
-
-print("\n\n")
-"""
-
-"""
-# cluster pruning
-leader_follower_docID_dict = dvo.cluster_pruning_leader_follower_dict(dtfm) # sqrt(N) leaders
-
-# get document vectors from docIDs and document_term_frequency_matrix
-# get document vector from docID and document_term_frequency_matrix
-import numpy as np
-M, docID2row, word2col = dvo.document_vector_matrix_and_index_dicts(dtfm)
-
-# get leader indices as np array
-leader_IDs = list(leader_follower_docID_dict.keys())
-leader_indices = np.array([docID2row[lid] for lid in leader_IDs])
-
-# get leader vectors as matrix
-leader_M = M[leader_indices]
-"""
 
 
 

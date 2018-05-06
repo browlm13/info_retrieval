@@ -159,8 +159,10 @@ def cluster_pruning_leader_follower_dict(doc_freq_matrix_dataFrame, to_json=Fals
 
     # choose n random document vectors indices
     N = doc_freq_matrix_dataFrame.shape[0]
-    cluster_size = int(math.sqrt(N)) + 1 # sqrtN + 1 for leader
-    random_indices = np.random.randint(low=0, high=N, size=cluster_size, dtype=int)
+    sqrtN = int(math.sqrt(N))
+    cluster_size = sqrtN + 1 # sqrtN + 1 for leader
+    random_indices = np.random.randint(low=0, high=N, size=sqrtN, dtype=int) # sqrtN random indices for sqrtN leaders
+    # (note: not necessarily leader indices)
 
     # find each leaders top sqrtN followers using cosine similarity
     # follower list will start with leader as first index if leader is in matrix / is only equal document
@@ -185,10 +187,8 @@ def cluster_pruning_leader_follower_dict(doc_freq_matrix_dataFrame, to_json=Fals
     # return leader follower dictonary
     if to_json:
         leader_dict_json = {str(k) : v for k,v in leader_dict.items()}
-        return leader_dict_json 
+        return leader_dict_json
     return leader_dict
-
-
 
 
 def save_leader_follower_dictionary(doc_freq_matrix_dataFrame):

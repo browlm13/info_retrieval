@@ -116,6 +116,9 @@ class DocumentTermFrequencyMatrix():
         # add other representations
         self.numpy_matrix_and_mappings()
 
+        # perform cluster pruning preprocesing and save leader follower dictionary
+        self.perform_cluster_pruning_preprocessing()
+
     def save_document_term_frequency_matrix(self):
 
         logger.info("Writing DataFrame Document Term Frequency Matrix")
@@ -145,7 +148,6 @@ class DocumentTermFrequencyMatrix():
         # save indexed directory list
         data = dict(self.indexed_directory_name_list_dict)
         file_io.save("indexed_directory_name_list_file_path", data, None)
-        #self.indexed_directory_name_list
 
 
     def numpy_matrix_and_mappings(self):
