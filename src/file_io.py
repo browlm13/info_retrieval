@@ -3,6 +3,9 @@ import os
 import logging
 import sys
 
+# external
+import numpy as np
+
 # logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -26,7 +29,7 @@ def load_directory_structure():
     return directory_structure_dict
 
 
-def save(type, data, parameters_list):
+def save(type, data, parameters_list, output_type='json'):
     directory_structure_dict = load_directory_structure()
     file_path = directory_structure_dict['path_templates'][type]
     if parameters_list is not None:
@@ -37,9 +40,16 @@ def save(type, data, parameters_list):
     if not os.path.exists(directory_path):
         os.makedirs(directory_path)
 
+    #
     # write response summary file
-    with open(file_path, 'w') as file:
-        file.write(json.dumps(data))
+    #
+
+    if output_type == 'json':
+        with open(file_path, 'w') as file:
+            file.write(json.dumps(data))
+
+    if output_type == 'numpy_array':
+        np.save(file_path, data)
 
 
 def get_path(type, parameters_list, force=False):

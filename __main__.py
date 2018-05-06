@@ -7,6 +7,7 @@ import logging
 from src import Document_Vectors
 from src import document_vector_operations as dvo
 from src import base_station
+from src import matrices_and_maps
 
 __author__ = 'LJ Brown'
 __version__ = "2.0.1"
@@ -47,13 +48,26 @@ bs.scrape_website(seed_url=args.url, output_directory=args.output, max_urls_to_i
 # display summary and write term frequency matrix to output file
 ### summary.display_summary(args.output) # builds shitty matrix
 
+#
+#   Build Matrices and Maps
+#
+
+# builds numpy matrices and maps from scraped directory
+# matrices : full document vector matrix, title document vector matrix, leader document vector matrix
+# maps : row2docID++inv, word2col+inv,  leader_row_2_cluster_ids
+# notes: make title document vector matrix the same dimensions as the other document vectors in same order for map
+#             reuse
+
+
+matrices_and_maps.build_matrices_and_maps([args.output])
+
 
 #
 # Build Document Term Frequency Matrix
 #
 
-dtfm = Document_Vectors.DocumentTermFrequencyMatrix()
-dtfm.load_from_output_file([args.output])
+# dtfm = Document_Vectors.DocumentTermFrequencyMatrix()
+# dtfm.load_from_output_file([args.output])
 
 #
 # Perform Cluster Pruning and save Leader Follower Dictonary
@@ -85,7 +99,7 @@ query_vector = dvo.query_to_vector(raw_query, dtfm)
 token_list = dvo.vector_to_tokens(query_vector, dtfm)
 print(token_list)
 """
-
+"""
 # get docID_url_map
 docID_url_map = dvo.get_docID2url_map()
 
@@ -136,3 +150,4 @@ result_ids = [most_similar_leader_id] + follower_IDs
 url_list = [docID_url_map[rid] for rid in result_ids]
 print(url_list)
 
+"""

@@ -15,16 +15,10 @@
             "document_html_file_path" :                       "collected_data/%s/document_html_database/document_html_%s.json",
             "document_title_file_path" :                      "collected_data/%s/document_title_database/document_title_%s.json",
             "document_plain_text_file_path" :                 "collected_data/%s/document_plain_text_database/document_plain_text_%s.json",
-            "document_term_frequency_matrix_file_path" :      "output/document_term_frequency_matrix.csv",
-            "numpy_document_term_frequency_matrix_file_path" :"output/numpy_document_term_frequency_matrix.csv",
-            "word2col_file_path" :                            "output/word2col.json",
-            "col2word_file_path" :                            "output/col2word.json",
-            "docID2row_file_path" :                           "output/docID2row.json",
-            "row2docID_file_path" :                           "output/row2docID.json",
-            "docID2url_file_path" :                           "output/docID2url.json",
-            "matrix_maps_file_path" :                         "output/matrix_maps.pkl",
-            "leader_follower_file_path" :                     "output/leader_follower.json",
-            "indexed_directory_name_list_file_path" :         "output/indexed_directory_name_list.json"
+            "full_document_vector_matrix_file_path" :         "output/%s/matrices/full_document_vector_matrix.npy",
+            "title_document_vector_matrix_file_path" :        "output/%s/matrices/title_document_vector_matrix.npy",
+            "leader_document_vector_matrix_file_path" :       "output/%s/matrices/leader_document_vector_matrix.npy",
+            "matrix_maps_file_path" :                         "output/%s/matrix_maps.pkl"
         },
 
     "path_template_parameters" :
@@ -43,15 +37,9 @@
             "document_html_file_path" :                       ["Output Directory", "Document ID"],
             "document_title_file_path" :                      ["Output Directory", "Document ID"],
             "document_plain_text_file_path" :                 ["Output Directory", "Document ID"],
-            "document_term_frequency_matrix_file_path" :      ["None"],
-            "numpy_document_term_frequency_matrix_file_path" :["None"],
-            "word2col_file_path" :                            ["None"],
-            "col2word_file_path" :                            ["None"],
-            "docID2row_file_path" :                           ["None"],
-            "row2docID_file_path" :                           ["None"],
-            "docID2url_file_path" :                           ["None"],
-            "matrix_maps_file_path" :                         ["None"],
-            "leader_follower_file_path" :                     ["None"],
-            "indexed_directory_name_list_file_path" :         ["None"]
+            "full_document_vector_matrix_file_path" :         ["Output Directory"],
+            "title_document_vector_matrix_file_path" :        ["Output Directory"],
+            "leader_document_vector_matrix_file_path" :       ["Output Directory"],
+            "matrix_maps_file_path" :                         ["Output Directory"]
         }
 }
