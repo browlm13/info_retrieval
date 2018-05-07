@@ -51,7 +51,7 @@ def build_matrices_and_maps(indexed_directory_name_list):
     # create full, title and leader dvms and maps
     full_document_vector_matrix, docID2row, word2col = matrix_and_maps(combined_full_id_tf_dict, unique_words)
     title_document_vector_matrix, _, _ = matrix_and_maps(combined_title_id_tf_dict, unique_words)
-    leader_document_vector_matrix, leader_row_2_cluster_ids = \
+    leader_document_vector_matrix, leader_row_2_cluster_indices, leader_row_2_cluster_ids = \
         cluster_pruning_matrix_and_maps(full_document_vector_matrix, docID2row)
 
     # save matrices and maps
@@ -64,6 +64,8 @@ def build_matrices_and_maps(indexed_directory_name_list):
 
     # save all maps in one file
     matrix_maps = {
+        'leader_row_2_cluster_indices' : leader_row_2_cluster_indices,
+        'leader_row_2_cluster_ids' : leader_row_2_cluster_ids,
         'docID2url': get_docID2url_map(),
         'row2docID': {v: k for k, v in docID2row.items()},
         'docID2row': docID2row,
@@ -144,6 +146,7 @@ def cluster_pruning_matrix_and_maps(full_document_vector_matrix, docID2row):
     # create leader follower dictionary (with docIDs)
     leader_ids = id_cluster_matrix[:,0] # use first column as leaders
     # follower_id_matrix = id_cluster_matrix[:, 0:] # follower id matrix includes leader for leader follower dictionary
+    cluster_indices_list = cluster_matrix.tolist() # includes leader id too
     cluster_id_lists = id_cluster_matrix.tolist() # includes leader id too
 
     # create leader matrix to save - used for quicker comparisons with query
@@ -154,11 +157,14 @@ def cluster_pruning_matrix_and_maps(full_document_vector_matrix, docID2row):
     # go from leader_document_vector_matrix index with highest cosine similarity
     # to leader and follower id list for quick access
 
+    # get leader  document vector matrix row to doc indices in title and full document vector matrices
+    leader_row_2_cluster_indices = dict(zip(range(0,leader_indices.shape[0]), cluster_indices_list))
+
     # get leader  document vector matrix row to docID
     leader_row_2_cluster_ids = dict(zip(range(0,leader_indices.shape[0]), cluster_id_lists))
 
     # return leader document vector matrix and maps
-    return leader_document_vector_matrix, leader_row_2_cluster_ids
+    return leader_document_vector_matrix, leader_row_2_cluster_indices, leader_row_2_cluster_ids
 
 
 def display_loading_bar(completion_percentage, process_title):
@@ -178,8 +184,6 @@ def find_all_unique_words(id_tf_dict_list):
         for doc_id, tf_dict in id_tf_dict.items():
             unique_words = unique_words | set(tf_dict.keys())
     return unique_words
-
-
 
 
 def matrix_and_maps(document_id_term_frequency_dictionary, unique_words):

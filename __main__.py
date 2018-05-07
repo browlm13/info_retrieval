@@ -8,6 +8,7 @@ from src import Document_Vectors
 from src import document_vector_operations as dvo
 from src import base_station
 from src import matrices_and_maps
+from src import query_engine
 
 __author__ = 'LJ Brown'
 __version__ = "2.0.1"
@@ -59,8 +60,11 @@ bs.scrape_website(seed_url=args.url, output_directory=args.output, max_urls_to_i
 #             reuse
 
 
-matrices_and_maps.build_matrices_and_maps([args.output])
+# matrices_and_maps.build_matrices_and_maps([args.output])
 
+qe = query_engine.QueryEngine(args.output)
+query = "mary had a little lamb"
+qe.search(query)
 
 #
 # Build Document Term Frequency Matrix
