@@ -42,6 +42,9 @@ class QueryEngine:
 
         # TODO: should build matrices and maps if output_directory_name does not exist
 
+        # TODO: should not need following parameter
+        self.output_directory_name = output_directory_name
+
         # load
         # self.load_leader_document_vector_matrix()
         # self.load_title_document_vector_matrix()
@@ -103,8 +106,12 @@ class QueryEngine:
 
         # find the selected clusters document id list and urls
         cluster_indices = np.array(self.leader_row_2_cluster_indices[nearest_leader_row])
+        cluster_ids = np.array(self.leader_row_2_cluster_ids[nearest_leader_row])
+
+        # tmp slow
         # cluster_ids = self.leader_row_2_cluster_ids[nearest_leader_row]
         # cluster_urls = [self.docID2url[docID] for docID in cluster_ids]
+        # print(cluster_urls)
 
         # add .25 to scores of documents in cluster where the titles contain words in the query
         # the dot product of the query vector and the title vector are greater than 1
@@ -112,4 +119,38 @@ class QueryEngine:
         # find title vectors of cluster documents
         title_vectors = self.title_document_vector_matrix[cluster_indices]
 
+        # take the dot product of the query vector against each title vector
+        dot_results = np.dot(title_vectors, query_vector)
 
+        # multiply by 0.25 - skip same difference
+
+        # sort by max indices and apply this to the cluster ids for ranked results (negative results for reverse order)
+        ranked_result_ids = cluster_ids[np.argsort(-dot_results)]
+        # ranked_result_urls = [self.docID2url[docID] for docID in ranked_result_ids]
+
+
+        #display
+        display_strings = self.ranked_results_display_strings(ranked_result_ids)
+        for ds in display_strings:
+            print(ds)
+
+
+        # get non zero indices
+        # non_zero_indices = np.nonzero(dot_results)
+
+    def get_title(self, docID):         # TODO: Merge title databases so outputdir is not needed
+        title_path = file_io.get_path('document_title_file_path', [self.output_directory_name, docID])
+        with open(title_path) as json_data:
+            dtd = json.load(json_data)
+            doc_title = dtd['title']
+        return doc_title
+
+
+    def ranked_results_display_strings(self, ranked_result_ids):
+        ranked_result_urls = [self.docID2url[docID] for docID in ranked_result_ids]
+        ranked_result_titles = [self.get_title(docID) for docID in ranked_result_ids]
+
+        urls_and_titles = zip(ranked_result_urls, ranked_result_titles)
+        format_urls_and_titles = lambda url, title: url + '\n' + title + '\n'
+        display_strings = [format_urls_and_titles(unt[0], unt[1]) for unt in urls_and_titles]
+        return display_strings

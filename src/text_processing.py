@@ -130,7 +130,7 @@ def plain_text_to_tokens(plain_text, stopwords_file=None):
     tokens = [w for w in tokens if not is_shorter(w)]
 
     # remove number
-    tokens = [w for w in tokens if not is_number(w)]
+    # tokens = [w for w in tokens if not is_number(w)]
 
     # stem words
     tokens = map(stem, tokens)
