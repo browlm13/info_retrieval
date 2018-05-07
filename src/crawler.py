@@ -13,7 +13,6 @@ from src import file_parser
 from src import webpage_accessor
 
 # logging
-logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 

@@ -15,7 +15,7 @@ __version__ = "2.0.1"
                         Search Engine / Web Crawler
                              Command Line Tool
 """
-
+logging.basicConfig(level=logging.DEBUG)
 logger = logging.getLogger(__name__)
 logger.addHandler(logging.FileHandler("output/output_log.txt"))
 logger.addHandler(logging.StreamHandler(sys.stdout))

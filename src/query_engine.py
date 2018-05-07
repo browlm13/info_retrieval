@@ -165,7 +165,7 @@ class QueryEngine:
             logger.debug("No Results Found")
             return np.zeros(0), np.zeros(0)
 
-        return ranked_result_ids, document_scores
+        return ranked_result_ids[:num_results], document_scores[:num_results]
 
     def full_search(self, query_vector):
 
@@ -250,17 +250,24 @@ class QueryEngine:
 
         # results found
         # if ranked_result_ids.any():
-
-        if np.count_nonzero(document_scores) >= K:
+        num_results = int(np.count_nonzero(document_scores))
+        if num_results >= K:
 
             # only display top k results
             ranked_result_ids = ranked_result_ids[:K]
             document_scores = document_scores[:K]
 
         else:
-            logger.debug("Less than %s results found" % str(K))
-            raise Exception('Less than K results found')
-            # run query expansion
+            logger.info("Less than %s results found" % str(K))
+
+            if num_results < int(K/2.0):
+
+                logger.info("Less than K/2 results found")
+                # raise Exception('Less than K/2 results found')
+                # run query expansion
+
+            if num_results == 0:
+                display_string += "No Results Found."
 
         display_strings = self.ranked_results_display_strings(ranked_result_ids, document_scores)
         for ds in display_strings:
