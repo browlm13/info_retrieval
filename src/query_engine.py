@@ -278,6 +278,10 @@ class QueryEngine:
         display_string += "\n\n"
         print(display_string)
 
+        # tmp write results to file
+        with open("results.txt", "a") as myfile:
+            myfile.write(display_string)
+
     def get_title(self, docID):         # TODO: Merge title databases so outputdir is not needed
         title_path = file_io.get_path('document_title_file_path', [self.output_directory_name, docID])
         with open(title_path) as json_data:

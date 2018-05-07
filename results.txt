@@ -1,0 +1,118 @@
+User Query : moore smu
+
+	Indexed Tokens : ['moor', 'smu']
+
+RESULTS:
+------------------------------------------------------------------------------------------
+
+1. (SCORE:0.5041562759767249) https://s2.smu.edu/~fmoore/index.htm
+Freeman Moore - SMU Spring 2018
+
+2. (SCORE:0.5041562759767249) https://s2.smu.edu/~fmoore/index-fall2017.htm
+Freeman Moore - SMU Fall 2017
+
+3. (SCORE:0.5041562759767249) https://s2.smu.edu/~fmoore/index-final.htm
+Freeman Moore - SMU Spring 2017
+
+4. (SCORE:0.25166251039068993) https://s2.smu.edu/~fmoore/schedule.htm
+SMU CSE 5337/7337 Spring 2018 Schedule
+
+5. (SCORE:0.250831255195345) https://s2.smu.edu/~fmoore/textfiles/index.html
+SMU CSE 5/7337 Spring 2018 Textfiles
+
+
+
+
+User Query : Bob Ewell where Scout
+
+	Indexed Tokens : ['bob', 'ewel', 'scout']
+
+RESULTS:
+------------------------------------------------------------------------------------------
+
+1. (SCORE:0.012468827930174564) https://s2.smu.edu/~fmoore/misc/text/mockingbird5.html
+Mockingbird part 5
+
+2. (SCORE:0.005818786367414797) https://s2.smu.edu/~fmoore/misc/text/mockingbird4.html
+Mockingbird part 4
+
+3. (SCORE:0.0033250207813798837) https://s2.smu.edu/~fmoore/misc/text/mockingbird3.html
+Mockingbird part 3
+
+4. (SCORE:0.0024937655860349127) https://s2.smu.edu/~fmoore/misc/text/mockingbird2.html
+Mockingbird part 2
+
+5. (SCORE:0.0016625103906899418) https://s2.smu.edu/~fmoore/misc/text/mockingbird1.html
+Mockingbird novel part 1
+
+6. (SCORE:0.0008312551953449709) https://s2.smu.edu/~fmoore/textfiles/baseball4.txt
+NO TITLE
+
+
+
+
+User Query : three year story
+
+	Indexed Tokens : ['stori', 'three', 'year']
+
+RESULTS:
+------------------------------------------------------------------------------------------
+
+1. (SCORE:0.004156275976724855) https://s2.smu.edu/~fmoore/misc/text/mockingbird4.html
+Mockingbird part 4
+
+2. (SCORE:0.0024937655860349127) https://s2.smu.edu/~fmoore/misc/text/mockingbird1.html
+Mockingbird novel part 1
+
+3. (SCORE:0.0016625103906899418) https://s2.smu.edu/~fmoore/misc/text/mockingbird2.html
+Mockingbird part 2
+
+4. (SCORE:0.0016625103906899418) https://s2.smu.edu/~fmoore/textfiles/basketball1.txt
+NO TITLE
+
+5. (SCORE:0.0008312551953449709) https://s2.smu.edu/~fmoore/misc/text/mockingbird5.html
+Mockingbird part 5
+
+6. (SCORE:0.0008312551953449709) https://s2.smu.edu/~fmoore/textfiles/baseball5.txt
+NO TITLE
+
+
+
+
+User Query : Atticus to defend Maycomb
+
+	Indexed Tokens : ['atticu', 'defend', 'maycomb']
+
+RESULTS:
+------------------------------------------------------------------------------------------
+
+1. (SCORE:0.010806317539484621) https://s2.smu.edu/~fmoore/misc/text/mockingbird4.html
+Mockingbird part 4
+
+2. (SCORE:0.006650041562759767) https://s2.smu.edu/~fmoore/misc/text/mockingbird5.html
+Mockingbird part 5
+
+3. (SCORE:0.004156275976724855) https://s2.smu.edu/~fmoore/misc/text/mockingbird1.html
+Mockingbird novel part 1
+
+4. (SCORE:0.0008312551953449709) https://s2.smu.edu/~fmoore/textfiles/basketball5.txt
+NO TITLE
+
+5. (SCORE:0.0008312551953449709) https://s2.smu.edu/~fmoore/textfiles/baseball2.txt
+NO TITLE
+
+6. (SCORE:0.0008312551953449709) https://s2.smu.edu/~fmoore/misc/text/mockingbird2.html
+Mockingbird part 2
+
+
+
+
+User Query : hocuspocus thisworks
+
+	Indexed Tokens : []
+
+RESULTS:
+------------------------------------------------------------------------------------------
+
+No Results Found.
+
