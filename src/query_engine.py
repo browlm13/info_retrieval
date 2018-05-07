@@ -123,6 +123,10 @@ class QueryEngine:
         cluster_indices = np.array(self.leader_row_2_cluster_indices[nearest_leader_row])
         cluster_ids = np.array(self.leader_row_2_cluster_ids[nearest_leader_row])
 
+        #
+        # this sorts by title score - does not select leader based on title score
+        #
+
         # add .25 to scores of documents in cluster where the titles contain words in the query
         # the dot product of the query vector and the title vector are greater than 1
 
@@ -136,29 +140,70 @@ class QueryEngine:
         dot_results = np.dot(title_vectors, query_vector)
 
         # multiply by 0.25 - skip same difference
+        # get non zero indices
+        # non_zero_indices = np.nonzero(dot_results)
 
         # sort by max indices and apply this to the cluster ids for ranked results (negative results for reverse order)
-        ranked_result_ids = cluster_ids[np.argsort(-dot_results)]
+        sort_array = np.argsort(-dot_results)
+        document_scores = dot_results[sort_array]
+        ranked_result_ids = cluster_ids[sort_array]
 
-        return ranked_result_ids
+        return ranked_result_ids, document_scores
 
     def full_search(self, query_vector, N=5):
 
         # TODO: Load in init
         self.load_matrices(['title_document_vector_matrix', 'full_document_vector_matrix'])
 
-        # compute nearest N document vectors to query vector
-        nearest_indices = document_vector_operations.ranked_cosine_similarity(query_vector,
-                                                                                 self.full_document_vector_matrix)[:5]
 
-        # convert to doc ids the slow way
-        nearest_ids = [self.row2docID[index] for index in nearest_indices]
+        #
+        # cosine similarity between query vector and all documents
+        #
 
+        # cosine similarity between query vector and all documents is the dot product of each row
+        full_dot_results = np.dot(self.full_document_vector_matrix, query_vector)
 
-        # ranked results currently no modifications
-        ranked_result_ids = nearest_ids
+        # normalize scores
+        cosine_similarity_scores = np.divide(full_dot_results, query_vector.shape)
 
-        return ranked_result_ids
+        #
+        # if any of the query words appear in the title add .25 to its score
+        #
+
+        # dot query vector with title_document_vector_matrix
+        title_dot_results = np.dot(self.title_document_vector_matrix, query_vector)
+
+        # scale result by 0.25
+        title_bonuses = np.multiply(title_dot_results, 0.25)
+
+        # add to the cosine similarity vector for document scores
+        scored_documents = np.add(cosine_similarity_scores, title_bonuses)
+
+        #
+        # Rank documents
+        #
+
+        # get sorted indices
+        ranked_result_indices = np.argsort(scored_documents)[::-1]
+
+        # document scores (sort)
+        document_scores = scored_documents[ranked_result_indices]
+
+        # remove elements with zeros
+        nonzero_indices = np.nonzero(document_scores)
+        ranked_result_indices = ranked_result_indices[nonzero_indices]
+        document_scores = document_scores[nonzero_indices]
+
+        # get docIDs (don't just add 1)
+        row2docID_lambda = lambda row: self.row2docID[row]
+        vfunc = np.vectorize(row2docID_lambda)
+        ranked_result_ids = vfunc(ranked_result_indices)
+
+        # compute nearest N document vectors to query vector (fast way)
+        # nearest_indices = document_vector_operations.ranked_cosine_similarity(query_vector,
+        #                                                                         self.full_document_vector_matrix)[:5]
+
+        return ranked_result_ids, document_scores
 
     def search(self, raw_query, type="cluster_pruning"):
 
@@ -169,11 +214,11 @@ class QueryEngine:
         tokens = self.vector_to_tokens(query_vector)
         logger.debug("query tokens: %s" % str(tokens))
 
-        ranked_result_ids = None
+        ranked_result_ids, document_scores = None, None
         if type == "cluster_pruning":
-            ranked_result_ids = self.cluster_pruning_search(query_vector)
+            ranked_result_ids, document_scores = self.cluster_pruning_search(query_vector)
         if type == "full_search":
-            ranked_result_ids = self.full_search(query_vector)
+            ranked_result_ids, document_scores = self.full_search(query_vector)
 
 
         #
@@ -183,15 +228,11 @@ class QueryEngine:
         display_string = "\nUser Query : %s\n" % raw_query
         display_string += "\tIndexed Tokens : %s\n" % tokens
         # TODO: Add scoring
-        display_strings = self.ranked_results_display_strings(ranked_result_ids)
+        display_strings = self.ranked_results_display_strings(ranked_result_ids, document_scores)
         for ds in display_strings:
             display_string += ds
         display_string += "\n\n"
         print(display_string)
-
-
-        # get non zero indices
-        # non_zero_indices = np.nonzero(dot_results)
 
     def get_title(self, docID):         # TODO: Merge title databases so outputdir is not needed
         title_path = file_io.get_path('document_title_file_path', [self.output_directory_name, docID])
@@ -201,14 +242,15 @@ class QueryEngine:
         return doc_title
 
 
-    def ranked_results_display_strings(self, ranked_result_ids):
+    def ranked_results_display_strings(self, ranked_result_ids, document_scores):
         ranked_result_urls = [self.docID2url[docID] for docID in ranked_result_ids]
         ranked_result_titles = [self.get_title(docID) for docID in ranked_result_ids]
 
-        urls_and_titles = zip(ranked_result_urls, ranked_result_titles)
+        urls_titles_and_scores = zip(ranked_result_urls, ranked_result_titles, document_scores)
         title_or_none = lambda title: "NO TITLE" if title == None else title
-        format_urls_and_titles = lambda url, title: url + '\n' + title_or_none(title) + '\n'
-        display_strings = [format_urls_and_titles(unt[0], unt[1]) for unt in urls_and_titles]
+        format_urls_titles_and_scores = lambda url, title, score: '(SCORE:%s) ' % str(score) + url + '\n' + \
+                                                           title_or_none(title) + '\n\n'
+        display_strings = [format_urls_titles_and_scores(uts[0], uts[1], uts[2]) for uts in urls_titles_and_scores]
 
         # add numbers
         for i,ds in enumerate(display_strings):

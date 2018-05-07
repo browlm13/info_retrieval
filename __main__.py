@@ -65,3 +65,9 @@ qe.search(query, type='full_search')
 
 query = "Freeman Moore - SMU Spring 2017" # https://s2.smu.edu/~fmoore/index-final.htm
 qe.search(query, type='full_search')
+
+query = "mary had a little lamb"
+qe.search(query, type='full_search')
+
+query = "golfing at smu campus golf club"
+qe.search(query, type='full_search')
