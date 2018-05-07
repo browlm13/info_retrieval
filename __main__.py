@@ -69,12 +69,12 @@ print("query: %s" % query)
 qe.search(query)
 print("\n")
 
-query = "Freeman Moore - SMU Spring 2018" # https://s2.smu.edu/~fmoore/index_duplicate.htm
+query = "Freeman Moore - SMU 2018" # https://s2.smu.edu/~fmoore/index_duplicate.htm
 print("query: %s" % query)
 qe.search(query)
 print("\n")
 
-query = "Freeman Moore - SMU Spring 2017" # https://s2.smu.edu/~fmoore/index-final.htm
+query = "Freeman Moore - SMU 2017" # https://s2.smu.edu/~fmoore/index-final.htm
 print("query: %s" % query)
 qe.search(query)
 print("\n")

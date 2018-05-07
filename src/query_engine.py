@@ -119,6 +119,9 @@ class QueryEngine:
         # find title vectors of cluster documents
         title_vectors = self.title_document_vector_matrix[cluster_indices]
 
+        title_tokens = [self.vector_to_tokens(tv) for tv in title_vectors]
+        print(title_tokens)
+
         # take the dot product of the query vector against each title vector
         dot_results = np.dot(title_vectors, query_vector)
 
@@ -151,6 +154,7 @@ class QueryEngine:
         ranked_result_titles = [self.get_title(docID) for docID in ranked_result_ids]
 
         urls_and_titles = zip(ranked_result_urls, ranked_result_titles)
-        format_urls_and_titles = lambda url, title: url + '\n' + title + '\n'
+        title_or_none = lambda title: "NO TITLE" if title == None else title
+        format_urls_and_titles = lambda url, title: url + '\n' + title_or_none(title) + '\n'
         display_strings = [format_urls_and_titles(unt[0], unt[1]) for unt in urls_and_titles]
         return display_strings

@@ -90,6 +90,11 @@ def alphabetic_start(word):
         return True
     return False
 
+def alphanumeric_start(word):
+    """ Return True if word ends with an alphanumeric (letter or number) character """
+    if word[0].isalnum():
+        return True
+    return False
 
 def alphanumeric_end(word):
     """ Return True if word ends with an alphanumeric (letter or number) character """
@@ -111,7 +116,10 @@ def plain_text_to_tokens(plain_text, stopwords_file=None):
     tokens = [t.lower() for t in tokens]
 
     # remove words with no alphabetic start characters
-    tokens = [w for w in tokens if alphabetic_start(w)]
+    # tokens = [w for w in tokens if alphabetic_start(w)]
+
+    # remove words with no alphanumeric start characters
+    tokens = [w for w in tokens if alphanumeric_start(w)]
 
     # remove words with no alphanumeric end characters
     tokens = [w for w in tokens if alphanumeric_end(w)]
