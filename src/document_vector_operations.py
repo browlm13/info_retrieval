@@ -17,8 +17,8 @@ import numpy as np
 # logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
-# logger.addHandler(logging.FileHandler("output/output_log.txt"))
-logger.addHandler(logging.StreamHandler(sys.stdout))
+logger.addHandler(logging.FileHandler("output/output_log.txt"))
+# logger.addHandler(logging.StreamHandler(sys.stdout))
 
 
 def load_document_frequency_dicts(indexed_directory_name):
