@@ -53,31 +53,19 @@ bs.scrape_website(seed_url=args.url, output_directory=args.output, max_urls_to_i
 #   Build Matrices and Maps
 #
 
-# builds numpy matrices and maps from scraped directory
-# matrices : full document vector matrix, title document vector matrix, leader document vector matrix
-# maps : row2docID++inv, word2col+inv,  leader_row_2_cluster_ids
-# notes: make title document vector matrix the same dimensions as the other document vectors in same order for map
-#             reuse
-
-
 # matrices_and_maps.build_matrices_and_maps([args.output])
 
 qe = query_engine.QueryEngine(args.output)
 
 query = "SMU CSE 5337/7337 Spring 2018 Schedule" # https://s2.smu.edu/~fmoore/schedule.htm
-print("query: %s" % query)
 qe.search(query)
-print("\n")
 
-query = "Freeman Moore - SMU 2018" # https://s2.smu.edu/~fmoore/index_duplicate.htm
-print("query: %s" % query)
+query = "Freeman Moore - SMU Spring 2018" # https://s2.smu.edu/~fmoore/index_duplicate.htm
 qe.search(query)
-print("\n")
 
-query = "Freeman Moore - SMU 2017" # https://s2.smu.edu/~fmoore/index-final.htm
-print("query: %s" % query)
+
+query = "Freeman Moore - SMU Spring 2017" # https://s2.smu.edu/~fmoore/index-final.htm
 qe.search(query)
-print("\n")
 
 #
 # Build Document Term Frequency Matrix

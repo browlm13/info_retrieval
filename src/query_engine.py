@@ -93,12 +93,7 @@ class QueryEngine:
             token_list.append(self.col2word[i])
         return token_list
 
-    def search(self, raw_query):
-
-        # convert query to vector
-        query_vector = self.query_to_vector(raw_query)
-        # tokens = self.vector_to_tokens(query_vector)
-        # print(tokens)
+    def cluster_pruning_search(self, query_vector):
 
         # find nearest leader document vector to query vector
         nearest_leader_row = document_vector_operations.ranked_cosine_similarity(query_vector,
@@ -108,19 +103,14 @@ class QueryEngine:
         cluster_indices = np.array(self.leader_row_2_cluster_indices[nearest_leader_row])
         cluster_ids = np.array(self.leader_row_2_cluster_ids[nearest_leader_row])
 
-        # tmp slow
-        # cluster_ids = self.leader_row_2_cluster_ids[nearest_leader_row]
-        # cluster_urls = [self.docID2url[docID] for docID in cluster_ids]
-        # print(cluster_urls)
-
         # add .25 to scores of documents in cluster where the titles contain words in the query
         # the dot product of the query vector and the title vector are greater than 1
 
         # find title vectors of cluster documents
         title_vectors = self.title_document_vector_matrix[cluster_indices]
 
-        title_tokens = [self.vector_to_tokens(tv) for tv in title_vectors]
-        print(title_tokens)
+        # title_tokens = [self.vector_to_tokens(tv) for tv in title_vectors]
+        # print(title_tokens)
 
         # take the dot product of the query vector against each title vector
         dot_results = np.dot(title_vectors, query_vector)
@@ -129,13 +119,33 @@ class QueryEngine:
 
         # sort by max indices and apply this to the cluster ids for ranked results (negative results for reverse order)
         ranked_result_ids = cluster_ids[np.argsort(-dot_results)]
-        # ranked_result_urls = [self.docID2url[docID] for docID in ranked_result_ids]
+
+        return ranked_result_ids
+
+    def search(self, raw_query, type="cluster_pruning"):
+
+        # convert query to vector
+        query_vector = self.query_to_vector(raw_query)
+
+        # debug display query tokens
+        tokens = self.vector_to_tokens(query_vector)
+        logger.debug("query tokens: %s" % str(tokens))
+
+        ranked_result_ids = None
+        if type == "cluster_pruning":
+            ranked_result_ids = self.cluster_pruning_search(query_vector)
+        # if type == "full_search":
+
 
 
         #display
+        print("\nUser Query : %s\n" % raw_query)
+        print("\tIndexed Tokens : %s\n" % tokens)
+        # TODO: Add scoring
         display_strings = self.ranked_results_display_strings(ranked_result_ids)
         for ds in display_strings:
             print(ds)
+        print("\n\n")
 
 
         # get non zero indices
@@ -157,4 +167,9 @@ class QueryEngine:
         title_or_none = lambda title: "NO TITLE" if title == None else title
         format_urls_and_titles = lambda url, title: url + '\n' + title_or_none(title) + '\n'
         display_strings = [format_urls_and_titles(unt[0], unt[1]) for unt in urls_and_titles]
+
+        # add numbers
+        for i,ds in enumerate(display_strings):
+            display_strings[i] = str(i + 1) + '. ' + ds
+
         return display_strings
