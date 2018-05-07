@@ -6,25 +6,25 @@ User Query : moore smu
 RESULTS:
 ------------------------------------------------------------------------------------------
 
-1. URL: https://s2.smu.edu/~fmoore/index.htm,
-TITLE: Freeman Moore - SMU Spring 2018,
-SCORE: 0.5041562759767249
-
-2. URL: https://s2.smu.edu/~fmoore/index-fall2017.htm,
+1. URL: https://s2.smu.edu/~fmoore/index-fall2017.htm,
 TITLE: Freeman Moore - SMU Fall 2017,
-SCORE: 0.5041562759767249
+SCORE: 0.7784704904405653
 
-3. URL: https://s2.smu.edu/~fmoore/index-final.htm,
+2. URL: https://s2.smu.edu/~fmoore/index-final.htm,
 TITLE: Freeman Moore - SMU Spring 2017,
-SCORE: 0.5041562759767249
+SCORE: 0.7493765586034913
+
+3. URL: https://s2.smu.edu/~fmoore/index_duplicate.htm,
+TITLE: Freeman Moore - SMU Spring 2018,
+SCORE: 0.7452202826267664
 
 4. URL: https://s2.smu.edu/~fmoore/schedule.htm,
 TITLE: SMU CSE 5337/7337 Spring 2018 Schedule,
-SCORE: 0.25166251039068993
+SCORE: 0.6107647547797174
 
 5. URL: https://s2.smu.edu/~fmoore/textfiles/index.html,
 TITLE: SMU CSE 5/7337 Spring 2018 Textfiles,
-SCORE: 0.250831255195345
+SCORE: 0.2732751454696592
 
 
 
@@ -38,27 +38,27 @@ RESULTS:
 
 1. URL: https://s2.smu.edu/~fmoore/misc/text/mockingbird5.html,
 TITLE: Mockingbird part 5,
-SCORE: 0.012468827930174564
+SCORE: 2.29426433915212
 
 2. URL: https://s2.smu.edu/~fmoore/misc/text/mockingbird4.html,
 TITLE: Mockingbird part 4,
-SCORE: 0.005818786367414797
+SCORE: 0.9833748960931006
 
 3. URL: https://s2.smu.edu/~fmoore/misc/text/mockingbird3.html,
 TITLE: Mockingbird part 3,
-SCORE: 0.0033250207813798837
+SCORE: 0.2460515378221114
 
 4. URL: https://s2.smu.edu/~fmoore/misc/text/mockingbird2.html,
 TITLE: Mockingbird part 2,
-SCORE: 0.0024937655860349127
+SCORE: 0.20698254364089774
 
 5. URL: https://s2.smu.edu/~fmoore/misc/text/mockingbird1.html,
 TITLE: Mockingbird novel part 1,
-SCORE: 0.0016625103906899418
+SCORE: 0.11970074812967581
 
 6. URL: https://s2.smu.edu/~fmoore/textfiles/baseball4.txt,
 TITLE: NO TITLE,
-SCORE: 0.0008312551953449709
+SCORE: 0.03657522859517872
 
 
 
@@ -72,27 +72,27 @@ RESULTS:
 
 1. URL: https://s2.smu.edu/~fmoore/misc/text/mockingbird4.html,
 TITLE: Mockingbird part 4,
-SCORE: 0.004156275976724855
+SCORE: 0.7024106400665004
 
 2. URL: https://s2.smu.edu/~fmoore/misc/text/mockingbird1.html,
 TITLE: Mockingbird novel part 1,
-SCORE: 0.0024937655860349127
+SCORE: 0.17955112219451372
 
-3. URL: https://s2.smu.edu/~fmoore/misc/text/mockingbird2.html,
-TITLE: Mockingbird part 2,
-SCORE: 0.0016625103906899418
-
-4. URL: https://s2.smu.edu/~fmoore/textfiles/basketball1.txt,
-TITLE: NO TITLE,
-SCORE: 0.0016625103906899418
-
-5. URL: https://s2.smu.edu/~fmoore/misc/text/mockingbird5.html,
+3. URL: https://s2.smu.edu/~fmoore/misc/text/mockingbird5.html,
 TITLE: Mockingbird part 5,
-SCORE: 0.0008312551953449709
+SCORE: 0.15295095594347466
 
-6. URL: https://s2.smu.edu/~fmoore/textfiles/baseball5.txt,
+4. URL: https://s2.smu.edu/~fmoore/misc/text/mockingbird2.html,
+TITLE: Mockingbird part 2,
+SCORE: 0.13798836242726517
+
+5. URL: https://s2.smu.edu/~fmoore/textfiles/basketball1.txt,
 TITLE: NO TITLE,
-SCORE: 0.0008312551953449709
+SCORE: 0.12967581047381546
+
+6. URL: https://s2.smu.edu/~fmoore/textfiles/basketball5.txt,
+TITLE: NO TITLE,
+SCORE: 0.08728179551122195
 
 
 
@@ -106,27 +106,27 @@ RESULTS:
 
 1. URL: https://s2.smu.edu/~fmoore/misc/text/mockingbird4.html,
 TITLE: Mockingbird part 4,
-SCORE: 0.010806317539484621
+SCORE: 1.826267664172901
 
 2. URL: https://s2.smu.edu/~fmoore/misc/text/mockingbird5.html,
 TITLE: Mockingbird part 5,
-SCORE: 0.006650041562759767
+SCORE: 1.2236076475477973
 
 3. URL: https://s2.smu.edu/~fmoore/misc/text/mockingbird1.html,
 TITLE: Mockingbird novel part 1,
-SCORE: 0.004156275976724855
+SCORE: 0.29925187032418954
 
 4. URL: https://s2.smu.edu/~fmoore/textfiles/basketball5.txt,
 TITLE: NO TITLE,
-SCORE: 0.0008312551953449709
+SCORE: 0.08728179551122195
 
-5. URL: https://s2.smu.edu/~fmoore/textfiles/baseball2.txt,
-TITLE: NO TITLE,
-SCORE: 0.0008312551953449709
-
-6. URL: https://s2.smu.edu/~fmoore/misc/text/mockingbird2.html,
+5. URL: https://s2.smu.edu/~fmoore/misc/text/mockingbird2.html,
 TITLE: Mockingbird part 2,
-SCORE: 0.0008312551953449709
+SCORE: 0.06899418121363259
+
+6. URL: https://s2.smu.edu/~fmoore/textfiles/baseball2.txt,
+TITLE: NO TITLE,
+SCORE: 0.06317539484621779
 
 
 

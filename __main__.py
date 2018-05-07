@@ -51,8 +51,8 @@ args = parser.parse_args()
 
 # matrices_and_maps.build_matrices_and_maps([args.output])
 
-qe = query_engine.QueryEngine(args.output, search_type="full_search")
-# qe = query_engine.QueryEngine(args.output, search_type="full_search", weighting_type="tfidf")
+# qe = query_engine.QueryEngine(args.output, search_type="full_search")
+qe = query_engine.QueryEngine(args.output, search_type="full_search", weighting_type="tfidf")
 # qe = query_engine.QueryEngine(args.output, search_type="cluster_pruning")
 
 query = "moore smu"
