@@ -38,6 +38,39 @@ load:
 
 class QueryEngine:
 
+    def load_maps(self):
+
+        # load matrix maps
+        matrix_maps_file_path = file_io.get_path("matrix_maps_file_path", [self.output_directory_name])
+        with open(matrix_maps_file_path, 'rb') as pickle_file:
+            self.matrix_maps = pickle.load(pickle_file)
+
+        # loading without optimization loads all
+        self.word2col = self.matrix_maps['word2col']      # query_to_vector
+        self.col2word = self.matrix_maps['col2word']      # vector_to_tokens
+        self.leader_row_2_cluster_indices = self.matrix_maps['leader_row_2_cluster_indices']    # cluster
+        self.leader_row_2_cluster_ids = self.matrix_maps['leader_row_2_cluster_ids']            # cluster
+        self.docID2url = self.matrix_maps['docID2url']                                          # cluster
+        self.row2docID = self.matrix_maps['row2docID']
+
+    def load_matrices(self, matrix_names):
+
+        if "leader_document_vector_matrix" in matrix_names:
+            # load leader document vector matrix
+            ldvm_file_path = file_io.get_path("leader_document_vector_matrix_file_path", [self.output_directory_name])
+            self.leader_document_vector_matrix = np.load(ldvm_file_path)
+
+        if "title_document_vector_matrix" in matrix_names:
+            # load title document vector matrix
+            tdvm_file_path = file_io.get_path("title_document_vector_matrix_file_path", [self.output_directory_name])
+            self.title_document_vector_matrix = np.load(tdvm_file_path)
+
+        if "full_document_vector_matrix" in matrix_names:
+            # load full document vector matrix
+            fdvm_file_path = file_io.get_path("full_document_vector_matrix_file_path", [self.output_directory_name])
+            self.full_document_vector_matrix = np.load(fdvm_file_path)
+
+
     def __init__(self, output_directory_name):
 
         # TODO: should build matrices and maps if output_directory_name does not exist
@@ -45,29 +78,13 @@ class QueryEngine:
         # TODO: should not need following parameter
         self.output_directory_name = output_directory_name
 
-        # load
-        # self.load_leader_document_vector_matrix()
-        # self.load_title_document_vector_matrix()
-        # self.load_matrix_maps()
+        # TODO: load based on search type, don't load for each individual search
+        self.load_maps()
 
-        # load leader document vector matrix
-        ldvm_file_path = file_io.get_path("leader_document_vector_matrix_file_path", [output_directory_name])
-        self.leader_document_vector_matrix = np.load(ldvm_file_path)
 
-        # load title document vector matrix
-        tdvm_file_path = file_io.get_path("title_document_vector_matrix_file_path", [output_directory_name])
-        self.title_document_vector_matrix = np.load(tdvm_file_path)
 
-        # load matrix maps
-        matrix_maps_file_path = file_io.get_path("matrix_maps_file_path", [output_directory_name])
-        with open(matrix_maps_file_path, 'rb') as pickle_file:
-            self.matrix_maps = pickle.load(pickle_file)
 
-        self.word2col = self.matrix_maps['word2col']
-        self.col2word = self.matrix_maps['col2word']    # tmp not needed
-        self.leader_row_2_cluster_indices = self.matrix_maps['leader_row_2_cluster_indices']
-        self.leader_row_2_cluster_ids = self.matrix_maps['leader_row_2_cluster_ids']
-        self.docID2url = self.matrix_maps['docID2url']
+
 
     def query_to_vector(self, raw_query):
         # create empty query vector
@@ -94,6 +111,9 @@ class QueryEngine:
         return token_list
 
     def cluster_pruning_search(self, query_vector):
+
+        # TODO: Load in init
+        self.load_matrices(['leader_document_vector_matrix', 'title_document_vector_matrix'])
 
         # find nearest leader document vector to query vector
         nearest_leader_row = document_vector_operations.ranked_cosine_similarity(query_vector,
@@ -122,6 +142,24 @@ class QueryEngine:
 
         return ranked_result_ids
 
+    def full_search(self, query_vector, N=5):
+
+        # TODO: Load in init
+        self.load_matrices(['title_document_vector_matrix', 'full_document_vector_matrix'])
+
+        # compute nearest N document vectors to query vector
+        nearest_indices = document_vector_operations.ranked_cosine_similarity(query_vector,
+                                                                                 self.full_document_vector_matrix)[:5]
+
+        # convert to doc ids the slow way
+        nearest_ids = [self.row2docID[index] for index in nearest_indices]
+
+
+        # ranked results currently no modifications
+        ranked_result_ids = nearest_ids
+
+        return ranked_result_ids
+
     def search(self, raw_query, type="cluster_pruning"):
 
         # convert query to vector
@@ -134,18 +172,22 @@ class QueryEngine:
         ranked_result_ids = None
         if type == "cluster_pruning":
             ranked_result_ids = self.cluster_pruning_search(query_vector)
-        # if type == "full_search":
+        if type == "full_search":
+            ranked_result_ids = self.full_search(query_vector)
 
 
+        #
+        # display results
+        #
 
-        #display
-        print("\nUser Query : %s\n" % raw_query)
-        print("\tIndexed Tokens : %s\n" % tokens)
+        display_string = "\nUser Query : %s\n" % raw_query
+        display_string += "\tIndexed Tokens : %s\n" % tokens
         # TODO: Add scoring
         display_strings = self.ranked_results_display_strings(ranked_result_ids)
         for ds in display_strings:
-            print(ds)
-        print("\n\n")
+            display_string += ds
+        display_string += "\n\n"
+        print(display_string)
 
 
         # get non zero indices

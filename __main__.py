@@ -58,14 +58,13 @@ bs.scrape_website(seed_url=args.url, output_directory=args.output, max_urls_to_i
 qe = query_engine.QueryEngine(args.output)
 
 query = "SMU CSE 5337/7337 Spring 2018 Schedule" # https://s2.smu.edu/~fmoore/schedule.htm
-qe.search(query)
+qe.search(query, type='full_search')
 
 query = "Freeman Moore - SMU Spring 2018" # https://s2.smu.edu/~fmoore/index_duplicate.htm
-qe.search(query)
-
+qe.search(query, type='full_search')
 
 query = "Freeman Moore - SMU Spring 2017" # https://s2.smu.edu/~fmoore/index-final.htm
-qe.search(query)
+qe.search(query, type='full_search')
 
 #
 # Build Document Term Frequency Matrix
