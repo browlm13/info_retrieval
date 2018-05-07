@@ -170,3 +170,47 @@ SCORE: 0.0773067331670823
 
 
 
+
+User Query : testing the search engine out
+
+	Indexed Tokens : ['search', 'test']
+
+RESULTS:
+------------------------------------------------------------------------------------------
+
+1. URL: https://s2.smu.edu/~fmoore/misc/porter_stemmer_example.html,
+TITLE: Porter Stemmer Online,
+SCORE: 0.34663341645885287
+
+2. URL: https://s2.smu.edu/~fmoore/schedule.htm,
+TITLE: SMU CSE 5337/7337 Spring 2018 Schedule,
+SCORE: 0.18038237738985868
+
+3. URL: https://s2.smu.edu/~fmoore/textfiles/baseball3.txt,
+TITLE: NO TITLE,
+SCORE: 0.057356608478802994
+
+
+
+
+User Query : baseball
+
+	Indexed Tokens : ['basebal']
+
+RESULTS:
+------------------------------------------------------------------------------------------
+
+1. URL: https://s2.smu.edu/~fmoore/textfiles/baseball5.txt,
+TITLE: NO TITLE,
+SCORE: 0.1662510390689942
+
+2. URL: https://s2.smu.edu/~fmoore/textfiles/index.html,
+TITLE: SMU CSE 5/7337 Spring 2018 Textfiles,
+SCORE: 0.11637572734829593
+
+3. URL: https://s2.smu.edu/~fmoore/textfiles/baseball4.txt,
+TITLE: NO TITLE,
+SCORE: 0.07315045719035744
+
+
+
