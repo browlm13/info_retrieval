@@ -38,6 +38,29 @@ load:
 
 class QueryEngine:
 
+    def __init__(self, output_directory_name, search_type="full_search", weighting_type="tf"):
+
+        # TODO: should build matrices and maps if output_directory_name does not exist
+
+        self.output_directory_name = output_directory_name
+        self.search_type = search_type
+        self.weighting_type = weighting_type
+
+        # TODO: load based on search type, don't load for each individual search
+        self.load_maps()
+
+        # load matrices based on search type and weighting_type
+        if search_type == "cluster_pruning":
+            # TODO: impliment tfidf weighting option
+            self.load_matrices(['leader_document_vector_matrix', 'title_document_vector_matrix'])
+        if search_type == "full_search":
+            self.load_matrices(['title_document_vector_matrix'])
+            if weighting_type == "tf":
+                self.load_matrices(['full_document_vector_matrix'])
+            if weighting_type == "tfidf":
+                self.load_matrices(['tfidf_matrix'])
+                self.full_document_vector_matrix = self.tfidf_matrix
+
     def load_maps(self):
 
         # load matrix maps
@@ -74,32 +97,6 @@ class QueryEngine:
             # load tfidf matrix
             tfidf_matrix_file_path = file_io.get_path("tfidf_matrix_file_path", [self.output_directory_name])
             self.tfidf_matrix = np.load(tfidf_matrix_file_path)
-
-
-    def __init__(self, output_directory_name, search_type="full_search", weighting_type="tf"):
-
-        # TODO: should build matrices and maps if output_directory_name does not exist
-
-        self.output_directory_name = output_directory_name
-        self.search_type = search_type
-        self.weighting_type = weighting_type
-
-        # TODO: load based on search type, don't load for each individual search
-        self.load_maps()
-
-
-        # load matrices based on search type and weighting_type
-        if search_type == "cluster_pruning":
-            # TODO: impliment tfidf weighting option
-            self.load_matrices(['leader_document_vector_matrix', 'title_document_vector_matrix'])
-        if search_type == "full_search":
-            self.load_matrices(['title_document_vector_matrix'])
-            if weighting_type == "tf":
-                self.load_matrices(['full_document_vector_matrix'])
-            if weighting_type == "tfidf":
-                self.load_matrices(['tfidf_matrix'])
-                self.full_document_vector_matrix = self.tfidf_matrix
-
 
     def query_to_vector(self, raw_query):
         # create empty query vector
@@ -165,7 +162,7 @@ class QueryEngine:
 
         return ranked_result_ids, document_scores
 
-    def full_search(self, query_vector, N=5):
+    def full_search(self, query_vector):
 
         # TODO: Load in init
         # self.load_matrices(['title_document_vector_matrix', 'full_document_vector_matrix'])
@@ -220,7 +217,7 @@ class QueryEngine:
 
         return ranked_result_ids, document_scores
 
-    def search(self, raw_query):
+    def search(self, raw_query, K=6):
 
         # convert query to vector
         query_vector = self.query_to_vector(raw_query)
@@ -235,13 +232,18 @@ class QueryEngine:
         if self.search_type == "full_search":
             ranked_result_ids, document_scores = self.full_search(query_vector)
 
+        # only display top k results
+        ranked_result_ids = ranked_result_ids[:K]
+        document_scores = document_scores[:K]
 
         #
         # display results
         #
 
-        display_string = "\nUser Query : %s\n" % raw_query
-        display_string += "\tIndexed Tokens : %s\n" % tokens
+        display_string = "\nUser Query : %s\n\n" % raw_query
+        display_string += "\tIndexed Tokens : %s\n\n" % tokens
+        display_string += "RESULTS:\n"
+        display_string += "-" * 90 + "\n\n"
 
         display_strings = self.ranked_results_display_strings(ranked_result_ids, document_scores)
         for ds in display_strings:
