@@ -53,6 +53,7 @@ def build_matrices_and_maps(indexed_directory_name_list):
     title_document_vector_matrix, _, _ = matrix_and_maps(combined_title_id_tf_dict, unique_words)
     leader_document_vector_matrix, leader_row_2_cluster_indices, leader_row_2_cluster_ids = \
         cluster_pruning_matrix_and_maps(full_document_vector_matrix, docID2row)
+    tfidf_matrix = build_tfidf_matrix(full_document_vector_matrix)
 
     # save matrices and maps
     file_io.save('full_document_vector_matrix_file_path', full_document_vector_matrix,
@@ -60,6 +61,8 @@ def build_matrices_and_maps(indexed_directory_name_list):
     file_io.save('title_document_vector_matrix_file_path', title_document_vector_matrix,
                  [output_directory_name], output_type='numpy_array')
     file_io.save('leader_document_vector_matrix_file_path', leader_document_vector_matrix,
+                 [output_directory_name], output_type='numpy_array')
+    file_io.save('tfidf_matrix_file_path', tfidf_matrix,
                  [output_directory_name], output_type='numpy_array')
 
     # save all maps in one file
@@ -109,16 +112,20 @@ def load_title_document_id_term_frequency_dictionaries(indexed_directory_name):
             document_id_term_frequency_dictionary[doc_id] = doc_term_freq_dict
     return document_id_term_frequency_dictionary
 
+def build_tfidf_matrix(full_document_vector_matrix):
+    logger.info("Computing TF-IDF Matrix - Preprocessing")
+    corpus_term_frequencies = np.sum(full_document_vector_matrix, 1)
+    inverse_corpus_tf_matrix = corpus_term_frequencies[:,None]
+    tfidf_matrix = np.multiply(full_document_vector_matrix, inverse_corpus_tf_matrix)
+    return tfidf_matrix
 
 def cluster_pruning_matrix_and_maps(full_document_vector_matrix, docID2row):
     """
     Select docIds for leaders and followers and format in python dictionary
-    :return: return sqrt(N) leaders with sqrt(N) followers as python dictionary with keys as leader docIDs and values
+    return sqrt(N) leaders with sqrt(N) followers as python dictionary with keys as leader docIDs and values
             as list of follower docIDs
     """
     logger.info("Cluster Pruning - Preprocessing")
-    #document_vector_matrix, docID2row, word2col = document_vector_matrix_and_index_dicts(doc_freq_matrix_dataFrame)
-
 
     # choose n random document vectors indices
     N = len(docID2row)

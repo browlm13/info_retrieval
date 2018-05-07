@@ -55,19 +55,17 @@ bs.scrape_website(seed_url=args.url, output_directory=args.output, max_urls_to_i
 
 # matrices_and_maps.build_matrices_and_maps([args.output])
 
-qe = query_engine.QueryEngine(args.output)
+qe = query_engine.QueryEngine(args.output, search_type="full_search", weighting_type="tfidf")
+# qe = query_engine.QueryEngine(args.output, search_type="cluster_pruning")
 
 query = "SMU CSE 5337/7337 Spring 2018 Schedule" # https://s2.smu.edu/~fmoore/schedule.htm
-qe.search(query, type='full_search')
+qe.search(query)
 
-query = "Freeman Moore - SMU Spring 2018" # https://s2.smu.edu/~fmoore/index_duplicate.htm
-qe.search(query, type='full_search')
+query = "basketball players"
+qe.search(query)
 
-query = "Freeman Moore - SMU Spring 2017" # https://s2.smu.edu/~fmoore/index-final.htm
-qe.search(query, type='full_search')
 
-query = "mary had a little lamb"
-qe.search(query, type='full_search')
-
-query = "golfing at smu campus golf club"
-qe.search(query, type='full_search')
+"""
+"Freeman Moore - SMU Spring 2018" # https://s2.smu.edu/~fmoore/index_duplicate.htm
+"Freeman Moore - SMU Spring 2017" # https://s2.smu.edu/~fmoore/index-final.htm
+"""

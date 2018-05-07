@@ -70,20 +70,35 @@ class QueryEngine:
             fdvm_file_path = file_io.get_path("full_document_vector_matrix_file_path", [self.output_directory_name])
             self.full_document_vector_matrix = np.load(fdvm_file_path)
 
+        if "tfidf_matrix" in matrix_names:
+            # load tfidf matrix
+            tfidf_matrix_file_path = file_io.get_path("tfidf_matrix_file_path", [self.output_directory_name])
+            self.tfidf_matrix = np.load(tfidf_matrix_file_path)
 
-    def __init__(self, output_directory_name):
+
+    def __init__(self, output_directory_name, search_type="full_search", weighting_type="tf"):
 
         # TODO: should build matrices and maps if output_directory_name does not exist
 
-        # TODO: should not need following parameter
         self.output_directory_name = output_directory_name
+        self.search_type = search_type
+        self.weighting_type = weighting_type
 
         # TODO: load based on search type, don't load for each individual search
         self.load_maps()
 
 
-
-
+        # load matrices based on search type and weighting_type
+        if search_type == "cluster_pruning":
+            # TODO: impliment tfidf weighting option
+            self.load_matrices(['leader_document_vector_matrix', 'title_document_vector_matrix'])
+        if search_type == "full_search":
+            self.load_matrices(['title_document_vector_matrix'])
+            if weighting_type == "tf":
+                self.load_matrices(['full_document_vector_matrix'])
+            if weighting_type == "tfidf":
+                self.load_matrices(['tfidf_matrix'])
+                self.full_document_vector_matrix = self.tfidf_matrix
 
 
     def query_to_vector(self, raw_query):
@@ -113,7 +128,7 @@ class QueryEngine:
     def cluster_pruning_search(self, query_vector):
 
         # TODO: Load in init
-        self.load_matrices(['leader_document_vector_matrix', 'title_document_vector_matrix'])
+        # self.load_matrices(['leader_document_vector_matrix', 'title_document_vector_matrix'])
 
         # find nearest leader document vector to query vector
         nearest_leader_row = document_vector_operations.ranked_cosine_similarity(query_vector,
@@ -153,7 +168,7 @@ class QueryEngine:
     def full_search(self, query_vector, N=5):
 
         # TODO: Load in init
-        self.load_matrices(['title_document_vector_matrix', 'full_document_vector_matrix'])
+        # self.load_matrices(['title_document_vector_matrix', 'full_document_vector_matrix'])
 
 
         #
@@ -205,7 +220,7 @@ class QueryEngine:
 
         return ranked_result_ids, document_scores
 
-    def search(self, raw_query, type="cluster_pruning"):
+    def search(self, raw_query):
 
         # convert query to vector
         query_vector = self.query_to_vector(raw_query)
@@ -215,9 +230,9 @@ class QueryEngine:
         logger.debug("query tokens: %s" % str(tokens))
 
         ranked_result_ids, document_scores = None, None
-        if type == "cluster_pruning":
+        if self.search_type == "cluster_pruning":
             ranked_result_ids, document_scores = self.cluster_pruning_search(query_vector)
-        if type == "full_search":
+        if self.search_type == "full_search":
             ranked_result_ids, document_scores = self.full_search(query_vector)
 
 
@@ -227,7 +242,7 @@ class QueryEngine:
 
         display_string = "\nUser Query : %s\n" % raw_query
         display_string += "\tIndexed Tokens : %s\n" % tokens
-        # TODO: Add scoring
+
         display_strings = self.ranked_results_display_strings(ranked_result_ids, document_scores)
         for ds in display_strings:
             display_string += ds
