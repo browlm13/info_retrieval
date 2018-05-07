@@ -60,6 +60,24 @@ args = parser.parse_args()
 
 qe = query_engine.QueryEngine(args.output, search_type="full_search", weighting_type="tfidf")
 
+# required queries
+"""
+query = "moore smu"
+qe.search(query)
+
+query = "Bob Ewell where Scout"
+qe.search(query)
+
+query = "three year story"
+qe.search(query)
+
+query = "Atticus to defend Maycomb"
+qe.search(query)
+
+query = "hocuspocus thisworks"
+qe.search(query)
+"""
+
 # make program loop
 
 welcome_string = "\n\n"
@@ -67,12 +85,12 @@ welcome_string += '=' * 90
 welcome_string += '\n\n'
 welcome_string += '\tSearch Engine (preprocessing done on \"http://lyle.smu.edu/~fmoore/\")\n\n'
 welcome_string += '=' * 90
-welcome_string += '\n\n'
-print(welcome_string)
 
 while True:
-    print("Type Query then press \'Enter\'. Search single word \'STOP\' (case sensitive) to terminate.")
-    query = input("Search: ")
+    print(welcome_string)
+    print("\tSettings: Search Type: %s, Weighting Type: %s" % (qe.search_type, qe.weighting_type))
+    print("Type Query then press \'Enter\'. Search single word \'STOP\' (case sensitive) to terminate.\n")
+    query = input("[Search]: ")
 
     # terminate condition
     if query == "STOP":

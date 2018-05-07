@@ -45,6 +45,7 @@ class QueryEngine:
             # TODO: impliment tfidf weighting option
             if weighting_type != "tf":
                 logger.error("Weighting not implimented for cluster_pruning")
+                self.weighting_type = "tf"
             self.load_matrices(['leader_document_vector_matrix', 'title_document_vector_matrix'])
         if search_type == "full_search":
             self.load_matrices(['title_document_vector_matrix'])
@@ -236,11 +237,11 @@ class QueryEngine:
 
         display_string = "\nUser Query : %s\n\n" % raw_query
         display_string += "\tIndexed Tokens : %s\n\n" % tokens
+        display_string += "\tSearch Type: %s, Weighting Type: %s\n\n" % (self.search_type, self.weighting_type)
         display_string += "RESULTS:\n"
         display_string += "-" * 90 + "\n\n"
 
         # results found
-        # if ranked_result_ids.any():
         num_results = int(np.count_nonzero(document_scores))
         if num_results >= K:
 
@@ -263,8 +264,6 @@ class QueryEngine:
         display_strings = self.ranked_results_display_strings(ranked_result_ids, document_scores)
         for ds in display_strings:
             display_string += ds
-        # else:
-        #    display_string += "No Results Found."
 
         display_string += "\n\n"
         print(display_string)

@@ -3,6 +3,8 @@ User Query : moore smu
 
 	Indexed Tokens : ['moor', 'smu']
 
+	Search Type: full_search, Weighting Type: tfidf
+
 RESULTS:
 ------------------------------------------------------------------------------------------
 
@@ -32,6 +34,8 @@ SCORE: 0.2732751454696592
 User Query : Bob Ewell where Scout
 
 	Indexed Tokens : ['bob', 'ewel', 'scout']
+
+	Search Type: full_search, Weighting Type: tfidf
 
 RESULTS:
 ------------------------------------------------------------------------------------------
@@ -67,6 +71,8 @@ User Query : three year story
 
 	Indexed Tokens : ['stori', 'three', 'year']
 
+	Search Type: full_search, Weighting Type: tfidf
+
 RESULTS:
 ------------------------------------------------------------------------------------------
 
@@ -100,6 +106,8 @@ SCORE: 0.08728179551122195
 User Query : Atticus to defend Maycomb
 
 	Indexed Tokens : ['atticu', 'defend', 'maycomb']
+
+	Search Type: full_search, Weighting Type: tfidf
 
 RESULTS:
 ------------------------------------------------------------------------------------------
@@ -135,15 +143,92 @@ User Query : hocuspocus thisworks
 
 	Indexed Tokens : []
 
+	Search Type: full_search, Weighting Type: tfidf
+
 RESULTS:
 ------------------------------------------------------------------------------------------
 
 No Results Found.
 
 
+
+User Query : Playing Golf at a golf club
+
+	Indexed Tokens : ['club', 'golf', 'play']
+
+	Search Type: full_search, Weighting Type: tfidf
+
+RESULTS:
+------------------------------------------------------------------------------------------
+
+1. URL: https://s2.smu.edu/~fmoore/textfiles/golf1.txt,
+TITLE: NO TITLE,
+SCORE: 0.29925187032418954
+
+2. URL: https://s2.smu.edu/~fmoore/textfiles/basketball5.txt,
+TITLE: NO TITLE,
+SCORE: 0.26184538653366585
+
+3. URL: https://s2.smu.edu/~fmoore/textfiles/index.html,
+TITLE: SMU CSE 5/7337 Spring 2018 Textfiles,
+SCORE: 0.23275145469659186
+
+4. URL: https://s2.smu.edu/~fmoore/textfiles/golf5.txt,
+TITLE: NO TITLE,
+SCORE: 0.20947630922693267
+
+5. URL: https://s2.smu.edu/~fmoore/textfiles/golf4.txt,
+TITLE: NO TITLE,
+SCORE: 0.11970074812967581
+
+6. URL: https://s2.smu.edu/~fmoore/textfiles/basketball1.txt,
+TITLE: NO TITLE,
+SCORE: 0.06483790523690773
+
+
+
+
+User Query : football
+
+	Indexed Tokens : ['footbal']
+
+	Search Type: full_search, Weighting Type: tfidf
+
+RESULTS:
+------------------------------------------------------------------------------------------
+
+1. URL: https://s2.smu.edu/~fmoore/textfiles/basketball2.txt,
+TITLE: NO TITLE,
+SCORE: 0.16791354945968412
+
+2. URL: https://s2.smu.edu/~fmoore/textfiles/football4.txt,
+TITLE: NO TITLE,
+SCORE: 0.14713216957605985
+
+3. URL: https://s2.smu.edu/~fmoore/textfiles/index.html,
+TITLE: SMU CSE 5/7337 Spring 2018 Textfiles,
+SCORE: 0.11637572734829593
+
+4. URL: https://s2.smu.edu/~fmoore/textfiles/football3.txt,
+TITLE: NO TITLE,
+SCORE: 0.07315045719035744
+
+5. URL: https://s2.smu.edu/~fmoore/textfiles/football5.txt,
+TITLE: NO TITLE,
+SCORE: 0.0714879467996675
+
+6. URL: https://s2.smu.edu/~fmoore/textfiles/football1.txt,
+TITLE: NO TITLE,
+SCORE: 0.06816292601828762
+
+
+
+
 User Query : basketball
 
 	Indexed Tokens : ['basketbal']
+
+	Search Type: full_search, Weighting Type: tfidf
 
 RESULTS:
 ------------------------------------------------------------------------------------------
@@ -171,46 +256,110 @@ SCORE: 0.0773067331670823
 
 
 
-User Query : testing the search engine out
+User Query : SMU CSE 5337/7337 Spring 2018 Schedule
 
-	Indexed Tokens : ['search', 'test']
+	Indexed Tokens : ['2018', '5337/7337', 'cse', 'schedul', 'smu', 'spring']
+
+	Search Type: full_search, Weighting Type: tfidf
 
 RESULTS:
 ------------------------------------------------------------------------------------------
 
-1. URL: https://s2.smu.edu/~fmoore/misc/porter_stemmer_example.html,
-TITLE: Porter Stemmer Online,
-SCORE: 0.34663341645885287
+1. URL: https://s2.smu.edu/~fmoore/schedule.htm,
+TITLE: SMU CSE 5337/7337 Spring 2018 Schedule,
+SCORE: 4.20573566084788
+
+2. URL: https://s2.smu.edu/~fmoore/index_duplicate.htm,
+TITLE: Freeman Moore - SMU Spring 2018,
+SCORE: 1.3385286783042394
+
+3. URL: https://s2.smu.edu/~fmoore/textfiles/index.html,
+TITLE: SMU CSE 5/7337 Spring 2018 Textfiles,
+SCORE: 1.0931005818786368
+
+4. URL: https://s2.smu.edu/~fmoore/misc/exam1.html,
+TITLE: CSE 7337 Spring 2018 distance students exam 1 location,
+SCORE: 0.8730257689110557
+
+5. URL: https://s2.smu.edu/~fmoore/index-final.htm,
+TITLE: Freeman Moore - SMU Spring 2017,
+SCORE: 0.8491271820448878
+
+6. URL: https://s2.smu.edu/~fmoore/index-fall2017.htm,
+TITLE: Freeman Moore - SMU Fall 2017,
+SCORE: 0.5284704904405653
+
+
+
+
+User Query : Freeman Moore - SMU Spring 2018
+
+	Indexed Tokens : ['2018', 'freeman', 'moor', 'smu', 'spring']
+
+	Search Type: full_search, Weighting Type: tfidf
+
+RESULTS:
+------------------------------------------------------------------------------------------
+
+1. URL: https://s2.smu.edu/~fmoore/index_duplicate.htm,
+TITLE: Freeman Moore - SMU Spring 2018,
+SCORE: 2.083748960931006
 
 2. URL: https://s2.smu.edu/~fmoore/schedule.htm,
 TITLE: SMU CSE 5337/7337 Spring 2018 Schedule,
-SCORE: 0.18038237738985868
+SCORE: 2.0126766417290107
 
-3. URL: https://s2.smu.edu/~fmoore/textfiles/baseball3.txt,
-TITLE: NO TITLE,
-SCORE: 0.057356608478802994
+3. URL: https://s2.smu.edu/~fmoore/index-final.htm,
+TITLE: Freeman Moore - SMU Spring 2017,
+SCORE: 1.598503740648379
+
+4. URL: https://s2.smu.edu/~fmoore/index-fall2017.htm,
+TITLE: Freeman Moore - SMU Fall 2017,
+SCORE: 1.3069409808811305
+
+5. URL: https://s2.smu.edu/~fmoore/textfiles/index.html,
+TITLE: SMU CSE 5/7337 Spring 2018 Textfiles,
+SCORE: 0.8198254364089775
+
+6. URL: https://s2.smu.edu/~fmoore/misc/exam1.html,
+TITLE: CSE 7337 Spring 2018 distance students exam 1 location,
+SCORE: 0.5615128844555278
 
 
 
 
-User Query : baseball
+User Query : Freeman Moore - SMU Spring 2017
 
-	Indexed Tokens : ['basebal']
+	Indexed Tokens : ['2017', 'freeman', 'moor', 'smu', 'spring']
+
+	Search Type: full_search, Weighting Type: tfidf
 
 RESULTS:
 ------------------------------------------------------------------------------------------
 
-1. URL: https://s2.smu.edu/~fmoore/textfiles/baseball5.txt,
-TITLE: NO TITLE,
-SCORE: 0.1662510390689942
+1. URL: https://s2.smu.edu/~fmoore/index-final.htm,
+TITLE: Freeman Moore - SMU Spring 2017,
+SCORE: 1.9981296758104738
 
-2. URL: https://s2.smu.edu/~fmoore/textfiles/index.html,
+2. URL: https://s2.smu.edu/~fmoore/index-fall2017.htm,
+TITLE: Freeman Moore - SMU Fall 2017,
+SCORE: 1.8354114713216958
+
+3. URL: https://s2.smu.edu/~fmoore/index_duplicate.htm,
+TITLE: Freeman Moore - SMU Spring 2018,
+SCORE: 1.686616791354946
+
+4. URL: https://s2.smu.edu/~fmoore/schedule.htm,
+TITLE: SMU CSE 5337/7337 Spring 2018 Schedule,
+SCORE: 1.2215295095594347
+
+5. URL: https://s2.smu.edu/~fmoore/textfiles/index.html,
 TITLE: SMU CSE 5/7337 Spring 2018 Textfiles,
-SCORE: 0.11637572734829593
+SCORE: 0.5465502909393184
 
-3. URL: https://s2.smu.edu/~fmoore/textfiles/baseball4.txt,
-TITLE: NO TITLE,
-SCORE: 0.07315045719035744
+6. URL: https://s2.smu.edu/~fmoore/misc/exam1.html,
+TITLE: CSE 7337 Spring 2018 distance students exam 1 location,
+SCORE: 0.2807564422277639
 
 
 
