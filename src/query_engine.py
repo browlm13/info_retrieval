@@ -296,8 +296,8 @@ class QueryEngine:
 
         urls_titles_and_scores = zip(ranked_result_urls, ranked_result_titles, document_scores)
         title_or_none = lambda title: "NO TITLE" if title == None else title
-        format_urls_titles_and_scores = lambda url, title, score: '(SCORE:%s) ' % str(score) + url + '\n' + \
-                                                           title_or_none(title) + '\n\n'
+        format_urls_titles_and_scores = lambda url, title, score: 'URL: %s,\nTITLE: %s,\nSCORE: %s\n\n' \
+                                                                  % (url, title_or_none(title), str(score))
         display_strings = [format_urls_titles_and_scores(uts[0], uts[1], uts[2]) for uts in urls_titles_and_scores]
 
         # add numbers
