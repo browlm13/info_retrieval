@@ -52,6 +52,8 @@ class QueryEngine:
         # load matrices based on search type and weighting_type
         if search_type == "cluster_pruning":
             # TODO: impliment tfidf weighting option
+            if weighting_type != "tf":
+                logger.error("Weighting not implimented for cluster_pruning")
             self.load_matrices(['leader_document_vector_matrix', 'title_document_vector_matrix'])
         if search_type == "full_search":
             self.load_matrices(['title_document_vector_matrix'])
@@ -157,6 +159,12 @@ class QueryEngine:
         document_scores = dot_results[sort_array]
         ranked_result_ids = cluster_ids[sort_array]
 
+        # count nonzero scores
+        num_results = np.count_nonzero(document_scores)
+        if num_results < 1:
+            logger.debug("No Results Found")
+            return np.zeros(0), np.zeros(0)
+
         return ranked_result_ids, document_scores
 
     def full_search(self, query_vector):
@@ -194,6 +202,12 @@ class QueryEngine:
         # document scores (sort)
         document_scores = scored_documents[ranked_result_indices]
 
+        # count nonzero scores
+        num_results = np.count_nonzero(document_scores)
+        if num_results < 1:
+            logger.debug("No Results Found")
+            return np.zeros(0), np.zeros(0)
+
         # remove elements with zeros
         nonzero_indices = np.nonzero(document_scores)
         ranked_result_indices = ranked_result_indices[nonzero_indices]
@@ -225,10 +239,6 @@ class QueryEngine:
         if self.search_type == "full_search":
             ranked_result_ids, document_scores = self.full_search(query_vector)
 
-        # only display top k results
-        ranked_result_ids = ranked_result_ids[:K]
-        document_scores = document_scores[:K]
-
         #
         # display results
         #
@@ -238,9 +248,26 @@ class QueryEngine:
         display_string += "RESULTS:\n"
         display_string += "-" * 90 + "\n\n"
 
+        # results found
+        # if ranked_result_ids.any():
+
+        if np.count_nonzero(document_scores) >= K:
+
+            # only display top k results
+            ranked_result_ids = ranked_result_ids[:K]
+            document_scores = document_scores[:K]
+
+        else:
+            logger.debug("Less than %s results found" % str(K))
+            raise Exception('Less than K results found')
+            # run query expansion
+
         display_strings = self.ranked_results_display_strings(ranked_result_ids, document_scores)
         for ds in display_strings:
             display_string += ds
+        # else:
+        #    display_string += "No Results Found."
+
         display_string += "\n\n"
         print(display_string)
 

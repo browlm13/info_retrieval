@@ -51,13 +51,13 @@ args = parser.parse_args()
 
 # matrices_and_maps.build_matrices_and_maps([args.output])
 
-qe = query_engine.QueryEngine(args.output, search_type="full_search", weighting_type="tfidf")
+qe = query_engine.QueryEngine(args.output, search_type="cluster_pruning", weighting_type="tfidf")
 # qe = query_engine.QueryEngine(args.output, search_type="cluster_pruning")
 
 query = "SMU CSE 5337/7337 Spring 2018 Schedule" # https://s2.smu.edu/~fmoore/schedule.htm
 qe.search(query)
 
-query = "basketball"
+query = "nvm"
 qe.search(query)
 
 
