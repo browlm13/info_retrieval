@@ -124,9 +124,6 @@ class QueryEngine:
 
     def cluster_pruning_search(self, query_vector):
 
-        # TODO: Load in init
-        # self.load_matrices(['leader_document_vector_matrix', 'title_document_vector_matrix'])
-
         # find nearest leader document vector to query vector
         nearest_leader_row = document_vector_operations.ranked_cosine_similarity(query_vector,
                                                                                  self.leader_document_vector_matrix)[0]
@@ -163,10 +160,6 @@ class QueryEngine:
         return ranked_result_ids, document_scores
 
     def full_search(self, query_vector):
-
-        # TODO: Load in init
-        # self.load_matrices(['title_document_vector_matrix', 'full_document_vector_matrix'])
-
 
         #
         # cosine similarity between query vector and all documents
@@ -211,7 +204,7 @@ class QueryEngine:
         vfunc = np.vectorize(row2docID_lambda)
         ranked_result_ids = vfunc(ranked_result_indices)
 
-        # compute nearest N document vectors to query vector (fast way)
+        # compute nearest N document vectors to query vector (the fast way -- does not give scores)
         # nearest_indices = document_vector_operations.ranked_cosine_similarity(query_vector,
         #                                                                         self.full_document_vector_matrix)[:5]
 
