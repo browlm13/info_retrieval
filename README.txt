@@ -1,10 +1,3 @@
-
-TODO: Postings lists and tiered postings lists - weighted scores
-TODO: Postings list <-> Term Frequency Matrix
-TODO: Impalement Kmeans clustering for document vector groupings
-TODO: Purity Measures of clustering
-
-
 TODO: Revise structure
 
     objective:
