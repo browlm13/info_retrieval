@@ -140,3 +140,33 @@ RESULTS:
 
 No Results Found.
 
+
+User Query : basketball
+
+	Indexed Tokens : ['basketbal']
+
+RESULTS:
+------------------------------------------------------------------------------------------
+
+1. URL: https://s2.smu.edu/~fmoore/textfiles/basketball2.txt,
+TITLE: NO TITLE,
+SCORE: 0.2518703241895262
+
+2. URL: https://s2.smu.edu/~fmoore/textfiles/basketball5.txt,
+TITLE: NO TITLE,
+SCORE: 0.1745635910224439
+
+3. URL: https://s2.smu.edu/~fmoore/textfiles/index.html,
+TITLE: SMU CSE 5/7337 Spring 2018 Textfiles,
+SCORE: 0.11637572734829593
+
+4. URL: https://s2.smu.edu/~fmoore/textfiles/basketball4.txt,
+TITLE: NO TITLE,
+SCORE: 0.0798004987531172
+
+5. URL: https://s2.smu.edu/~fmoore/textfiles/basketball3.txt,
+TITLE: NO TITLE,
+SCORE: 0.0773067331670823
+
+
+

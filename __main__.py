@@ -27,7 +27,7 @@ STOPWORDS_FILE = "stopwords.txt"
 
 
 #
-# Crawl Site
+#   Preprocessing
 #
 
 parser = argparse.ArgumentParser( description='Scrape A Website.' )
@@ -38,12 +38,13 @@ parser.add_argument('-u', '--url', help='Website to crawl and index.', type=str,
 args = parser.parse_args()
 
 
-# crawl site
+
+#
+#   Crawl Site
+#
+
 # bs = base_station.Base_Station(index_document_html=False, index_document_title=True, index_document_plain_text=True, index_document_term_frequency_dictionary=True)
 # bs.scrape_website(seed_url=args.url, output_directory=args.output, max_urls_to_index=args.number, stopwords_file=args.input)
-
-# display summary and write term frequency matrix to output file
-### summary.display_summary(args.output) # builds shitty matrix
 
 #
 #   Build Matrices and Maps
@@ -51,6 +52,39 @@ args = parser.parse_args()
 
 # matrices_and_maps.build_matrices_and_maps([args.output])
 
+#
+#
+#   Run Search Engine
+#
+#
+
+qe = query_engine.QueryEngine(args.output, search_type="full_search", weighting_type="tfidf")
+
+# make program loop
+
+welcome_string = "\n\n"
+welcome_string += '=' * 90
+welcome_string += '\n\n'
+welcome_string += '\tSearch Engine (preprocessing done on \"http://lyle.smu.edu/~fmoore/\")\n\n'
+welcome_string += '=' * 90
+welcome_string += '\n\n'
+print(welcome_string)
+
+while True:
+    print("Type Query then press \'Enter\'. Search single word \'STOP\' (case sensitive) to terminate.")
+    query = input("Search: ")
+
+    # terminate condition
+    if query == "STOP":
+        print("Stopping Program.")
+        sys.exit()
+
+    # search for user query
+    qe.search(query)
+
+
+
+"""
 # qe = query_engine.QueryEngine(args.output, search_type="full_search")
 qe = query_engine.QueryEngine(args.output, search_type="full_search", weighting_type="tfidf")
 # qe = query_engine.QueryEngine(args.output, search_type="cluster_pruning")
@@ -70,8 +104,6 @@ qe.search(query)
 query = "hocuspocus thisworks"
 qe.search(query)
 
-
-"""
 "SMU CSE 5337/7337 Spring 2018 Schedule" # https://s2.smu.edu/~fmoore/schedule.htm
 "Freeman Moore - SMU Spring 2018" # https://s2.smu.edu/~fmoore/index_duplicate.htm
 "Freeman Moore - SMU Spring 2017" # https://s2.smu.edu/~fmoore/index-final.htm

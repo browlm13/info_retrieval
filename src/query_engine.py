@@ -26,15 +26,6 @@ logger.addHandler(logging.FileHandler("output/output_log.txt"))
 #
 #   Query Engine
 #
-"""
-load: 
-    -leader_document_vector_matrix
-    -title_document_vector_matrix
-    -matrix_maps
-    -convert query to vector using word2col
-    -compare with leaders / use leader row2 cluster id map
-    -0.25 query score thing with title matrix
-"""
 
 class QueryEngine:
 
