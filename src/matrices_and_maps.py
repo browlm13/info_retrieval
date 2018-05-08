@@ -144,17 +144,16 @@ def cluster_pruning_matrix_and_maps(document_vector_matrix, docID2row):
     logger.info("Preprocessing - Choosing leaders using kmeans")
     # choose n random document vectors indices
     N = len(docID2row)
-    sqrtN = 5
-    cluster_size = 6
-    random_indices = np.random.randint(low=0, high=N, size=sqrtN, dtype=int) # sqrtN random indices for sqrtN leaders
+    k = 5
+    cluster_size = 6 # includes leader and followers
+    random_indices = np.random.randint(low=0, high=N, size=k, dtype=int) # sqrtN random indices for sqrtN leaders
     # (note: not necessarily leader indices)
-    k = sqrtN
     max_iterations = 100
     leader_indices = np.zeros(1)
     initial_centroid_matrix = document_vector_matrix[random_indices]
     while not leader_indices.any():
         logger.info("\t\tChoosing leaders using kmeans...")
-        random_indices = np.random.randint(low=0, high=N, size=sqrtN,
+        random_indices = np.random.randint(low=0, high=N, size=k,
                                            dtype=int)  # sqrtN random indices for sqrtN leaders
         initial_centroid_matrix = document_vector_matrix[random_indices]
         leader_indices = document_vector_operations.find_leader_indices_using_kmeans(document_vector_matrix, k, max_iterations, initial_centroid_matrix)

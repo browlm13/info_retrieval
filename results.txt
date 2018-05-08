@@ -1,5 +1,4 @@
 
-
 User Query : moore smu
 
 	Indexed Tokens : ['moor', 'smu']
@@ -152,37 +151,38 @@ RESULTS:
 No Results Found.
 
 
+User Query : cowboys dallas
 
-User Query : player
+	Indexed Tokens : ['cowboy', 'dalla']
 
-	Indexed Tokens : ['player']
-
-	Search Type: cluster_pruning, Weighting Type: tf
+	Search Type: full_search, Weighting Type: tfidf
 
 RESULTS:
 ------------------------------------------------------------------------------------------
 
-1. URL: https://s2.smu.edu/~fmoore/textfiles/football3.txt,
+1. URL: https://s2.smu.edu/~fmoore/textfiles/football5.txt,
 TITLE: NO TITLE,
-SCORE: 1.0
+SCORE: 0.004987531172069825
 
 2. URL: https://s2.smu.edu/~fmoore/textfiles/football4.txt,
 TITLE: NO TITLE,
-SCORE: 1.0
+SCORE: 0.004156275976724855
 
-3. URL: https://s2.smu.edu/~fmoore/textfiles/football1.txt,
+3. URL: https://s2.smu.edu/~fmoore/textfiles/football3.txt,
 TITLE: NO TITLE,
-SCORE: 1.0
+SCORE: 0.0033250207813798837
 
-4. URL: https://s2.smu.edu/~fmoore/textfiles/football5.txt,
+4. URL: https://s2.smu.edu/~fmoore/textfiles/football1.txt,
 TITLE: NO TITLE,
-SCORE: 1.0
+SCORE: 0.0024937655860349127
 
-5. URL: https://s2.smu.edu/~fmoore/textfiles/basketball5.txt,
+5. URL: https://s2.smu.edu/~fmoore/textfiles/football2.txt,
 TITLE: NO TITLE,
-SCORE: 1.0
+SCORE: 0.0008312551953449709
 
-6. URL: https://s2.smu.edu/~fmoore/textfiles/football2.txt,
+6. URL: https://s2.smu.edu/~fmoore/textfiles/basketball3.txt,
 TITLE: NO TITLE,
-SCORE: 1.0
+SCORE: 0.0008312551953449709
+
+
 

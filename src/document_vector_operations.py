@@ -155,17 +155,12 @@ def find_leader_indices_using_kmeans(M, k, max_iterations, initial_centroid_matr
     # find new centroid centers
     leader_indices = np.empty(shape=k)
     for centroid_index in range(0, k):
-        print("Cluster %s" % centroid_index)
+        # print("Cluster %s" % centroid_index)
 
-        # find vectors with the current centroid as their closest centroid
-        #member_vector_indices = np.where(nc_vector == centroid_index)[0]
-        try:
-            # leader_vector_index = np.where(nc_vector == centroid_index)[0][0]
-            leader_vector_index = np.where(nc_vector == centroid_index)[0][0] # this first zero isn't necissarily closest
-            print(leader_vector_index)
-            leader_indices[centroid_index] = leader_vector_index
-        except:
-            return np.zeros(1)
+        # find the vector with the current centroid as its closest centroid
+        leader_vector = nearest_centroid_vector(centroids, M) # reverse parameters for nearest document vector
+        leader_vector_index = ranked_cosine_similarity(centroids[centroid_index], M)[0]
+        leader_indices[centroid_index] = leader_vector_index
 
 
     return leader_indices

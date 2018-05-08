@@ -60,9 +60,10 @@ args = parser.parse_args()
 #
 
 qe = query_engine.QueryEngine(args.output, search_type="full_search", weighting_type="tfidf")
+# qe = query_engine.QueryEngine(args.output, search_type="cluster_pruning", weighting_type="tf")
 
-qe.display_clustering_info(write=True)
-# qe.display_clustering_info()
+# qe.display_clustering_info(write=True)
+qe.display_clustering_info()
 # qe.write_average_error_variance_as_function_of_k()
 # qe.plot_average_error_variances_as_function_of_k()
 
@@ -106,4 +107,3 @@ while True:
 
     # search for user query
     qe.search(query)
-

@@ -1,83 +1,83 @@
 term frequency clustering information: (cluster leaders chosen using kmeans)
 cluster 1:
-	leader docID: 31
+	leader docID: 1
 	follower docIDs and leader/follower scores:
-		docID: 35, score: 0.038237738985868665
-		docID: 27, score: 0.021612635078969242
-		docID: 32, score: 0.01828761429758936
-		docID: 36, score: 0.015793848711554447
-		docID: 40, score: 0.014962593516209476
+		docID: 12, score: 0.0773067331670823
+		docID: 3, score: 0.07231920199501247
+		docID: 2, score: 0.032418952618453865
+		docID: 11, score: 0.011637572734829594
+		docID: 7, score: 0.00914380714879468
 cluster 2:
-	leader docID: 7
+	leader docID: 22
 	follower docIDs and leader/follower scores:
-		docID: 28, score: 0.020781379883624274
-		docID: 35, score: 0.012468827930174564
-		docID: 21, score: 0.012468827930174564
-		docID: 2, score: 0.00997506234413965
-		docID: 1, score: 0.00914380714879468
+		docID: 36, score: 0.02493765586034913
+		docID: 33, score: 0.023275145469659187
+		docID: 25, score: 0.019118869492934332
+		docID: 21, score: 0.01828761429758936
+		docID: 28, score: 0.017456359102244388
 cluster 3:
-	leader docID: 14
+	leader docID: 26
 	follower docIDs and leader/follower scores:
-		docID: 20, score: 0.16874480465502908
-		docID: 13, score: 0.06733167082294264
-		docID: 15, score: 0.058187863674147966
-		docID: 18, score: 0.05236907730673317
-		docID: 37, score: 0.01662510390689942
+		docID: 36, score: 0.02826267664172901
+		docID: 28, score: 0.00997506234413965
+		docID: 7, score: 0.00831255195344971
+		docID: 21, score: 0.00831255195344971
+		docID: 22, score: 0.005818786367414797
 cluster 4:
-	leader docID: 20
+	leader docID: 2
 	follower docIDs and leader/follower scores:
-		docID: 14, score: 0.16874480465502908
-		docID: 15, score: 0.07065669160432253
-		docID: 18, score: 0.06982543640897755
-		docID: 13, score: 0.06400665004156277
-		docID: 37, score: 0.01828761429758936
+		docID: 1, score: 0.032418952618453865
+		docID: 4, score: 0.024106400665004156
+		docID: 12, score: 0.020781379883624274
+		docID: 3, score: 0.0199501246882793
+		docID: 11, score: 0.01828761429758936
 cluster 5:
-	leader docID: 12
+	leader docID: 34
 	follower docIDs and leader/follower scores:
-		docID: 3, score: 0.08478802992518704
-		docID: 1, score: 0.0773067331670823
-		docID: 2, score: 0.020781379883624274
-		docID: 11, score: 0.00914380714879468
-		docID: 7, score: 0.005818786367414797
+		docID: 7, score: 0.00914380714879468
+		docID: 20, score: 0.006650041562759767
+		docID: 25, score: 0.006650041562759767
+		docID: 37, score: 0.006650041562759767
+		docID: 14, score: 0.006650041562759767
 
 tf-idf clustering information: (cluster leaders chosen using kmeans)
 cluster 1:
-	leader docID: 40
-	follower docIDs and leader/follower scores:
-		docID: 36, score: 0.015793848711554447
-		docID: 35, score: 0.038237738985868665
-		docID: 31, score: 0.05320033250207814
-		docID: 27, score: 0.021612635078969242
-		docID: 32, score: 0.01828761429758936
-cluster 2:
-	leader docID: 23
+	leader docID: 14
 	follower docIDs and leader/follower scores:
 		docID: 20, score: 0.0
-		docID: 2, score: 0.00997506234413965
-		docID: 14, score: 0.0
-		docID: 30, score: 0.004156275976724855
-		docID: 36, score: 0.00831255195344971
-cluster 3:
-	leader docID: 20
+		docID: 13, score: 0.0
+		docID: 15, score: 0.0008312551953449709
+		docID: 18, score: 0.0008312551953449709
+		docID: 37, score: 0.0016625103906899418
+cluster 2:
+	leader docID: 5
 	follower docIDs and leader/follower scores:
-		docID: 14, score: 0.36076475477971737
-		docID: 15, score: 0.058187863674147966
-		docID: 18, score: 0.05236907730673317
-		docID: 13, score: 0.06733167082294264
-		docID: 37, score: 0.01662510390689942
+		docID: 6, score: 0.0
+		docID: 9, score: 0.0
+		docID: 10, score: 0.0
+		docID: 12, score: 0.0024937655860349127
+		docID: 18, score: 0.0033250207813798837
+cluster 3:
+	leader docID: 5
+	follower docIDs and leader/follower scores:
+		docID: 6, score: 0.0
+		docID: 9, score: 0.0
+		docID: 10, score: 0.0
+		docID: 12, score: 0.0
+		docID: 18, score: 0.0024937655860349127
 cluster 4:
 	leader docID: 20
 	follower docIDs and leader/follower scores:
-		docID: 14, score: 0.16874480465502908
-		docID: 18, score: 0.06982543640897755
-		docID: 15, score: 0.07065669160432253
-		docID: 13, score: 0.06400665004156277
-		docID: 37, score: 0.01828761429758936
+		docID: 14, score: 0.0016625103906899418
+		docID: 15, score: 0.0
+		docID: 18, score: 0.0
+		docID: 13, score: 0.004156275976724855
+		docID: 37, score: 0.0024937655860349127
 cluster 5:
 	leader docID: 3
 	follower docIDs and leader/follower scores:
-		docID: 12, score: 0.09310058187863675
-		docID: 1, score: 0.0773067331670823
-		docID: 2, score: 0.020781379883624274
-		docID: 4, score: 0.004156275976724855
-		docID: 11, score: 0.00914380714879468
+		docID: 12, score: 0.0024937655860349127
+		docID: 2, score: 0.0024937655860349127
+		docID: 1, score: 0.0033250207813798837
+		docID: 4, score: 0.0
+		docID: 28, score: 0.0016625103906899418
