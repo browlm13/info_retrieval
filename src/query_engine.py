@@ -61,7 +61,7 @@ class QueryEngine:
                 # self.full_document_vector_matrix = self.tfidf_matrix
                 # TODO: Implement tfidf option in cluster pruning search
 
-    def display_clustering_info(self, write=False, method="using_kmeans"):
+    def display_clustering_info(self, write=False, method="using kmeans"):
 
         # tf cluster information
         id_clusters = list(self.leader_row_2_cluster_ids.values())

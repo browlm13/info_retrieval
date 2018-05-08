@@ -51,7 +51,7 @@ args = parser.parse_args()
 #   Build Matrices and Maps
 #
 
-matrices_and_maps.build_matrices_and_maps([args.output])
+# matrices_and_maps.build_matrices_and_maps([args.output])
 
 #
 #
@@ -61,11 +61,11 @@ matrices_and_maps.build_matrices_and_maps([args.output])
 
 qe = query_engine.QueryEngine(args.output, search_type="full_search", weighting_type="tfidf")
 
-qe.display_clustering_info(write=True)
-# qe.display_clustering_info()
+# qe.display_clustering_info(write=True)
+qe.display_clustering_info()
 
-# required queries
 """
+# required queries
 query = "moore smu"
 qe.search(query)
 
@@ -81,7 +81,7 @@ qe.search(query)
 query = "hocuspocus thisworks"
 qe.search(query)
 """
-"""
+
 # make program loop
 
 welcome_string = "\n\n"
@@ -104,4 +104,3 @@ while True:
     # search for user query
     qe.search(query)
 
-"""
