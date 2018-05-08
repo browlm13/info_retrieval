@@ -42,18 +42,94 @@ class QueryEngine:
 
         # load matrices based on search type and weighting_type
         if search_type == "cluster_pruning":
-            # TODO: impliment tfidf weighting option
-            if weighting_type != "tf":
-                logger.error("Weighting not implimented for cluster_pruning")
-                self.weighting_type = "tf"
-            self.load_matrices(['leader_document_vector_matrix', 'title_document_vector_matrix'])
+            self.load_matrices(['title_document_vector_matrix'])
+            if weighting_type == "tf":
+                self.load_matrices(['leader_document_vector_matrix'])
+            if weighting_type == "tfidf":
+                self.load_matrices(['tfidf_leader_document_vector_matrix'])
+                # self.leader_document_vector_matrix = self.tfidf_leader_document_vector_matrix
+                # self.leader_row_2_cluster_indices = self.tfidf_leader_row_2_cluster_indices
+                # self.leader_row_2_cluster_ids = self.tfidf_leader_row_2_cluster_ids
+                # TODO: Implement tfidf option in cluster pruning search
+
         if search_type == "full_search":
             self.load_matrices(['title_document_vector_matrix'])
             if weighting_type == "tf":
                 self.load_matrices(['full_document_vector_matrix'])
             if weighting_type == "tfidf":
                 self.load_matrices(['tfidf_matrix'])
-                self.full_document_vector_matrix = self.tfidf_matrix
+                # self.full_document_vector_matrix = self.tfidf_matrix
+                # TODO: Implement tfidf option in cluster pruning search
+
+    def display_clustering_info(self, write=False):
+
+        # tf cluster information
+        id_clusters = list(self.leader_row_2_cluster_ids.values())
+        indices_clusters = list(self.leader_row_2_cluster_indices.values())
+        info_string = "term frequency clustering information: (cluster leaders chosen randomly)"
+        info_string += self.clusters_info_string(id_clusters, indices_clusters)
+
+        # tfidf cluster information
+        id_clusters = list(self.leader_row_2_cluster_ids.values())
+        indices_clusters = list(self.leader_row_2_cluster_indices.values())
+        info_string += "\n\ntf-idf clustering information: (cluster leaders chosen randomly)"
+        info_string += self.clusters_info_string(id_clusters, indices_clusters)
+
+        print(info_string)
+        if write==True:
+            # tmp write results to file
+            with open("clustering_info.txt", "w") as myfile:
+                myfile.write(info_string)
+
+
+
+    def clusters_info_string(self, id_clusters, indices_clusters):
+
+        # by ids
+        # id_clusters = list(self.leader_row_2_cluster_ids.values())
+        id_cluster_matrix = np.array(id_clusters)
+        id_leaders = id_cluster_matrix[:,0]
+        id_followers_matrix = id_cluster_matrix[:,1:]
+
+        # by indices
+        # indices_clusters = list(self.leader_row_2_cluster_indices.values())
+        indices_cluster_matrix = np.array(indices_clusters)
+
+        # indices_leaders = indices_cluster_matrix[:,0]
+        indices_follower_matrix = indices_cluster_matrix[:,1:]
+
+        # compute leader follower score for each element in row 0 for each row
+        self.load_matrices(['full_document_vector_matrix'])
+        self.load_matrices(['leader_document_vector_matrix'])
+        leader_follower_pair_scores_matrix = np.empty(shape=(len(indices_clusters), len(indices_clusters[0]) -1))
+        for i in range(len(indices_clusters)):
+            followers_i_document_vectors = self.full_document_vector_matrix[indices_follower_matrix[i,:]]
+            leader_i_document_vector = self.leader_document_vector_matrix[i]
+
+            # compute cosine similarity between leader and each follower / row in followers_i_document_vectors
+            leader_followers_i_dot_results = np.dot(followers_i_document_vectors, leader_i_document_vector)
+
+            # normalize scores
+            leader_follower_i_cosine_similarity_scores = \
+                np.divide(leader_followers_i_dot_results, leader_i_document_vector.shape)
+
+            # set row of leader_follower_pair_scores_matrix
+            leader_follower_pair_scores_matrix[i] = leader_follower_i_cosine_similarity_scores
+
+        # display leader docID , follower docID and pair scores for each follower of leader - for each leader
+        cluster_pruning_info_string = ''
+        for i in range(len(id_clusters)):
+            i_leader_id = id_leaders[i]
+            i_follower_ids = id_followers_matrix[i]
+            i_leader_follower_scores = leader_follower_pair_scores_matrix[i]
+            i_follower_id_score_tuple_list = zip(i_follower_ids, i_leader_follower_scores)
+            cluster_pruning_info_string += "\ncluster %s:" % (i + 1)
+            cluster_pruning_info_string += "\n\tleader docID: %s" % i_leader_id
+            cluster_pruning_info_string += "\n\tfollower docIDs and leader/follower scores:"
+            for id, score in i_follower_id_score_tuple_list:
+                cluster_pruning_info_string += "\n\t\tdocID: %s, score: %s" % (id, score)
+
+        return cluster_pruning_info_string
 
     def load_maps(self):
 
@@ -67,6 +143,8 @@ class QueryEngine:
         self.col2word = self.matrix_maps['col2word']      # vector_to_tokens
         self.leader_row_2_cluster_indices = self.matrix_maps['leader_row_2_cluster_indices']    # cluster
         self.leader_row_2_cluster_ids = self.matrix_maps['leader_row_2_cluster_ids']            # cluster
+        self.tfidf_leader_row_2_cluster_indices = self.matrix_maps['tfidf_leader_row_2_cluster_indices']# tfidf cluster
+        self.tfidf_leader_row_2_cluster_ids = self.matrix_maps['tfidf_leader_row_2_cluster_ids']        # tfidf cluster
         self.docID2url = self.matrix_maps['docID2url']                                          # cluster
         self.row2docID = self.matrix_maps['row2docID']
 
@@ -91,6 +169,12 @@ class QueryEngine:
             # load tfidf matrix
             tfidf_matrix_file_path = file_io.get_path("tfidf_matrix_file_path", [self.output_directory_name])
             self.tfidf_matrix = np.load(tfidf_matrix_file_path)
+
+        if "tfidf_leader_document_vector_matrix" in matrix_names:
+            # load leader document vector matrix
+            tfidf_ldvm_file_path = file_io.get_path("tfidf_leader_document_vector_matrix_file_path",
+                                              [self.output_directory_name])
+            self.tfidf_leader_document_vector_matrix = np.load(tfidf_ldvm_file_path)
 
     def query_to_vector(self, raw_query):
         # create empty query vector
@@ -118,20 +202,35 @@ class QueryEngine:
 
     def cluster_pruning_search(self, query_vector):
 
-        # find nearest leader document vector to query vector
-        nearest_leader_row = document_vector_operations.ranked_cosine_similarity(query_vector,
-                                                                                 self.leader_document_vector_matrix)[0]
 
-        # find the selected clusters document id list and urls
-        cluster_indices = np.array(self.leader_row_2_cluster_indices[nearest_leader_row])
-        cluster_ids = np.array(self.leader_row_2_cluster_ids[nearest_leader_row])
+        if self.weighting_type == 'tf':
 
+            # find nearest leader document vector to query vector
+            nearest_leader_row = document_vector_operations.ranked_cosine_similarity(query_vector,
+                                                                                     self.leader_document_vector_matrix)[0]
+
+            # find the selected clusters document id list and urls
+            cluster_indices = np.array(self.leader_row_2_cluster_indices[nearest_leader_row])
+            cluster_ids = np.array(self.leader_row_2_cluster_ids[nearest_leader_row])
+        if self.weighting_type == 'tfidf':
+            # find nearest leader document vector to query vector
+            nearest_leader_row = document_vector_operations.ranked_cosine_similarity(query_vector,
+                                                                        self.tfidf_leader_document_vector_matrix)[0]
+
+            # find the selected clusters document id list and urls
+            cluster_indices = np.array(self.tfidf_leader_row_2_cluster_indices[nearest_leader_row])
+            cluster_ids = np.array(self.tfidf_leader_row_2_cluster_ids[nearest_leader_row])
+
+
+        #
+        # give each doc a base score of 1
+        #
+        base_scores = np.ones(cluster_ids.shape)
+
+        #
+        # if any of the query words appear in the title add .25 to its score
         #
         # this sorts by title score - does not select leader based on title score
-        #
-
-        # add .25 to scores of documents in cluster where the titles contain words in the query
-        # the dot product of the query vector and the title vector are greater than 1
 
         # find title vectors of cluster documents
         title_vectors = self.title_document_vector_matrix[cluster_indices]
@@ -140,24 +239,38 @@ class QueryEngine:
         # print(title_tokens)
 
         # take the dot product of the query vector against each title vector
-        dot_results = np.dot(title_vectors, query_vector)
+        title_dot_results = np.dot(title_vectors, query_vector)
 
-        # multiply by 0.25 - skip same difference
-        # get non zero indices
-        # non_zero_indices = np.nonzero(dot_results)
+        # scale result by 0.25
+        title_bonuses = np.multiply(title_dot_results, 0.25)
+
+        # add to the cosine similarity vector for document scores
+        scored_documents = np.add(base_scores, title_bonuses)
+
+        #
+        # sort based on score from title
+        #
 
         # sort by max indices and apply this to the cluster ids for ranked results (negative results for reverse order)
-        sort_array = np.argsort(-dot_results)
-        document_scores = dot_results[sort_array]
+        sort_array = np.argsort(-scored_documents)
+        document_scores = scored_documents[sort_array]
         ranked_result_ids = cluster_ids[sort_array]
 
+        """
         # count nonzero scores
         num_results = np.count_nonzero(document_scores)
         if num_results < 1:
             logger.debug("No Results Found")
             return np.zeros(0), np.zeros(0)
-
+        
         return ranked_result_ids[:num_results], document_scores[:num_results]
+        """
+
+        if not document_scores.any():
+            logger.debug("No Results Found")
+            return np.zeros(0), np.zeros(0)
+
+        return ranked_result_ids, document_scores
 
     def full_search(self, query_vector):
 
@@ -243,8 +356,11 @@ class QueryEngine:
 
         # results found
         num_results = int(np.count_nonzero(document_scores))
-        if num_results >= K:
+        if (self.search_type == "cluster_pruning") and (num_results != 0):
+            # display entire cluster
+            pass
 
+        elif num_results >= K:
             # only display top k results
             ranked_result_ids = ranked_result_ids[:K]
             document_scores = document_scores[:K]
@@ -261,9 +377,10 @@ class QueryEngine:
             if num_results == 0:
                 display_string += "No Results Found."
 
-        display_strings = self.ranked_results_display_strings(ranked_result_ids, document_scores)
-        for ds in display_strings:
-            display_string += ds
+        if num_results > 0:
+            display_strings = self.ranked_results_display_strings(ranked_result_ids, document_scores)
+            for ds in display_strings:
+                display_string += ds
 
         display_string += "\n\n"
         print(display_string)

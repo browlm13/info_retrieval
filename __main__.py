@@ -7,6 +7,7 @@ import logging
 from src import base_station
 from src import matrices_and_maps
 from src import query_engine
+from src import summary
 
 __author__ = 'LJ Brown'
 __version__ = "2.0.1"
@@ -59,6 +60,9 @@ args = parser.parse_args()
 #
 
 qe = query_engine.QueryEngine(args.output, search_type="full_search", weighting_type="tfidf")
+
+#qe.display_clustering_info(write=True)
+qe.display_clustering_info()
 
 # required queries
 """

@@ -18,6 +18,7 @@
             "full_document_vector_matrix_file_path" :         "output/%s/matrices/full_document_vector_matrix.npy",
             "title_document_vector_matrix_file_path" :        "output/%s/matrices/title_document_vector_matrix.npy",
             "leader_document_vector_matrix_file_path" :       "output/%s/matrices/leader_document_vector_matrix.npy",
+            "tfidf_leader_document_vector_matrix_file_path" : "output/%s/matrices/tfidf_leader_document_vector_matrix.npy",
             "tfidf_matrix_file_path" :                        "output/%s/matrices/tfidf_matrix.npy",
             "matrix_maps_file_path" :                         "output/%s/matrix_maps.pkl"
         },
@@ -42,6 +43,7 @@
             "title_document_vector_matrix_file_path" :        ["Output Directory"],
             "leader_document_vector_matrix_file_path" :       ["Output Directory"],
             "tfidf_matrix_file_path" :                        ["Output Directory"],
+            "tfidf_leader_document_vector_matrix_file_path" : ["Output Directory"],
             "matrix_maps_file_path" :                         ["Output Directory"]
         }
 }

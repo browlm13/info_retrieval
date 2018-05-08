@@ -54,6 +54,8 @@ def build_matrices_and_maps(indexed_directory_name_list):
     leader_document_vector_matrix, leader_row_2_cluster_indices, leader_row_2_cluster_ids = \
         cluster_pruning_matrix_and_maps(full_document_vector_matrix, docID2row)
     tfidf_matrix = build_tfidf_matrix(full_document_vector_matrix)
+    tfidf_leader_document_vector_matrix, tfidf_leader_row_2_cluster_indices, tfidf_leader_row_2_cluster_ids = \
+        cluster_pruning_matrix_and_maps(tfidf_matrix, docID2row)
 
     # save matrices and maps
     file_io.save('full_document_vector_matrix_file_path', full_document_vector_matrix,
@@ -64,9 +66,13 @@ def build_matrices_and_maps(indexed_directory_name_list):
                  [output_directory_name], output_type='numpy_array')
     file_io.save('tfidf_matrix_file_path', tfidf_matrix,
                  [output_directory_name], output_type='numpy_array')
+    file_io.save('tfidf_leader_document_vector_matrix_file_path', tfidf_leader_document_vector_matrix,
+                 [output_directory_name], output_type='numpy_array')
 
     # save all maps in one file
     matrix_maps = {
+        'tfidf_leader_row_2_cluster_indices': tfidf_leader_row_2_cluster_indices,
+        'tfidf_leader_row_2_cluster_ids': tfidf_leader_row_2_cluster_ids,
         'leader_row_2_cluster_indices' : leader_row_2_cluster_indices,
         'leader_row_2_cluster_ids' : leader_row_2_cluster_ids,
         'docID2url': get_docID2url_map(),
@@ -119,7 +125,7 @@ def build_tfidf_matrix(full_document_vector_matrix):
     tfidf_matrix = np.multiply(full_document_vector_matrix, inverse_corpus_tf_matrix)
     return tfidf_matrix
 
-def cluster_pruning_matrix_and_maps(full_document_vector_matrix, docID2row):
+def cluster_pruning_matrix_and_maps(document_vector_matrix, docID2row):
     """
     Select docIds for leaders and followers and format in python dictionary
     return sqrt(N) leaders with sqrt(N) followers as python dictionary with keys as leader docIDs and values
@@ -138,8 +144,8 @@ def cluster_pruning_matrix_and_maps(full_document_vector_matrix, docID2row):
     # cluster matrix elements represent row indices in numpy document term frequency matrix
     # follower list will start with leader as first index if leader is in matrix / is only equal document
     find_cluster_array = lambda random_idx: \
-        document_vector_operations.ranked_cosine_similarity(full_document_vector_matrix[random_idx],
-                                                                     full_document_vector_matrix)[:cluster_size]
+        document_vector_operations.ranked_cosine_similarity(document_vector_matrix[random_idx],
+                                                                     document_vector_matrix)[:cluster_size]
 
     vfunc = np.vectorize(find_cluster_array, signature='()->(sqrtN)')
     cluster_matrix = vfunc(random_indices)
@@ -159,7 +165,7 @@ def cluster_pruning_matrix_and_maps(full_document_vector_matrix, docID2row):
     # create leader matrix to save - used for quicker comparisons with query
     # get leader vectors as matrix
     leader_indices = cluster_matrix[:,0]
-    leader_document_vector_matrix = full_document_vector_matrix[leader_indices]  # used for best quick comparison with query
+    leader_document_vector_matrix = document_vector_matrix[leader_indices]  # used for best quick comparison with query
 
     # go from leader_document_vector_matrix index with highest cosine similarity
     # to leader and follower id list for quick access
