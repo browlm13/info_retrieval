@@ -70,8 +70,8 @@ class QueryEngine:
         info_string += self.clusters_info_string(id_clusters, indices_clusters)
 
         # tfidf cluster information
-        id_clusters = list(self.leader_row_2_cluster_ids.values())
-        indices_clusters = list(self.leader_row_2_cluster_indices.values())
+        id_clusters = list(self.tfidf_leader_row_2_cluster_ids.values())
+        indices_clusters = list(self.tfidf_leader_row_2_cluster_indices.values())
         info_string += "\n\ntf-idf clustering information: (cluster leaders chosen randomly)"
         info_string += self.clusters_info_string(id_clusters, indices_clusters)
 

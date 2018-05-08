@@ -61,7 +61,7 @@ args = parser.parse_args()
 
 qe = query_engine.QueryEngine(args.output, search_type="full_search", weighting_type="tfidf")
 
-#qe.display_clustering_info(write=True)
+# qe.display_clustering_info(write=True)
 qe.display_clustering_info()
 
 # required queries
