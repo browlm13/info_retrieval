@@ -47,10 +47,6 @@ class QueryEngine:
                 self.load_matrices(['leader_document_vector_matrix'])
             if weighting_type == "tfidf":
                 self.load_matrices(['tfidf_leader_document_vector_matrix'])
-                # self.leader_document_vector_matrix = self.tfidf_leader_document_vector_matrix
-                # self.leader_row_2_cluster_indices = self.tfidf_leader_row_2_cluster_indices
-                # self.leader_row_2_cluster_ids = self.tfidf_leader_row_2_cluster_ids
-                # TODO: Implement tfidf option in cluster pruning search
 
         if search_type == "full_search":
             self.load_matrices(['title_document_vector_matrix'])
@@ -58,8 +54,6 @@ class QueryEngine:
                 self.load_matrices(['full_document_vector_matrix'])
             if weighting_type == "tfidf":
                 self.load_matrices(['tfidf_matrix'])
-                # self.full_document_vector_matrix = self.tfidf_matrix
-                # TODO: Implement tfidf option in cluster pruning search
 
     def average_error_variance_for_k_clusters(self, k):
         # self.full_document_vector_matrix

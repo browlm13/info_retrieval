@@ -3,7 +3,8 @@ Finding the best number of clusters
 
 maximizing the second derivative of the variance as a function of the number of clusters (k)
     1. plot the average? (throw out bad data) varaiance for each value of k
-    2. use polynomial interpolation? for a function that describes the varaince as a function of k
+    X 2. use polynomial interpolation? for a function that describes the varaince as a function of k
+        - polynomial interpolation I think destroys the useful information
     3. find the maximum of that functions second derivative
 
 
