@@ -99,13 +99,44 @@ class QueryEngine:
         import matplotlib.pyplot as plt
         avg_v_fok = np.load("average_error_variances_as_function_of_k.txt.npy")
 
+        """
         fig = plt.figure()
         plt.plot(avg_v_fok)
         fig.suptitle('average variance (v) as function of number of clusters (k)', fontsize=20)
         plt.xlabel('k', fontsize=18)
         plt.ylabel('v', fontsize=16)
-        plt.show()
+        # plt.show()
         fig.savefig('varaince_function_of_k.png')
+        """
+
+        ks = np.arange(1,avg_v_fok.shape[0] +1 ,1)
+
+        # find polynomial - try degree 2
+        pvs_coeffs = np.polyfit(ks, avg_v_fok, 2)   # find regression coefficents (x^2, x, 1)
+        pvs = np.polyval(pvs_coeffs, ks)            # evaluate points at k
+
+        print(pvs_coeffs)
+
+        fig = plt.figure()
+        plt.plot(ks, pvs)
+        fig.suptitle('average variance (v) as function of number of clusters (k) 2nd degree polynomial regression', fontsize=20)
+        plt.xlabel('k', fontsize=18)
+        plt.ylabel('v(k)', fontsize=16)
+        # plt.show()
+        fig.savefig('variance_function_of_k_regression.png')
+
+        # second derivative is 2* the x^2 coefficent + the x coefficent
+        second_derivative_coeffs = [pvs_coeffs[0]*2, pvs_coeffs[1]]
+        pvs_double_prime = np.polyval(second_derivative_coeffs, ks)
+
+        fig = plt.figure()
+        plt.plot(ks, pvs_double_prime)
+        fig.suptitle('second derivative of v(k) regression formula', fontsize=20)
+        plt.xlabel('k', fontsize=18)
+        plt.ylabel('v(k)\'\'', fontsize=16)
+        plt.show()
+        fig.savefig('2nd_derivative_of_variance_as_function_of_k.png')
+
 
     def display_clustering_info(self, write=False, method="using kmeans"):
 
