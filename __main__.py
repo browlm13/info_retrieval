@@ -51,7 +51,7 @@ args = parser.parse_args()
 #   Build Matrices and Maps
 #
 
-# matrices_and_maps.build_matrices_and_maps([args.output])
+matrices_and_maps.build_matrices_and_maps([args.output])
 
 #
 #
@@ -61,8 +61,8 @@ args = parser.parse_args()
 
 qe = query_engine.QueryEngine(args.output, search_type="full_search", weighting_type="tfidf")
 
-# qe.display_clustering_info(write=True)
-qe.display_clustering_info()
+qe.display_clustering_info(write=True)
+# qe.display_clustering_info()
 
 # required queries
 """
@@ -81,7 +81,7 @@ qe.search(query)
 query = "hocuspocus thisworks"
 qe.search(query)
 """
-
+"""
 # make program loop
 
 welcome_string = "\n\n"
@@ -104,29 +104,4 @@ while True:
     # search for user query
     qe.search(query)
 
-
-
-"""
-# qe = query_engine.QueryEngine(args.output, search_type="full_search")
-qe = query_engine.QueryEngine(args.output, search_type="full_search", weighting_type="tfidf")
-# qe = query_engine.QueryEngine(args.output, search_type="cluster_pruning")
-
-query = "moore smu"
-qe.search(query)
-
-query = "Bob Ewell where Scout"
-qe.search(query)
-
-query = "three year story"
-qe.search(query)
-
-query = "Atticus to defend Maycomb"
-qe.search(query)
-
-query = "hocuspocus thisworks"
-qe.search(query)
-
-"SMU CSE 5337/7337 Spring 2018 Schedule" # https://s2.smu.edu/~fmoore/schedule.htm
-"Freeman Moore - SMU Spring 2018" # https://s2.smu.edu/~fmoore/index_duplicate.htm
-"Freeman Moore - SMU Spring 2017" # https://s2.smu.edu/~fmoore/index-final.htm
 """

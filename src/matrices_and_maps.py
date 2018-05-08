@@ -135,10 +135,24 @@ def cluster_pruning_matrix_and_maps(document_vector_matrix, docID2row):
 
     # choose n random document vectors indices
     N = len(docID2row)
-    sqrtN = int(math.sqrt(N))
-    cluster_size = sqrtN + 1 # sqrtN + 1 for leader
+    sqrtN = 5 # int(math.sqrt(N)) #tmp
+    cluster_size = 13 # sqrtN + 1 # sqrtN + 1 for leader #tmp
     random_indices = np.random.randint(low=0, high=N, size=sqrtN, dtype=int) # sqrtN random indices for sqrtN leaders
     # (note: not necessarily leader indices)
+
+    # NEW K-means to choose leader documents
+    k = sqrtN
+    max_iterations = 100
+    leader_indices = np.zeros(1)
+    initial_centroid_matrix = document_vector_matrix[random_indices]
+    while not leader_indices.any():
+        leader_indices = document_vector_operations.find_leader_indices_using_kmeans(document_vector_matrix, k, max_iterations, initial_centroid_matrix)
+        print(leader_indices)
+
+    #tmp
+    ramdom_indices = leader_indices
+    print(random_indices)
+    # NEW K-means to choose leader documents
 
     # find each leaders top sqrtN followers using cosine similarity
     # cluster matrix elements represent row indices in numpy document term frequency matrix
@@ -149,6 +163,13 @@ def cluster_pruning_matrix_and_maps(document_vector_matrix, docID2row):
 
     vfunc = np.vectorize(find_cluster_array, signature='()->(sqrtN)')
     cluster_matrix = vfunc(random_indices)
+
+
+    #tmp testing kmeans
+
+
+    print(cluster_matrix)
+    # tmp testing kmeans
 
     # turn cluster matrix into id cluster matrix (use docIDs as elements instead of element indices as element indices)
     row2docID = {v: k for k, v in docID2row.items()}
