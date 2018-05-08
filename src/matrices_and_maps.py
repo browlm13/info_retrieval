@@ -136,7 +136,7 @@ def cluster_pruning_matrix_and_maps(document_vector_matrix, docID2row):
     # choose n random document vectors indices
     N = len(docID2row)
     sqrtN = 5 # int(math.sqrt(N)) #tmp
-    cluster_size = 13 # sqrtN + 1 # sqrtN + 1 for leader #tmp
+    cluster_size = 6 # sqrtN + 1 # sqrtN + 1 for leader #tmp
     random_indices = np.random.randint(low=0, high=N, size=sqrtN, dtype=int) # sqrtN random indices for sqrtN leaders
     # (note: not necessarily leader indices)
 
@@ -146,6 +146,9 @@ def cluster_pruning_matrix_and_maps(document_vector_matrix, docID2row):
     leader_indices = np.zeros(1)
     initial_centroid_matrix = document_vector_matrix[random_indices]
     while not leader_indices.any():
+        random_indices = np.random.randint(low=0, high=N, size=sqrtN,
+                                           dtype=int)  # sqrtN random indices for sqrtN leaders
+        initial_centroid_matrix = document_vector_matrix[random_indices]
         leader_indices = document_vector_operations.find_leader_indices_using_kmeans(document_vector_matrix, k, max_iterations, initial_centroid_matrix)
         print(leader_indices)
 
