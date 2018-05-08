@@ -104,6 +104,46 @@ def kmeans(vector_matrix, k, max_iters, initial_centroid_matrix=np.zeros(1)):
 
     return matrix_centroid_vectors, count
 
+def error_variance_for_k_clusters(M, k, max_iterations):
+    # sum of squared error - error variance
+
+    # choose random rows from M as initial centroids
+    dim = M.shape[0]
+    random_indices = np.random.randint(low=0, high=dim, size=k, dtype=int)
+    initial_centroid_matrix = M[random_indices]
+
+    # perform k-means
+    centroids, iters = kmeans(M, k, max_iterations, initial_centroid_matrix)
+
+    # find nearest centroid for all rows in M, and list the indices as element in an array
+    nc_vector = nearest_centroid_vector(M, centroids)
+
+    error_variance = 0
+
+    # compute sum of squared error - error variance
+    for centroid_index in range(0, k):
+
+        # find vectors with the current centroid as their closest centroid
+        member_vector_indices = np.where(nc_vector == centroid_index)[0]
+        cluster_members = M[member_vector_indices]
+
+        # compute squared error for each row of cluster members and centroid
+
+        # print(centroids[centroid_index])
+        # print(cluster_members)
+        centroid_vector_i = centroids[centroid_index]                       # current centroid vector
+        mse = ((cluster_members - centroid_vector_i) ** 2).mean(axis=1)     # mean squared error
+
+        # sum and take square root of vector of squared error for cluster member
+        error_variance_i = np.sqrt(np.sum(mse))                             # error variance for cluster i
+
+        # add to total error_variance
+        error_variance += error_variance_i
+
+    return error_variance/k
+
+
+
 
 def find_leader_indices_using_kmeans(M, k, max_iterations, initial_centroid_matrix=None):
 
@@ -120,7 +160,8 @@ def find_leader_indices_using_kmeans(M, k, max_iterations, initial_centroid_matr
         # find vectors with the current centroid as their closest centroid
         #member_vector_indices = np.where(nc_vector == centroid_index)[0]
         try:
-            leader_vector_index = np.where(nc_vector == centroid_index)[0][0]
+            # leader_vector_index = np.where(nc_vector == centroid_index)[0][0]
+            leader_vector_index = np.where(nc_vector == centroid_index)[0][0] # this first zero isn't necissarily closest
             print(leader_vector_index)
             leader_indices[centroid_index] = leader_vector_index
         except:

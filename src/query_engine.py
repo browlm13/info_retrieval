@@ -61,6 +61,52 @@ class QueryEngine:
                 # self.full_document_vector_matrix = self.tfidf_matrix
                 # TODO: Implement tfidf option in cluster pruning search
 
+    def average_error_variance_for_k_clusters(self, k):
+        # self.full_document_vector_matrix
+        self.load_matrices(['full_document_vector_matrix'])
+        max_iterations = 100
+
+        # compute average error variance for k over a ceratin number of trials
+        num_trials = 15
+        completed_trials = 0
+        sum_error_variances_for_k = 0
+        for i in range(num_trials):
+            while completed_trials < num_trials:
+                trial_error_variance = document_vector_operations.error_variance_for_k_clusters(
+                    self.full_document_vector_matrix, k, max_iterations)
+                if not np.isnan(trial_error_variance):
+                    completed_trials += 1
+                    sum_error_variances_for_k += trial_error_variance
+                    logger.info("trial error variance for k=%s: %s" % (k, trial_error_variance))
+        average_error_variance_for_k = sum_error_variances_for_k / num_trials
+        return average_error_variance_for_k
+
+    def write_average_error_variance_as_function_of_k(self):
+
+        max_k = 10
+        average_error_variances = []
+        for k in range(1,max_k):
+            average_error_variances.append(self.average_error_variance_for_k_clusters(k))
+            logger.info("current avg error variances for k values: %s" % str(average_error_variances))
+
+        avg_v_fok = np.array(average_error_variances)
+
+        # save results to file
+        logger.info("average_error_variances_as_function_of_k: %s" % avg_v_fok)
+        np.save("average_error_variances_as_function_of_k", avg_v_fok)
+
+    def plot_average_error_variances_as_function_of_k(self):
+        import matplotlib.pyplot as plt
+        avg_v_fok = np.load("average_error_variances_as_function_of_k.txt.npy")
+
+        fig = plt.figure()
+        plt.plot(avg_v_fok)
+        fig.suptitle('average variance (v) as function of number of clusters (k)', fontsize=20)
+        plt.xlabel('k', fontsize=18)
+        plt.ylabel('v', fontsize=16)
+        plt.show()
+        fig.savefig('varaince_function_of_k.png')
+
     def display_clustering_info(self, write=False, method="using kmeans"):
 
         # tf cluster information
