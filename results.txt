@@ -151,3 +151,38 @@ RESULTS:
 
 No Results Found.
 
+
+
+User Query : player
+
+	Indexed Tokens : ['player']
+
+	Search Type: cluster_pruning, Weighting Type: tf
+
+RESULTS:
+------------------------------------------------------------------------------------------
+
+1. URL: https://s2.smu.edu/~fmoore/textfiles/football3.txt,
+TITLE: NO TITLE,
+SCORE: 1.0
+
+2. URL: https://s2.smu.edu/~fmoore/textfiles/football4.txt,
+TITLE: NO TITLE,
+SCORE: 1.0
+
+3. URL: https://s2.smu.edu/~fmoore/textfiles/football1.txt,
+TITLE: NO TITLE,
+SCORE: 1.0
+
+4. URL: https://s2.smu.edu/~fmoore/textfiles/football5.txt,
+TITLE: NO TITLE,
+SCORE: 1.0
+
+5. URL: https://s2.smu.edu/~fmoore/textfiles/basketball5.txt,
+TITLE: NO TITLE,
+SCORE: 1.0
+
+6. URL: https://s2.smu.edu/~fmoore/textfiles/football2.txt,
+TITLE: NO TITLE,
+SCORE: 1.0
+
