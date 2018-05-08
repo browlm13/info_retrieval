@@ -99,16 +99,18 @@ class QueryEngine:
         import matplotlib.pyplot as plt
         avg_v_fok = np.load("average_error_variances_as_function_of_k.txt.npy")
 
-        """
+
         fig = plt.figure()
         plt.plot(avg_v_fok)
         fig.suptitle('average variance (v) as function of number of clusters (k)', fontsize=20)
         plt.xlabel('k', fontsize=18)
         plt.ylabel('v', fontsize=16)
-        # plt.show()
+        plt.show()
         fig.savefig('varaince_function_of_k.png')
-        """
 
+        """
+        # wont work! derivative of second degreen polynomial is a line.
+        # use eye test
         ks = np.arange(1,avg_v_fok.shape[0] +1 ,1)
 
         # find polynomial - try degree 2
@@ -136,6 +138,7 @@ class QueryEngine:
         plt.ylabel('v(k)\'\'', fontsize=16)
         plt.show()
         fig.savefig('2nd_derivative_of_variance_as_function_of_k.png')
+        """
 
 
     def display_clustering_info(self, write=False, method="using kmeans"):

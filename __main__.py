@@ -61,10 +61,10 @@ args = parser.parse_args()
 
 qe = query_engine.QueryEngine(args.output, search_type="full_search", weighting_type="tfidf")
 
-# qe.display_clustering_info(write=True)
+qe.display_clustering_info(write=True)
 # qe.display_clustering_info()
 # qe.write_average_error_variance_as_function_of_k()
-qe.plot_average_error_variances_as_function_of_k()
+# qe.plot_average_error_variances_as_function_of_k()
 
 """
 # required queries
@@ -84,7 +84,7 @@ query = "hocuspocus thisworks"
 qe.search(query)
 """
 
-"""
+
 # make program loop
 
 welcome_string = "\n\n"
@@ -106,4 +106,4 @@ while True:
 
     # search for user query
     qe.search(query)
-"""
+
